@@ -1,16 +1,17 @@
 import React from 'react'
-import Menu from '../assets/Components/Menu.jsx'
+import DefaultScreen from '../assets/Components/DefaultScreen'
 
-const home = () => {
+const Home = () => {
     return (
-        <>
-            <Menu />
-            <hr className='border-green' />
-            <div className='flex justify-center align-center border-0 rounded-[12px] bg-white/25 p-4 m-4 w-[320px] sm:w-[410px] lg:w-[390px] xl:w-[475px]'>
-                <h1 className='text-primary font-bold text-lg'>Home</h1>
-            </div>
-        </>
+        <DefaultScreen>
+            <h1 className="text-4xl font-bold text-orange dark:text-green mb-6">
+                Bem-vindo ao meu Portfólio
+            </h1>
+            <p className="text-lg text-orange dark:text-green max-w-3xl mx-auto">
+                Designer 3D especializado em criar experiências visuais únicas e impactantes.
+            </p>
+        </DefaultScreen>
     )
 }
 
-export default home
+export default Home
