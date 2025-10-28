@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #3348EA;
+  --color-secondary: #000000;
+  --color-white: #FFFFFF;
+  --color-green: #83FF30;
+  --color-orange: #FF6608;
+
+  --font-family: 'Pathway Extreme', 'sans-serif';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
