@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import Banners from "../images/Banners.png";
 import Logo from "../images/Logo3D.png";
 import DarkMode from "./darkmode";
 import { IoHomeOutline, IoDocumentAttachOutline } from "react-icons/io5";
@@ -31,11 +30,6 @@ export default function MenuBar() {
           src={Logo}
           alt="Logo"
           className="w-[60px] sm:w-[86px] lg:w-[100px] xl:w-[120px]"
-        />
-        <img
-          src={Banners}
-          alt="Banners"
-          className="w-[140px] sm:w-[180px] lg:w-[280px] xl:w-[380px]"
         />
       </div>
 
