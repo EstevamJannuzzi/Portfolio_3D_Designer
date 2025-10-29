@@ -1,5 +1,5 @@
 import React from 'react'
-import DefaultScreen from '../assets/Components/DefaultScreen'
+import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 
 const Home = () => {
     return (
