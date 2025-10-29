@@ -4,7 +4,7 @@ import Footer from './Footer.jsx'
 
 const DefaultScreen = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col bg-white dark:bg-black transition-colors">
+    <div className="min-h-screen flex flex-col bg-light-gray dark:bg-black transition-colors">
       <Menu />
       <main className="flex-grow pt-[72px]">
         <div className="container mx-auto pt-14 sm:pt-20 lg:pt-28 xl:pt-32 flex items-center justify-center h-full">

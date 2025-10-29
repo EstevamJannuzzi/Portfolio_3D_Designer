@@ -8,8 +8,11 @@
   --color-white: #FFFFFF;
   --color-green: #83FF30;
   --color-orange: #FF6608;
+  --color-light-gray: #C0D5DC;
+  --color-dark-gray: #262A2C;
 
-  --font-family: 'Pathway Extreme', 'sans-serif';
+  --font-family: "Bungee", sans-serif;
+  --font-text: "Quicksand", sans-serif;
 }
 
 body {
