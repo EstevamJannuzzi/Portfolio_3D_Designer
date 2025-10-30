@@ -3,6 +3,7 @@ import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import DingBo from '../assets/images/DingBo.1.webp'
 import Carnivor from '../assets/images/carnivor.1.webp'
 import Gremlin from '../assets/images/Gremlin.1.webp'
+import Joystick from '../assets/images/Joystick.webp'
 import BoxText from '../assets/Components/BoxText.jsx'
 import Title from '../assets/Components/Title.jsx'
 
@@ -26,13 +27,13 @@ const Home = () => {
                     text="Designer 3D  Especialista em Visualização Digital  Domínio em Maya, ZBrush, Photoshop, KeyShot e Substance 3D Painter"
                     width="max-w-50 sm:max-w-60 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
-                    margin="mb-18 sm:mb-4 lg:mb-0 xl:-mb-16 mr-30 sm:mr-70 lg:mr-90 xl:mr-100"
+                    margin="mb-18 sm:mb-4 lg:mb-0 xl:-mb-24 mr-30 sm:mr-70 lg:mr-90 xl:mr-100"
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
                 <img
                     src={DingBo}
                     alt="DingBo"
-                    className="flex justify-center items-center w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px] ml-22 sm:ml-0 lg:ml-0 xl:ml-0 -mt-50 z-10 relative"
+                    className="flex justify-center items-center w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px] ml-22 sm:ml-0 lg:ml-0 xl:ml-0 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30 z-10 relative"
                 />
             </div>
             <div className='flex flex-col items-center justify-center gap-6 mb-12 mt-22'>
@@ -65,8 +66,8 @@ const Home = () => {
             </div>
             <div className='flex flex-col items-center justify-center gap-6 mb-4 mt-22'>
                 <img
-                    src={Carnivor}
-                    alt="Carnivor"
+                    src={Joystick}
+                    alt="Joystick"
                     className="flex justify-center items-center w-[300px] sm:w-[500px] lg:w-[620px] xl:w-[900px] -ml-14 sm:-ml-30 lg:-ml-20 xl:ml-0 z-10 relative"
                 />
                 <BoxText
