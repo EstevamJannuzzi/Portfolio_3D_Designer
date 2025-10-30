@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import Logo from "../images/Logo3D.png";
+import Logo from "../images/Logo3D.webp";
 import DarkMode from "./darkmode";
 import { IoHomeOutline, IoDocumentAttachOutline } from "react-icons/io5";
 import { LuContact } from "react-icons/lu";
