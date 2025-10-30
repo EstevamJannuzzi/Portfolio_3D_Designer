@@ -19,18 +19,18 @@ const Home = () => {
                     darkcolor="dark:text-white"
                 />
             </div>
-            <div className="relative flex flex-col items-center justify-center gap-6 mt-20 mb-8 ml-0 sm:ml-20 lg:ml-30 xl:ml-20">
+            <div className="relative flex flex-col items-center justify-center gap-6 mt-20 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-14">
                 <BoxText
                     text="Designer 3D  Especialista em Visualização Digital  Domínio em Maya, ZBrush, Photoshop, KeyShot e After Effect"
                     width="max-w-50 sm:max-w-60 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
-                    margin="mb-24 sm:mb-4 lg:mb-0 xl:mb-0 mr-30 sm:mr-70 lg:mr-90 xl:mr-100"
+                    margin="mb-18 sm:mb-4 lg:mb-0 xl:-mb-16 mr-30 sm:mr-70 lg:mr-90 xl:mr-100"
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
                 <img
                     src={DingBo}
                     alt="DingBo"
-                    className="flex justify-center items-center w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px] ml-30 sm:ml-0 lg:ml-0 xl:ml-0 -mt-50 z-10 relative"
+                    className="flex justify-center items-center w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px] ml-22 sm:ml-0 lg:ml-0 xl:ml-0 -mt-50 z-10 relative"
                 />
             </div>
 
