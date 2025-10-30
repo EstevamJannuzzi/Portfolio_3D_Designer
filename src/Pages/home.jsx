@@ -21,7 +21,7 @@ const Home = () => {
             </div>
             <div className="relative flex flex-col items-center justify-center gap-6 mt-20 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-14">
                 <BoxText
-                    text="Designer 3D  Especialista em Visualização Digital  Domínio em Maya, ZBrush, Photoshop, KeyShot e After Effect"
+                    text="Designer 3D  Especialista em Visualização Digital  Domínio em Maya, ZBrush, Photoshop, KeyShot e Substance 3D Painter"
                     width="max-w-50 sm:max-w-60 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     margin="mb-18 sm:mb-4 lg:mb-0 xl:-mb-16 mr-30 sm:mr-70 lg:mr-90 xl:mr-100"
