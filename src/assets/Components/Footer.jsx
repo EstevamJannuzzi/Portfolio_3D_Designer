@@ -6,7 +6,7 @@ import { VscGithub } from "react-icons/vsc";
 
 const Footer = () => {
   return (
-    <div className='flex flex-col md:flex-row justify-between items-center w-full h-[110px] sm:h-[80px] lg:h-[80px] xl:h-[80px] font-text bg-dark-gray/75 dark:bg-primary/20 backdrop-blur-md fixed bottom-0 left-0 px-14 pt-2 sm:pt-0 xl:pt-0 pb-6 sm:pb-0 xl:pb-0'>
+    <div className='flex flex-col md:flex-row justify-between items-center w-full h-[110px] sm:h-[70px] lg:h-[60px] xl:h-[60px] font-text bg-dark-gray/75 dark:bg-primary/20 backdrop-blur-md fixed bottom-0 left-0 px-14 pt-2 sm:pt-0 xl:pt-0 pb-6 sm:pb-0 xl:pb-0 z-50'>
       <span className='text-center md:text-left'>
         {new Date().getFullYear()} Feito por Estevam Jannuzzi &copy;. Todos os direitos reservados.
       </span>

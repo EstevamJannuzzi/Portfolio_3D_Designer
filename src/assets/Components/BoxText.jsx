@@ -1,9 +1,9 @@
 import React from 'react'
 
-const BoxText = ({ text }) => {
+const BoxText = ({ text, width, distance, margin, size }) => {
   return (
     <div>
-      <p className='font-text text-xl text-dark-gray dark:text-light-gray bg-white dark:bg-dark-gray rounded-lg p-4 w-[400px]'>
+      <p className={`font-text ${size} text-dark-gray dark:text-light-gray bg-white/85 dark:bg-dark-gray/85 rounded-lg p-4 ${width} ${distance} ${margin}`}>
         {text}
       </p>
     </div>
