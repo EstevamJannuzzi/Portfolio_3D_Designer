@@ -57,6 +57,15 @@ Sou apaixonado por tecnologia e inovação, sempre em busca de atualização con
               <p className="pl-4">01/2016 - Atual</p>
               <p className="pl-4">Modelagem, texturização, rigging e animação de personagens 3D</p>
               <p className="pl-4 mb-4">Edição e renderização de vídeos e imagens para projetos diversos</p>
+
+              <p><strong>LUBRIN</strong></p>
+              <p><strong>DESIGNER GRÁFICO</strong></p>
+              <p className="pl-4">04/2011 - 12/2014</p>
+              <p className="pl-4">Criação de folders, flyers e catálogos de produtos</p>
+              <p className="pl-4">Produção de imagens 3D para projetos de engenharia</p>
+              <p className="pl-4">Modelagem, texturização e animação 3D para materiais promocionais</p>
+              <p className="pl-4">Edição de fotos e vídeos para mídias impressas e digitais</p>
+              <p className="pl-4">Responsável pela manutenção do site da empresa</p>
             </>
           }
         />
