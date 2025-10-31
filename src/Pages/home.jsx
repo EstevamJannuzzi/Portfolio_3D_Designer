@@ -43,7 +43,7 @@ const Home = () => {
                     className="flex justify-center items-center w-[300px] sm:w-[500px] lg:w-[620px] xl:w-[900px] -ml-14 sm:-ml-30 lg:-ml-20 xl:ml-0 z-10 relative"
                 />
                 <BoxText
-                    text="Sou formado em Design Gráfico desde 2011, com mais de uma década de experiência em criação visual e modelagem 3D. Tenho domínio técnico em Maya, ZBrush, Photoshop, KeyShot e Substance 3D Painter — ferramentas que utilizo para transformar ideias em imagens impactantes, seja em projetos de produto, animação, visualização arquitetônica ou motion design."
+                    text="Sou formado em Design Gráfico desde 2011, com mais de uma década de experiência em criação visual e modelagem 3D. Tenho domínio técnico em Maya, ZBrush, Photoshop, KeyShot e Substance 3D Painter ferramentas que utilizo para transformar ideias em imagens impactantes, seja em projetos de produto, animação, visualização arquitetônica ou motion design."
                     width="max-w-60 sm:max-w-80 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     margin="-mt-60 sm:-mt-80 lg:-mt-100 xl:-mt-126 ml-30 sm:ml-50 lg:ml-70 xl:ml-120"
