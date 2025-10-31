@@ -1,13 +1,16 @@
 import React from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
+import Title from '../assets/Components/Title.jsx'
 
 const Curriculo = () => {
   return (
     <DefaultScreen className='z-30'>
-      <h1 className="text-4xl font-bold text-orange dark:text-green mb-6">Currículo</h1>
-      <p className="font-text text-xl text-dark-gray dark:text-light-gray max-w-3xl mx-auto">
-        Aqui você pode encontrar informações sobre minha formação, experiências e habilidades.
-      </p>
+      <div className='flex flex-col items-center justify-center gap-2 text-center'>
+        <Title
+          text="Currículo"
+          size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
+        />
+      </div>
     </DefaultScreen>
   )
 }
