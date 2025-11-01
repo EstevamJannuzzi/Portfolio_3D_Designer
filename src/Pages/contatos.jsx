@@ -77,7 +77,7 @@ const Contatos = () => {
 
       </div>
 
-      <div className="flex justify-center items-center mt-10">
+      <div className="flex justify-center items-center mt-10 mb-8">
         <img
           src={ContatosDing}
           alt="Contatos Ding"

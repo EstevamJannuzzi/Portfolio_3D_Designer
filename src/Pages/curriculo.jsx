@@ -15,7 +15,7 @@ const Curriculo = () => {
         <img
           src={Frog}
           alt="Frog"
-          className="flex justify-center items-center w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px]"
+          className="flex justify-center items-center w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px] mt-6 mb-6"
         />
         <BoxtextResume
           title="Resumo Profissional:"
