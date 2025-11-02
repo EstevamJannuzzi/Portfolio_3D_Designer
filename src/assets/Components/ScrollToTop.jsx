@@ -4,9 +4,11 @@ import { IoIosArrowDropup } from "react-icons/io";
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Mostra o botão quando o usuário rolar 300px para baixo
   const toggleVisibility = () => {
-    if (window.scrollY > 300) {
+    // Não mostrar no mobile portrait
+    const isMobilePortrait = window.innerWidth <= 640 && window.innerHeight > window.innerWidth;
+    
+    if (!isMobilePortrait && window.scrollY > 300) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -22,7 +24,11 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    window.addEventListener('resize', toggleVisibility); // para quando mudar orientação
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+      window.removeEventListener('resize', toggleVisibility);
+    };
   }, []);
 
   return (
