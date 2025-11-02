@@ -1,6 +1,7 @@
 import React from 'react'
 import Menu from './Menu.jsx'
 import Footer from './Footer.jsx'
+import ScrollToTop from './ScrollToTop.jsx'
 
 const DefaultScreen = ({ children }) => {
   return (
@@ -12,6 +13,7 @@ const DefaultScreen = ({ children }) => {
         </div>
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }
