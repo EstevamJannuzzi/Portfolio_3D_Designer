@@ -13,6 +13,9 @@
         "techSkills": "Además del diseño, soy un entusiasta de la tecnología y la programación, con enfoque en React JS y Python. Esta combinación me permite integrar arte y lógica, creando soluciones visuales interactivas y funcionales.",
         "goals": "Busco oportunidades en diseño 3D, tech art, visualización digital y proyectos que valoren creatividad, técnica e innovación. ¡Conectemos!"
     },
+    "portfolio": {
+        "title": "Portafolio"
+    },
     "resume": {
         "title": "Currículum",
         "professionalSummaryTitle": "Resumen Profesional:",
