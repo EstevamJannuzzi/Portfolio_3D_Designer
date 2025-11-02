@@ -20,7 +20,7 @@ const Curriculo = () => {
         <BoxtextResume
           title="Resumo Profissional:"
           description="Sou designer gráfico formado pela Universidade Paulista (UNIP) em 2011, com sólida experiência em modelagem 3D, animação e design visual. Iniciei minha carreira na empresa de engenharia Lubrin, onde atuava na criação de projetos tridimensionais de motores, redutores e componentes técnicos. Além disso, desenvolvia materiais gráficos como flyers e folders, gerenciava o site institucional e realizava edição de vídeos e imagens.
-Após essa experiência, segui como freelancer no estúdio de desenvolvimento de games IzotonicStudios, contribuindo com modelagem 3D, texturização e animações 2D e 3D para personagens e cenários. Paralelamente, atuo como designer na empresa MentalPlus, responsável pelo aplicativo homônimo voltado à área neuropsicológica. Lá, sou responsável pela modelagem e animação do mascote Dr. Brainy, além da manutenção do site da empresa.
+Após essa experiência, segui como freelancer no estúdio de desenvolvimento de games IzotonicStudios, contribuindo com modelagem 3D, texturização e animações 2D e 3D para personagens e cenários. Paralelamente, atuo como designer na empresa MentalPlus&#174;, responsável pelo aplicativo homônimo voltado à área neuropsicológica. Lá, sou responsável pela modelagem e animação do mascote Dr. Brainy, além da manutenção do site da empresa.
 Sou apaixonado por tecnologia e inovação, sempre em busca de atualização constante em novas ferramentas e técnicas. Tenho perfil colaborativo, sou proativo nas decisões, objetivo, determinado e extremamente detalhista em meus processos criativos.
 "
         />
