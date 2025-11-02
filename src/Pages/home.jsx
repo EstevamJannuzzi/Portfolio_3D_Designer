@@ -46,6 +46,7 @@ const Home = () => {
                     text="Sou formado em Design Gráfico desde 2011, com mais de uma década de experiência em criação visual e modelagem 3D. Tenho domínio técnico em Maya, ZBrush, Photoshop, KeyShot e Substance 3D Painter ferramentas que utilizo para transformar ideias em imagens impactantes, seja em projetos de produto, animação, visualização arquitetônica ou motion design."
                     width="max-w-46 sm:max-w-80 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
+                    position='right'
                     margin="-mt-72 sm:-mt-90 lg:-mt-110 xl:-mt-150 ml-30 sm:ml-50 lg:ml-80 xl:ml-140"
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
@@ -74,6 +75,7 @@ const Home = () => {
                     text="Busco oportunidades em design 3D, tech art, visualização digital e projetos que valorizem criatividade, técnica e inovação. Vamos nos conectar?"
                     width="max-w-40 sm:max-w-80 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
+                    position='right'
                     margin="-mt-60 sm:-mt-80 lg:-mt-106 xl:-mt-150 ml-30 sm:ml-50 lg:ml-94 xl:ml-130"
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />

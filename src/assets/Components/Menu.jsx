@@ -40,7 +40,7 @@ export default function MenuBar() {
             <Link
               key={link.name}
               to={link.to}
-              className={`flex items-center text-orange dark:text-green font-medium hover:text-green dark:hover:text-orange transition-colors ${location.pathname === link.to ? 'text-green dark:text-orange text-[24px] dark:!text-orange !text-green' : 'text-[20px]'}`}
+              className={`flex items-center text-orange dark:text-green font-medium hover:text-green dark:hover:text-orange ease-in-out hover:-translate-y-1 duration-300 ease-in-out hover:scale-110 transition-colors ${location.pathname === link.to ? 'text-green dark:text-orange text-[24px] dark:!text-orange !text-green' : 'text-[20px]'}`}
               style={{ minHeight: '32px', display: 'flex', alignItems: 'center' }}
             >
               {link.name === 'Home' && <IoHomeOutline className="mr-2" size={22} />}
@@ -103,7 +103,7 @@ export default function MenuBar() {
                     <Link
                       to={link.to}
                       onClick={() => setMenuOpen(false)}
-                      className={`block text-orange dark:text-green text-lg font-medium hover:text-green dark:hover:text-orange transition-colors text-center py-4 ${location.pathname === link.to ? 'text-green dark:text-orange text-[24px] dark:!text-orange !text-green' : 'text-[20px]'}`}
+                      className={`block text-orange dark:text-green text-lg font-medium hover:text-green dark:hover:text-orange ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 ease-in-out transition-colors text-center py-4 ${location.pathname === link.to ? 'text-green dark:text-orange text-[24px] dark:!text-orange !text-green' : 'text-[20px]'}`}
                       style={{ minHeight: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                     >
                       {link.name === 'Home' && <IoHomeOutline className="mr-2" size={22} />}
