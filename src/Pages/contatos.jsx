@@ -8,17 +8,20 @@ import { HiOutlineMail } from "react-icons/hi"
 import { PiLinkedinLogo } from "react-icons/pi"
 import { FiYoutube } from "react-icons/fi"
 import { VscGithub } from "react-icons/vsc"
+import { useTranslation } from 'react-i18next'
 
 const Contatos = () => {
+  const { t } = useTranslation()
+
   return (
     <DefaultScreen className='z-30'>
       <div className='flex flex-col items-center justify-center gap-2 text-center'>
         <Title
-          text="Contato"
+          text={t("contacts.title")}
           size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
         />
         <Title
-          text="Abaixo estão minhas formas de contato e redes sociais."
+          text={t("contacts.subtitle")}
           size="text-[20px] sm:text-[22px] lg:text-[28px] xl:text-[36px]"
           color="text-white"
           darkcolor="dark:text-white"
@@ -29,18 +32,19 @@ const Contatos = () => {
 
         <BoxContato
           icon={<FaWhatsapp size={70} />}
-          text="Whatsapp"
+          text={t("contacts.whatsapp")}
           link="https://wa.me/5511952029128"
         />
 
         <BoxContato
           icon={<HiOutlineMail size={70} />}
-          text="E-mail"
+          text={t("contacts.email")}
           link="mailto:estevamjannuzzi@gmail.com"
         />
+
         <BoxContato
           icon={<FaInstagram size={70} />}
-          text="Instagram"
+          text={t("contacts.instagram")}
           link="https://www.instagram.com/estevam_jannuzzi/"
         />
 
@@ -50,18 +54,19 @@ const Contatos = () => {
 
         <BoxContato
           icon={<PiLinkedinLogo size={70} />}
-          text="LinkedIn"
+          text={t("contacts.linkedin")}
           link="https://www.linkedin.com/in/estevam-jannuzzi-217355bb/"
         />
 
         <BoxContato
           icon={<FiYoutube size={70} />}
-          text="YouTube"
+          text={t("contacts.youtube")}
           link="https://www.youtube.com/@vfx_3D_world"
         />
+
         <BoxContato
           icon={<FaArtstation size={70} />}
-          text="ArtStation"
+          text={t("contacts.artstation")}
           link="https://www.artstation.com/estevamjannuzzi4"
         />
 
@@ -71,7 +76,7 @@ const Contatos = () => {
 
         <BoxContato
           icon={<VscGithub size={70} />}
-          text="GitHub"
+          text={t("contacts.github")}
           link="https://github.com/EstevamJannuzzi"
         />
 

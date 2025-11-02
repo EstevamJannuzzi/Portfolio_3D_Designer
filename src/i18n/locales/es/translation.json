@@ -1,0 +1,74 @@
+{
+    "menu": {
+        "home": "Inicio",
+        "portfolio": "Portafolio",
+        "curriculo": "Currículum",
+        "contatos": "Contactos"
+    },
+    "home": {
+        "title": "Bienvenido al Portafolio de",
+        "name": "Estevam Jannuzzi",
+        "professionalSummary": "Diseñador 3D, Especialista en Visualización Digital, Experto en Maya, ZBrush, Photoshop, KeyShot y Substance 3D Painter",
+        "experience": "Tengo un título en Diseño Gráfico desde 2011, con más de una década de experiencia en creación visual y modelado 3D. Tengo dominio técnico en Maya, ZBrush, Photoshop, KeyShot y Substance 3D Painter, herramientas que utilizo para transformar ideas en imágenes impactantes, ya sea en proyectos de producto, animación, visualización arquitectónica o motion design.",
+        "techSkills": "Además del diseño, soy un entusiasta de la tecnología y la programación, con enfoque en React JS y Python. Esta combinación me permite integrar arte y lógica, creando soluciones visuales interactivas y funcionales.",
+        "goals": "Busco oportunidades en diseño 3D, tech art, visualización digital y proyectos que valoren creatividad, técnica e innovación. ¡Conectemos!"
+    },
+    "resume": {
+        "title": "Currículum",
+        "professionalSummaryTitle": "Resumen Profesional:",
+        "professionalSummary": "Soy diseñador gráfico graduado por la Universidad Paulista (UNIP) en 2011, con sólida experiencia en modelado 3D, animación y diseño visual. Comencé mi carrera en Lubrin, empresa de ingeniería, creando proyectos 3D de motores, reductores y componentes técnicos. Además, desarrollaba materiales gráficos como flyers y folletos, gestionaba el sitio web de la empresa y editaba videos e imágenes. Después de esta experiencia, trabajé como freelancer en IzotonicStudios, contribuyendo con modelado 3D, texturización y animaciones 2D/3D para personajes y escenarios. También trabajo como diseñador en MentalPlus®, responsable de la aplicación homónima de neuropsicología, donde modelé y animé la mascota Dr. Brainy, además de mantener el sitio web de la empresa. Soy apasionado por la tecnología e innovación, siempre buscando actualización constante en nuevas herramientas y técnicas. Tengo un perfil colaborativo, proactivo en la toma de decisiones, objetivo, determinado y extremadamente detallista en mis procesos creativos.",
+        "educationTitle": "Educación:",
+        "education1": "Licenciatura en Diseño Gráfico - UNIP – Finalizado 12/2011",
+        "education2": "Bachillerato Técnico en Electrónica – Colegio S.A.A. – Finalizado 12/1997",
+        "languagesTitle": "Idiomas:",
+        "language1": "Inglés - Intermedio",
+        "language2": "Español - Básico",
+        "experienceTitle": "Experiencia Profesional:",
+        "exp1": {
+            "company": "MENTALPLUS®",
+            "role": "Desarrollador Front-End (Freelancer)",
+            "period": "01/2022 - Actual",
+            "details1": "Desarrollo de interfaces web utilizando ReactJS y Tailwind CSS",
+            "details2": "Creación y mantenimiento del sitio institucional y sistemas internos"
+        },
+        "exp2": {
+            "company": "IZOTONIC STUDIOS",
+            "role": "Diseñador 3D (Freelancer)",
+            "period": "01/2016 - Actual",
+            "details1": "Modelado, texturización, rigging y animación de personajes 3D",
+            "details2": "Edición y renderizado de videos e imágenes para diversos proyectos"
+        },
+        "exp3": {
+            "company": "LUBRIN",
+            "role": "Diseñador Gráfico",
+            "period": "04/2011 - 12/2014",
+            "details1": "Creación de folletos, flyers y catálogos de productos",
+            "details2": "Producción de imágenes 3D para proyectos de ingeniería",
+            "details3": "Modelado, texturización y animación 3D para materiales promocionales",
+            "details4": "Edición de fotos y videos para medios impresos y digitales",
+            "details5": "Responsable del mantenimiento del sitio web de la empresa",
+            "details6": ""
+        },
+        "coursesTitle": "Cursos Complementarios:",
+        "courses1": "Computación Gráfica: Autodesk Maya, Pixologic Zbrush, Adobe Photoshop, Illustrator, InDesign, After Effects, Premiere, Media Encore, Substance 3D Painter, Luxion Keyshot, Figma.",
+        "courses2": "Programación: Python, HTML5, CSS3, JavaScript (Intro), WordPress, ReactJS, Tailwind CSS.",
+        "courses3": "Sistemas Operativos: Windows 8.1, 10, 11, Linux Mint, Ubuntu, Fedora.",
+        "participationTitle": "Participaciones:",
+        "participation1": "Experiencia en eventos y competiciones del sector: Big Festival, Campus Party, Game Jam (campeón en 2019) y mentor en Game Jam+."
+    },
+    "contacts": {
+        "title": "Contacto",
+        "subtitle": "A continuación, se muestran mis formas de contacto y redes sociales.",
+        "whatsapp": "Whatsapp",
+        "email": "Correo",
+        "instagram": "Instagram",
+        "linkedin": "LinkedIn",
+        "youtube": "YouTube",
+        "artstation": "ArtStation",
+        "github": "GitHub"
+    },
+    "footer": {
+        "madeBy": "Hecho por Estevam Jannuzzi",
+        "rightsReserved": "Todos los derechos reservados."
+    }
+}
