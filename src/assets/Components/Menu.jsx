@@ -9,6 +9,7 @@ import { IoHomeOutline, IoDocumentAttachOutline } from "react-icons/io5";
 import { LuContact } from "react-icons/lu";
 import { PiBriefcaseLight } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
+import ReactCountryFlag from "react-country-flag";
 
 export default function MenuBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,6 +30,36 @@ export default function MenuBar() {
     { name: t("menu.curriculo"), to: "/curriculo", icon: <IoDocumentAttachOutline className="mr-2" size={22} /> },
     { name: t("menu.contatos"), to: "/contatos", icon: <LuContact className="mr-2" size={22} /> },
   ];
+
+  // Mapeia idiomas -> bandeiras
+  const flags = [
+    { code: "pt", country: "BR" },
+    { code: "en", country: "US" },
+    { code: "es", country: "ES" },
+    { code: "ja", country: "JP" },
+    { code: "zh", country: "CN" },
+    { code: "ru", country: "RU" },
+  ];
+
+  // Componente do botão de bandeira
+  const FlagButton = ({ countryCode, onClick, title }) => (
+    <button
+      onClick={onClick}
+      className="flex items-center justify-center transition-transform hover:scale-110 cursor-pointer"
+      style={{ width: '2em', height: '2em' }}
+      title={title}
+    >
+      <ReactCountryFlag
+        countryCode={countryCode}
+        svg
+        style={{
+          width: '100%',
+          height: '100%',
+          display: 'inline-block',
+        }}
+      />
+    </button>
+  );
 
   return (
     <header className="w-full flex items-center justify-between bg-dark-gray/75 dark:bg-primary/20 backdrop-blur-md gap-4 py-3 px-6 fixed top-0 left-0 z-50 shadow-sm">
@@ -53,7 +84,6 @@ export default function MenuBar() {
                   ? "text-green dark:text-orange text-[24px] scale-110"
                   : "text-orange dark:text-green text-[20px] hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110"
               }`}
-              style={{ minHeight: "32px", display: "flex", alignItems: "center" }}
             >
               {link.icon}
               {link.name}
@@ -65,7 +95,7 @@ export default function MenuBar() {
         <div className="flex items-center gap-4 relative">
           <DarkMode />
 
-          {/* 🌍 Botão único de idioma */}
+          {/* 🌍 Botão de idioma */}
           <div className="relative">
             <button
               onClick={toggleLangMenu}
@@ -84,42 +114,14 @@ export default function MenuBar() {
                   className="absolute right-0 mt-2 bg-white/95 dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 py-2 px-3"
                 >
                   <div className="flex flex-col items-center gap-2">
-                    <button
-                      onClick={() => changeLanguage("pt")}
-                      className="flex items-center gap-2 text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 font-medium cursor-pointer"
-                    >
-                      Pt
-                    </button>
-                    <button
-                      onClick={() => changeLanguage("en")}
-                      className="flex items-center gap-2 text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 font-medium cursor-pointer"
-                    >
-                      En
-                    </button>
-                    <button
-                      onClick={() => changeLanguage("es")}
-                      className="flex items-center gap-2 text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 font-medium cursor-pointer"
-                    >
-                      Es
-                    </button>
-                    <button
-                      onClick={() => changeLanguage("ja")}
-                      className="flex items-center gap-2 text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 font-medium cursor-pointer"
-                    >
-                      Ja
-                    </button>
-                    <button
-                      onClick={() => changeLanguage("zh")}
-                      className="flex items-center gap-2 text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 font-medium cursor-pointer"
-                    >
-                      Zh
-                    </button>
-                    <button
-                      onClick={() => changeLanguage("ru")}
-                      className="flex items-center gap-2 text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 font-medium cursor-pointer"
-                    >
-                      Ru
-                    </button>
+                    {flags.map((f) => (
+                      <FlagButton
+                        key={f.code}
+                        countryCode={f.country}
+                        onClick={() => changeLanguage(f.code)}
+                        title={f.code.toUpperCase()}
+                      />
+                    ))}
                   </div>
                 </motion.div>
               )}
@@ -128,7 +130,7 @@ export default function MenuBar() {
         </div>
       </div>
 
-      {/* MOBILE E TABLET HEADER */}
+      {/* MOBILE HEADER */}
       <div className="lg:hidden flex items-center gap-4">
         <DarkMode />
 
@@ -151,42 +153,14 @@ export default function MenuBar() {
                 className="absolute right-0 mt-2 bg-white/95 dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 py-2 px-3"
               >
                 <div className="flex flex-col items-center gap-2">
-                  <button
-                    onClick={() => changeLanguage("pt")}
-                    className="text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 text-base cursor-pointer"
-                  >
-                    Pt
-                  </button>
-                  <button
-                    onClick={() => changeLanguage("en")}
-                    className="text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 text-base cursor-pointer"
-                  >
-                    En
-                  </button>
-                  <button
-                    onClick={() => changeLanguage("es")}
-                    className="text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 text-base cursor-pointer"
-                  >
-                    Es
-                  </button>
-                  <button
-                    onClick={() => changeLanguage("ja")}
-                    className="text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 text-base cursor-pointer"
-                  >
-                    Ja
-                  </button>
-                  <button
-                    onClick={() => changeLanguage("zh")}
-                    className="text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 text-base cursor-pointer"
-                  >
-                    Zh
-                  </button>
-                  <button
-                    onClick={() => changeLanguage("ru")}
-                    className="text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 text-base cursor-pointer"
-                  >
-                    Ru
-                  </button>
+                  {flags.map((f) => (
+                    <FlagButton
+                      key={f.code}
+                      countryCode={f.country}
+                      onClick={() => changeLanguage(f.code)}
+                      title={f.code.toUpperCase()}
+                    />
+                  ))}
                 </div>
               </motion.div>
             )}
@@ -208,7 +182,7 @@ export default function MenuBar() {
         </button>
       </div>
 
-      {/* MENU MOBILE E TABLET */}
+      {/* MENU MOBILE */}
       <AnimatePresence>
         {menuOpen && (
           <>
@@ -225,7 +199,6 @@ export default function MenuBar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ type: "spring", bounce: 0, duration: 0.4 }}
-              onClick={(e) => e.stopPropagation()}
               className="absolute top-full left-0 w-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 lg:hidden shadow-lg"
             >
               <ul className="flex flex-col items-center py-4">
