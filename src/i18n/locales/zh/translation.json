@@ -3,67 +3,67 @@
         "home": "首页",
         "portfolio": "作品集",
         "curriculo": "简历",
-        "contatos": "联系"
+        "contatos": "联系方式"
     },
     "home": {
         "title": "欢迎来到",
-        "name": "Estevam Jannuzzi 的作品集",
-        "professionalSummary": "3D 设计师｜数字可视化专家｜精通 Maya、ZBrush、Photoshop、KeyShot 和 Substance 3D Painter",
-        "experience": "我于 2011 年毕业于平面设计专业，拥有十多年视觉创作与 3D 建模经验。精通 Maya、ZBrush、Photoshop、KeyShot 和 Substance 3D Painter，擅长将创意转化为震撼的图像作品，无论是产品设计、动画、建筑可视化还是动态设计项目。",
-        "techSkills": "除了设计，我对科技与编程也充满热情，专注于 React JS 和 Python 的学习。这种结合让我能将艺术与逻辑相融合，创造出互动性强、功能完善的视觉解决方案。",
-        "goals": "我正在寻求 3D 设计、技术美术、数字可视化等相关机会，期待与重视创造力、技术与创新的团队合作。让我们建立联系吧！"
+        "name": "Estevam Jannuzzi",
+        "professionalSummary": "3D设计师  数字可视化专家  精通Maya、ZBrush、Photoshop、KeyShot和Substance 3D Painter",
+        "experience": "自2011年获得平面设计学位以来，我拥有十多年视觉创作和3D建模经验。我熟练使用Maya、ZBrush、Photoshop、KeyShot和Substance 3D Painter，将创意转化为令人印象深刻的视觉效果，适用于产品设计、动画、建筑可视化和动态图形等项目。",
+        "techSkills": "除了设计，我对科技和编程也充满热情，专注于React JS和Python。这种结合让我能够将艺术与逻辑融合，创造交互性和功能性兼具的视觉解决方案。",
+        "goals": "我寻求在3D设计、技术艺术、数字可视化及注重创造力、技术性和创新性的项目中的机会。让我们建立联系吧！"
     },
     "portfolio": {
         "title": "作品集"
     },
     "resume": {
         "title": "简历",
-        "professionalSummaryTitle": "职业概述：",
-        "professionalSummary": "我于 2011 年毕业于巴西保利斯塔大学（UNIP）平面设计专业，拥有扎实的 3D 建模、动画与视觉设计经验。我的职业生涯始于工程公司 Lubrin，负责发动机、减速器及技术组件的三维项目设计，同时制作宣传资料（如传单和目录）、管理公司网站并进行视频与图像编辑。之后，我以自由职业者身份加入游戏开发工作室 Izotonic Studios，参与角色和场景的 3D 建模、贴图及 2D/3D 动画制作。目前，我在 MentalPlus® 公司担任设计师，负责其神经心理学领域应用的吉祥物 Dr. Brainy 的建模与动画，以及网站维护。我热爱科技与创新，不断学习新工具与技术。工作中具有团队合作精神、积极主动、目标明确且注重细节。",
-        "educationTitle": "学历：",
-        "education1": "平面设计学士 - UNIP 大学 – 毕业于 2011 年 12 月",
-        "education2": "电子技术中学 - S.A.A. 学院 – 毕业于 1997 年 12 月",
+        "professionalSummaryTitle": "专业概述：",
+        "professionalSummary": "我于2011年毕业于巴西圣保罗大学（UNIP）平面设计专业，在3D建模、动画和视觉设计方面具有丰富经验。我职业生涯起步于Lubrin工程公司，负责发动机、减速器及技术零件的3D项目，同时制作宣传资料如传单和目录、管理公司网站并编辑图像和视频。随后，我在IzotonicStudios担任自由设计师，参与3D建模、贴图及2D/3D角色和场景动画制作。同时，我在MentalPlus®担任设计师，负责神经心理学应用的设计，制作并动画化吉祥物Dr. Brainy，并维护公司网站。我热衷于科技与创新，持续学习新工具与新技术。我具有合作精神、主动性、目标导向、决策果断，并在创意流程中极其注重细节。",
+        "educationTitle": "教育背景：",
+        "education1": "平面设计学士 - UNIP – 2011年12月完成",
+        "education2": "电子学中等专业 – S.A.A. 学校 – 1997年12月完成",
         "languagesTitle": "语言能力：",
         "language1": "英语 - 中级",
-        "language2": "西班牙语 - 初级",
+        "language2": "西班牙语 - 基础",
         "experienceTitle": "工作经验：",
         "exp1": {
             "company": "MENTALPLUS®",
-            "role": "前端开发工程师（自由职业）",
-            "period": "2022年1月 - 至今",
-            "details1": "使用 ReactJS 和 Tailwind CSS 开发网页界面",
-            "details2": "负责公司网站和内部系统的开发与维护"
+            "role": "前端开发（自由职业者）",
+            "period": "2022年01月 - 至今",
+            "details1": "使用ReactJS和Tailwind CSS开发网页界面",
+            "details2": "创建并维护公司官网及内部系统"
         },
         "exp2": {
             "company": "IZOTONIC STUDIOS",
-            "role": "3D 设计师（自由职业）",
-            "period": "2016年1月 - 至今",
-            "details1": "负责角色的 3D 建模、贴图、绑定与动画制作",
-            "details2": "为各类项目进行视频与图像编辑与渲染"
+            "role": "3D设计师（自由职业者）",
+            "period": "2016年01月 - 至今",
+            "details1": "3D角色建模、贴图、绑定及动画制作",
+            "details2": "视频及图片编辑与渲染"
         },
         "exp3": {
             "company": "LUBRIN",
             "role": "平面设计师",
-            "period": "2011年4月 - 2014年12月",
-            "details1": "设计产品目录、宣传单与折页",
-            "details2": "制作工程项目的 3D 图像",
-            "details3": "负责促销材料的 3D 建模、贴图与动画",
-            "details4": "为印刷与数字媒体编辑照片与视频",
-            "details5": "维护公司官方网站",
+            "period": "2011年04月 - 2014年12月",
+            "details1": "制作宣传册、传单及产品目录",
+            "details2": "工程项目3D图像制作",
+            "details3": "宣传材料3D建模、贴图与动画",
+            "details4": "图片及视频编辑用于印刷和数字媒体",
+            "details5": "负责公司网站维护",
             "details6": ""
         },
-        "coursesTitle": "补充课程：",
-        "courses1": "计算机图形学：Autodesk Maya、Pixologic ZBrush、Adobe Photoshop、Adobe Illustrator、Adobe InDesign、Adobe After Effects、Adobe Premiere、Adobe Media Encore、Adobe Substance 3D Painter、Luxion Keyshot、Figma。",
-        "courses2": "编程：Python、HTML5、CSS3、JavaScript（入门）、WordPress、ReactJS、Tailwind CSS。",
-        "courses3": "操作系统：Windows 8.1、10、11、Linux Mint、Linux Ubuntu、Linux Fedora。",
-        "participationTitle": "活动与参与：",
-        "participation1": "曾参与行业活动与竞赛：Big Festival、Campus Party、Game Jam（2019 年冠军）及 Game Jam+ 导师。"
+        "coursesTitle": "相关课程：",
+        "courses1": "图形软件：Autodesk Maya、Pixologic ZBrush、Adobe Photoshop、Illustrator、InDesign、After Effects、Premiere、Media Encoder、Substance 3D Painter、KeyShot、Figma",
+        "courses2": "编程：Python、HTML5、CSS3、JavaScript（入门）、WordPress、ReactJS、Tailwind CSS",
+        "courses3": "操作系统：Windows 8.1、10、11；Linux Mint、Ubuntu、Fedora",
+        "participationTitle": "参与经历：",
+        "participation1": "参与行业活动及比赛：Big Festival、Campus Party、Game Jam（2019年冠军）、Game Jam+导师"
     },
     "contacts": {
-        "title": "联系",
-        "subtitle": "以下是我的联系方式和社交媒体账号。",
+        "title": "联系方式",
+        "subtitle": "以下是我的联系方式及社交媒体。",
         "whatsapp": "WhatsApp",
-        "email": "电子邮件",
+        "email": "邮箱",
         "instagram": "Instagram",
         "linkedin": "LinkedIn",
         "youtube": "YouTube",
@@ -71,7 +71,7 @@
         "github": "GitHub"
     },
     "footer": {
-        "madeBy": "由 Estevam Jannuzzi 制作",
-        "rightsReserved": "版权所有。"
+        "madeBy": "Estevam Jannuzzi制作",
+        "rightsReserved": "版权所有"
     }
 }

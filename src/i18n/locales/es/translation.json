@@ -3,15 +3,15 @@
         "home": "Inicio",
         "portfolio": "Portafolio",
         "curriculo": "Currículum",
-        "contatos": "Contactos"
+        "contatos": "Contacto"
     },
     "home": {
         "title": "Bienvenido al Portafolio de",
         "name": "Estevam Jannuzzi",
-        "professionalSummary": "Diseñador 3D, Especialista en Visualización Digital, Experto en Maya, ZBrush, Photoshop, KeyShot y Substance 3D Painter",
-        "experience": "Tengo un título en Diseño Gráfico desde 2011, con más de una década de experiencia en creación visual y modelado 3D. Tengo dominio técnico en Maya, ZBrush, Photoshop, KeyShot y Substance 3D Painter, herramientas que utilizo para transformar ideas en imágenes impactantes, ya sea en proyectos de producto, animación, visualización arquitectónica o motion design.",
-        "techSkills": "Además del diseño, soy un entusiasta de la tecnología y la programación, con enfoque en React JS y Python. Esta combinación me permite integrar arte y lógica, creando soluciones visuales interactivas y funcionales.",
-        "goals": "Busco oportunidades en diseño 3D, tech art, visualización digital y proyectos que valoren creatividad, técnica e innovación. ¡Conectemos!"
+        "professionalSummary": "Diseñador 3D  Especialista en Visualización Digital  Experto en Maya, ZBrush, Photoshop, KeyShot y Substance 3D Painter",
+        "experience": "Soy graduado en Diseño Gráfico desde 2011, con más de una década de experiencia en creación visual y modelado 3D. Domino herramientas como Maya, ZBrush, Photoshop, KeyShot y Substance 3D Painter, que utilizo para transformar ideas en imágenes impactantes, ya sea en proyectos de producto, animación, visualización arquitectónica o motion design.",
+        "techSkills": "Además del diseño, me apasiona la tecnología y la programación, con enfoque en React JS y Python. Esta combinación me permite integrar arte y lógica, creando soluciones visuales interactivas y funcionales.",
+        "goals": "Busco oportunidades en diseño 3D, tech art, visualización digital y proyectos que valoren la creatividad, la técnica y la innovación. ¿Nos conectamos?"
     },
     "portfolio": {
         "title": "Portafolio"
@@ -19,8 +19,8 @@
     "resume": {
         "title": "Currículum",
         "professionalSummaryTitle": "Resumen Profesional:",
-        "professionalSummary": "Soy diseñador gráfico graduado por la Universidad Paulista (UNIP) en 2011, con sólida experiencia en modelado 3D, animación y diseño visual. Comencé mi carrera en Lubrin, empresa de ingeniería, creando proyectos 3D de motores, reductores y componentes técnicos. Además, desarrollaba materiales gráficos como flyers y folletos, gestionaba el sitio web de la empresa y editaba videos e imágenes. Después de esta experiencia, trabajé como freelancer en IzotonicStudios, contribuyendo con modelado 3D, texturización y animaciones 2D/3D para personajes y escenarios. También trabajo como diseñador en MentalPlus®, responsable de la aplicación homónima de neuropsicología, donde modelé y animé la mascota Dr. Brainy, además de mantener el sitio web de la empresa. Soy apasionado por la tecnología e innovación, siempre buscando actualización constante en nuevas herramientas y técnicas. Tengo un perfil colaborativo, proactivo en la toma de decisiones, objetivo, determinado y extremadamente detallista en mis procesos creativos.",
-        "educationTitle": "Educación:",
+        "professionalSummary": "Soy diseñador gráfico graduado en la Universidad Paulista (UNIP) en 2011, con sólida experiencia en modelado 3D, animación y diseño visual. Inicié mi carrera en la empresa de ingeniería Lubrin, donde trabajé en proyectos tridimensionales de motores, reductores y componentes técnicos, además de desarrollar materiales gráficos como flyers y catálogos, gestionar el sitio web de la empresa y realizar edición de imágenes y videos. Luego, trabajé como freelancer en IzotonicStudios, contribuyendo con modelado 3D, texturización y animaciones 2D y 3D para personajes y escenarios. Paralelamente, trabajo como diseñador en MentalPlus®, responsable de la aplicación homónima en el área neuropsicológica. Allí, modelé y animé la mascota Dr. Brainy y mantengo el sitio web de la empresa. Apasionado por la tecnología y la innovación, busco mantenerme actualizado en nuevas herramientas y técnicas. Tengo un perfil colaborativo, proactivo, orientado a objetivos, determinado y muy detallista en mis procesos creativos.",
+        "educationTitle": "Formación Académica:",
         "education1": "Licenciatura en Diseño Gráfico - UNIP – Finalizado 12/2011",
         "education2": "Bachillerato Técnico en Electrónica – Colegio S.A.A. – Finalizado 12/1997",
         "languagesTitle": "Idiomas:",
@@ -32,7 +32,7 @@
             "role": "Desarrollador Front-End (Freelancer)",
             "period": "01/2022 - Actual",
             "details1": "Desarrollo de interfaces web utilizando ReactJS y Tailwind CSS",
-            "details2": "Creación y mantenimiento del sitio institucional y sistemas internos"
+            "details2": "Creación y mantenimiento del sitio institucional y sistemas internos de la empresa"
         },
         "exp2": {
             "company": "IZOTONIC STUDIOS",
@@ -53,17 +53,17 @@
             "details6": ""
         },
         "coursesTitle": "Cursos Complementarios:",
-        "courses1": "Computación Gráfica: Autodesk Maya, Pixologic Zbrush, Adobe Photoshop, Illustrator, InDesign, After Effects, Premiere, Media Encore, Substance 3D Painter, Luxion Keyshot, Figma.",
-        "courses2": "Programación: Python, HTML5, CSS3, JavaScript (Intro), WordPress, ReactJS, Tailwind CSS.",
-        "courses3": "Sistemas Operativos: Windows 8.1, 10, 11, Linux Mint, Ubuntu, Fedora.",
+        "courses1": "Gráfica Computacional: Autodesk Maya, Pixologic ZBrush, Adobe Photoshop, Illustrator, InDesign, After Effects, Premiere, Media Encoder, Substance 3D Painter, KeyShot, Figma.",
+        "courses2": "Programación: Python, HTML5, CSS3, JavaScript (Intro), WordPress, ReactJS y Tailwind CSS.",
+        "courses3": "Sistemas Operativos: Windows 8.1, 10, 11; Linux Mint, Ubuntu y Fedora.",
         "participationTitle": "Participaciones:",
         "participation1": "Experiencia en eventos y competiciones del sector: Big Festival, Campus Party, Game Jam (campeón en 2019) y mentor en Game Jam+."
     },
     "contacts": {
         "title": "Contacto",
-        "subtitle": "A continuación, se muestran mis formas de contacto y redes sociales.",
+        "subtitle": "A continuación, mis formas de contacto y redes sociales.",
         "whatsapp": "Whatsapp",
-        "email": "Correo",
+        "email": "Correo electrónico",
         "instagram": "Instagram",
         "linkedin": "LinkedIn",
         "youtube": "YouTube",
@@ -71,7 +71,7 @@
         "github": "GitHub"
     },
     "footer": {
-        "madeBy": "Hecho por Estevam Jannuzzi",
+        "madeBy": "Creado por Estevam Jannuzzi",
         "rightsReserved": "Todos los derechos reservados."
     }
 }

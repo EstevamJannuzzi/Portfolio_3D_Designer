@@ -3,15 +3,15 @@
         "home": "Home",
         "portfolio": "Portfolio",
         "curriculo": "Resume",
-        "contatos": "Contacts"
+        "contatos": "Contact"
     },
     "home": {
         "title": "Welcome to the Portfolio of",
         "name": "Estevam Jannuzzi",
-        "professionalSummary": "3D Designer, Specialist in Digital Visualization, Skilled in Maya, ZBrush, Photoshop, KeyShot, and Substance 3D Painter",
-        "experience": "I have a degree in Graphic Design since 2011, with over a decade of experience in visual creation and 3D modeling. I have technical expertise in Maya, ZBrush, Photoshop, KeyShot, and Substance 3D Painter, tools I use to turn ideas into impactful images, whether in product projects, animation, architectural visualization, or motion design.",
-        "techSkills": "Beyond design, I am passionate about technology and programming, focusing on React JS and Python. This combination allows me to integrate art and logic, creating interactive and functional visual solutions.",
-        "goals": "I am looking for opportunities in 3D design, tech art, digital visualization, and projects that value creativity, technique, and innovation. Let's connect!"
+        "professionalSummary": "3D Designer  Specialist in Digital Visualization  Skilled in Maya, ZBrush, Photoshop, KeyShot, and Substance 3D Painter",
+        "experience": "I have a degree in Graphic Design since 2011, with over a decade of experience in visual creation and 3D modeling. I have technical proficiency in Maya, ZBrush, Photoshop, KeyShot, and Substance 3D Painter, which I use to turn ideas into impactful visuals for product design, animation, architectural visualization, or motion design projects.",
+        "techSkills": "Besides design, I am passionate about technology and programming, focusing on React JS and Python. This combination allows me to integrate art and logic, creating interactive and functional visual solutions.",
+        "goals": "I am seeking opportunities in 3D design, tech art, digital visualization, and projects that value creativity, technical skill, and innovation. Let's connect!"
     },
     "portfolio": {
         "title": "Portfolio"
@@ -19,10 +19,10 @@
     "resume": {
         "title": "Resume",
         "professionalSummaryTitle": "Professional Summary:",
-        "professionalSummary": "I am a graphic designer graduated from Universidade Paulista (UNIP) in 2011, with solid experience in 3D modeling, animation, and visual design. I began my career at Lubrin, an engineering company, creating 3D projects of engines, reducers, and technical components. Additionally, I developed graphic materials such as flyers and folders, managed the company website, and edited videos and images. After this experience, I worked as a freelancer at IzotonicStudios game development studio, contributing with 3D modeling, texturing, and 2D/3D animations for characters and environments. I also work as a designer at MentalPlus®, responsible for the homonymous neuropsychology app, where I model and animate the mascot Dr. Brainy, and maintain the company website. I am passionate about technology and innovation, always seeking constant updates in new tools and techniques. I have a collaborative profile, proactive in decisions, objective, determined, and extremely detail-oriented in my creative processes.",
+        "professionalSummary": "I am a graphic designer graduated from Universidade Paulista (UNIP) in 2011, with solid experience in 3D modeling, animation, and visual design. I started my career at Lubrin Engineering, working on 3D projects of engines, reducers, and technical components, in addition to developing graphic materials such as flyers and brochures, managing the company website, and editing images and videos. After that, I worked as a freelancer at IzotonicStudios, contributing to 3D modeling, texturing, and 2D/3D animation for characters and environments. Simultaneously, I work as a designer at MentalPlus®, responsible for the homonymous neuropsychology app. There, I model and animate the mascot Dr. Brainy and maintain the company's website. I am passionate about technology and innovation, always seeking to stay updated with new tools and techniques. I have a collaborative, proactive, goal-oriented, determined, and highly detail-oriented creative approach.",
         "educationTitle": "Education:",
         "education1": "Bachelor in Graphic Design - UNIP – Completed 12/2011",
-        "education2": "Technical High School in Electronics – Colégio S.A.A. – Completed 12/1997",
+        "education2": "Technical High School in Electronics – S.A.A. School – Completed 12/1997",
         "languagesTitle": "Languages:",
         "language1": "English - Intermediate",
         "language2": "Spanish - Basic",
@@ -32,38 +32,38 @@
             "role": "Front-End Developer (Freelancer)",
             "period": "01/2022 - Present",
             "details1": "Developed web interfaces using ReactJS and Tailwind CSS",
-            "details2": "Created and maintained the institutional website and internal systems"
+            "details2": "Created and maintained the company’s website and internal systems"
         },
         "exp2": {
             "company": "IZOTONIC STUDIOS",
             "role": "3D Designer (Freelancer)",
             "period": "01/2016 - Present",
             "details1": "3D modeling, texturing, rigging, and animation of characters",
-            "details2": "Video and image editing and rendering for various projects"
+            "details2": "Editing and rendering videos and images for various projects"
         },
         "exp3": {
             "company": "LUBRIN",
             "role": "Graphic Designer",
             "period": "04/2011 - 12/2014",
-            "details1": "Created folders, flyers, and product catalogs",
+            "details1": "Created brochures, flyers, and product catalogs",
             "details2": "Produced 3D images for engineering projects",
             "details3": "3D modeling, texturing, and animation for promotional materials",
             "details4": "Photo and video editing for print and digital media",
-            "details5": "Responsible for company website maintenance",
+            "details5": "Responsible for website maintenance",
             "details6": ""
         },
         "coursesTitle": "Additional Courses:",
-        "courses1": "Graphic Computing: Autodesk Maya, Pixologic Zbrush, Adobe Photoshop, Illustrator, InDesign, After Effects, Premiere, Media Encore, Substance 3D Painter, Luxion Keyshot, Figma.",
+        "courses1": "Graphic Design Software: Autodesk Maya, Pixologic ZBrush, Adobe Photoshop, Illustrator, InDesign, After Effects, Premiere, Media Encoder, Substance 3D Painter, KeyShot, Figma.",
         "courses2": "Programming: Python, HTML5, CSS3, JavaScript (Intro), WordPress, ReactJS, Tailwind CSS.",
-        "courses3": "Operating Systems: Windows 8.1, 10, 11, Linux Mint, Ubuntu, Fedora.",
+        "courses3": "Operating Systems: Windows 8.1, 10, 11; Linux Mint, Ubuntu, Fedora.",
         "participationTitle": "Participation:",
-        "participation1": "Experience in sector events and competitions: Big Festival, Campus Party, Game Jam (winner in 2019) and mentor at Game Jam+."
+        "participation1": "Experience in industry events and competitions: Big Festival, Campus Party, Game Jam (2019 winner), and mentor at Game Jam+."
     },
     "contacts": {
         "title": "Contact",
-        "subtitle": "Below are my contact methods and social networks.",
-        "whatsapp": "Whatsapp",
-        "email": "E-mail",
+        "subtitle": "Here are my contact methods and social media.",
+        "whatsapp": "WhatsApp",
+        "email": "Email",
         "instagram": "Instagram",
         "linkedin": "LinkedIn",
         "youtube": "YouTube",
@@ -71,7 +71,7 @@
         "github": "GitHub"
     },
     "footer": {
-        "madeBy": "Made by Estevam Jannuzzi",
+        "madeBy": "Created by Estevam Jannuzzi",
         "rightsReserved": "All rights reserved."
     }
 }
