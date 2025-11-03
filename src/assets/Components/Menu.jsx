@@ -102,6 +102,24 @@ export default function MenuBar() {
                     >
                       Es
                     </button>
+                    <button
+                      onClick={() => changeLanguage("ja")}
+                      className="flex items-center gap-2 text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 font-medium cursor-pointer"
+                    >
+                      Ja
+                    </button>
+                    <button
+                      onClick={() => changeLanguage("zh")}
+                      className="flex items-center gap-2 text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 font-medium cursor-pointer"
+                    >
+                      Zh
+                    </button>
+                    <button
+                      onClick={() => changeLanguage("ru")}
+                      className="flex items-center gap-2 text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 font-medium cursor-pointer"
+                    >
+                      Ru
+                    </button>
                   </div>
                 </motion.div>
               )}
@@ -150,6 +168,24 @@ export default function MenuBar() {
                     className="text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 text-base cursor-pointer"
                   >
                     Es
+                  </button>
+                  <button
+                    onClick={() => changeLanguage("ja")}
+                    className="text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 text-base cursor-pointer"
+                  >
+                    Ja
+                  </button>
+                  <button
+                    onClick={() => changeLanguage("zh")}
+                    className="text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 text-base cursor-pointer"
+                  >
+                    Zh
+                  </button>
+                  <button
+                    onClick={() => changeLanguage("ru")}
+                    className="text-orange dark:text-green hover:text-green dark:hover:text-orange transition-all hover:scale-110 text-base cursor-pointer"
+                  >
+                    Ru
                   </button>
                 </div>
               </motion.div>
