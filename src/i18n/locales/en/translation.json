@@ -20,6 +20,21 @@
         "site": "Websites",
         "channel": "Channels"
     },
+    "buttons": {
+        "back": "Back"
+    },
+    "video": {
+        "title": "Videos"
+    },
+    "image": {
+        "title": "Images"
+    },
+    "site": {
+        "title": "Websites"
+    },
+    "channel": {
+        "title": "Channels"
+    },
     "resume": {
         "title": "Resume",
         "professionalSummaryTitle": "Professional Summary:",

@@ -1,7 +1,8 @@
 import React from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Title from '../assets/Components/Title.jsx'
-import BoxContato from '../assets/Components/BoxContent.jsx'
+import BoxContent from '../assets/Components/BoxContent.jsx'
+import Image from '../assets/Components/Image.jsx'
 import { LiaFileVideoSolid } from "react-icons/lia"
 import { FaRegImage } from "react-icons/fa6"
 import { CgWebsite } from "react-icons/cg"
@@ -21,33 +22,49 @@ const Portfolio = () => {
       </div>
       <div className="flex flex-inline items-center justify-center gap-4 mt-16 mb-6">
 
-        <BoxContato
+        <BoxContent
           icon={<LiaFileVideoSolid size={70} />}
           target="_self"
           text={t("portfolio.video")}
-          link="/"
+          link="/video"
         />
 
-        <BoxContato
+        <BoxContent
           icon={<FaRegImage size={70} />}
           target="_self"
           text={t("portfolio.image")}
-          link="/"
+          link="/imagens"
         />
       </div>
-      
+
       <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">
-        <BoxContato
+        <BoxContent
           icon={<CgWebsite size={70} />}
           target="_self"
           text={t("portfolio.site")}
-          link="/"
+          link="/websites"
         />
-        <BoxContato
+        <BoxContent
           icon={<FiYoutube size={70} />}
           target="_self"
           text={t("portfolio.channel")}
-          link="/"
+          link="/canais"
+        />
+      </div>
+
+      <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">
+
+        <Image
+          src='/BBB.8.webp'
+          alt="Contatos Ding"
+          width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[700px]"
+          special='block dark:hidden'
+        />
+        <Image
+          src='/BBB.8_green.webp'
+          alt="Contatos Ding"
+          width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[700px]"
+          special='hidden dark:block'
         />
 
       </div>

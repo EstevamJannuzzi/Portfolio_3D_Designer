@@ -4,9 +4,6 @@ import { initReactI18next } from 'react-i18next'
 import en from './locales/en/translation.json'
 import es from './locales/es/translation.json'
 import pt from './locales/pt/translation.json'
-import ja from './locales/ja/translation.json'
-import zh from './locales/zh/translation.json'
-import ru from './locales/ru/translation.json'
 
 // Carrega o idioma salvo ou usa pt como padrão
 const savedLang = localStorage.getItem("language") || "pt"
@@ -18,9 +15,6 @@ i18n
       en: { translation: en }, 
       es: { translation: es }, 
       pt: { translation: pt },
-      ja: { translation: ja },
-      zh: { translation: zh },
-      ru: { translation: ru },
     },
     lng: savedLang,
     fallbackLng: "en",

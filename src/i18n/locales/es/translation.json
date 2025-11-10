@@ -20,6 +20,21 @@
         "site": "Sitios web",
         "channel": "Canales"
     },
+    "buttons": {
+        "back": "Volver"
+    },
+    "video": {
+        "title": "Videos"
+    },
+    "image": {
+        "title": "Imágenes"
+    },
+    "site": {
+        "title": "Sitios web"
+    },
+    "channel": {
+        "title": "Canales"
+    },
     "resume": {
         "title": "Currículum",
         "professionalSummaryTitle": "Resumen Profesional:",

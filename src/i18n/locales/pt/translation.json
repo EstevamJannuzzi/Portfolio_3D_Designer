@@ -20,6 +20,21 @@
         "site": "WebSites",
         "channel": "Canais"
     },
+    "buttons": {
+        "back": "Voltar"
+    },
+    "video": {
+        "title": "Vídeos"
+    },
+    "image": {
+        "title": "Imagens"
+    },
+    "site": {
+        "title": "WebSites"
+    },
+    "channel": {
+        "title": "Canais"
+    },
     "resume": {
         "title": "Currículo",
         "professionalSummaryTitle": "Resumo Profissional:",

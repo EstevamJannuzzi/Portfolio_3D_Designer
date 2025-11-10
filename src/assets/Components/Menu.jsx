@@ -36,9 +36,6 @@ export default function MenuBar() {
     { code: "pt", country: "BR" },
     { code: "en", country: "US" },
     { code: "es", country: "ES" },
-    { code: "ja", country: "JP" },
-    { code: "zh", country: "CN" },
-    { code: "ru", country: "RU" },
   ];
 
   // Componente do botão de bandeira
