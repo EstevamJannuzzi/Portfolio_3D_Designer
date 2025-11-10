@@ -2,7 +2,7 @@ import React from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Title from '../assets/Components/Title.jsx'
 import BoxContato from '../assets/Components/BoxContato.jsx'
-import ContatosDing from '../assets/images/ContatosDing.webp'
+import Image from '../assets/Components/Image.jsx'
 import { FaWhatsapp, FaInstagram, FaArtstation } from 'react-icons/fa'
 import { HiOutlineMail } from "react-icons/hi"
 import { PiLinkedinLogo } from "react-icons/pi"
@@ -83,10 +83,10 @@ const Contatos = () => {
       </div>
 
       <div className="flex justify-center items-center mt-10 mb-8">
-        <img
-          src={ContatosDing}
+        <Image
+          src='/ContatosDing.webp'
           alt="Contatos Ding"
-          className='w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[700px]'
+          width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[700px]"
         />
       </div>
     </DefaultScreen>

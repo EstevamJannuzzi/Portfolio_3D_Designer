@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Menu, X, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import Logo from "../images/Logo3D.webp";
+import Image from "./Image";
 import DarkMode from "./darkmode";
 import { IoHomeOutline, IoDocumentAttachOutline } from "react-icons/io5";
 import { LuContact } from "react-icons/lu";
@@ -65,10 +65,10 @@ export default function MenuBar() {
     <header className="w-full flex items-center justify-between bg-dark-gray/75 dark:bg-primary/20 backdrop-blur-md gap-4 py-3 px-6 fixed top-0 left-0 z-50 shadow-sm">
       {/* LOGO */}
       <div className="flex items-center gap-x-4 xl:gap-x-6 ml-0 sm:ml-90 lg:ml-6 xl:ml-0">
-        <img
-          src={Logo}
+        <Image
+          src='/logo3D.webp'
           alt="Logo"
-          className="w-[60px] sm:w-[86px] lg:w-[100px] xl:w-[120px]"
+          width='w-[60px] sm:w-[86px] lg:w-[100px] xl:w-[120px]'
         />
       </div>
 
@@ -79,11 +79,10 @@ export default function MenuBar() {
             <Link
               key={link.to}
               to={link.to}
-              className={`flex items-center font-medium transition-all duration-300 ease-in-out cursor-pointer ${
-                location.pathname === link.to
-                  ? "text-green dark:text-orange text-[24px] scale-110"
-                  : "text-orange dark:text-green text-[20px] hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110"
-              }`}
+              className={`flex items-center font-medium transition-all duration-300 ease-in-out cursor-pointer ${location.pathname === link.to
+                ? "text-green dark:text-orange text-[24px] scale-110"
+                : "text-orange dark:text-green text-[20px] hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110"
+                }`}
             >
               {link.icon}
               {link.name}
@@ -213,11 +212,10 @@ export default function MenuBar() {
                     <Link
                       to={link.to}
                       onClick={() => setMenuOpen(false)}
-                      className={`block text-lg font-medium text-center py-4 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${
-                        location.pathname === link.to
-                          ? "text-green dark:text-orange text-[24px] scale-110"
-                          : "text-orange dark:text-green hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110 text-[20px]"
-                      }`}
+                      className={`block text-lg font-medium text-center py-4 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${location.pathname === link.to
+                        ? "text-green dark:text-orange text-[24px] scale-110"
+                        : "text-orange dark:text-green hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110 text-[20px]"
+                        }`}
                     >
                       {link.icon}
                       {link.name}

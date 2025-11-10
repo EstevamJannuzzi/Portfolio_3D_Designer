@@ -1,9 +1,6 @@
 import React from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
-import DingBo from '../assets/images/DingBo.1.webp'
-import Carnivor from '../assets/images/carnivor.1.webp'
-import Gremlin from '../assets/images/Gremlin.1.webp'
-import Joystick from '../assets/images/Joystick.webp'
+import Image from '../assets/Components/Image.jsx'
 import BoxText from '../assets/Components/BoxText.jsx'
 import Title from '../assets/Components/Title.jsx'
 import { useTranslation } from 'react-i18next'
@@ -34,18 +31,22 @@ const Home = () => {
                     margin="mb-4 sm:-mb-10 lg:mb-0 xl:-mb-24 mr-40 sm:mr-70 lg:mr-90 xl:mr-120"
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
-                <img
-                    src={DingBo}
+                <Image
+                    src='/DingBo.1.webp'
                     alt="DingBo"
-                    className="flex justify-center items-center w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px] ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30 z-10 relative"
+                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
+                    margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
+                    distance='z-10 relative'
                 />
             </div>
 
             <div className='flex flex-col items-center justify-center gap-6 mb-12 mt-22'>
-                <img
-                    src={Carnivor}
+                <Image
+                    src='/carnivor.1.webp'
                     alt="Carnivor"
-                    className="flex justify-center items-center w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px] -ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20 z-10 relative"
+                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
+                    margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
+                    distance='z-10 relative'
                 />
                 <BoxText
                     text={t("home.experience")}
@@ -57,7 +58,7 @@ const Home = () => {
                 />
             </div>
 
-            <div className="relative flex flex-col items-center justify-center gap-6 mt-16 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-14">
+            <div className="relative flex flex-col items-center justify-center gap-6 mt-16 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-18">
                 <BoxText
                     text={t("home.techSkills")}
                     width="max-w-40 sm:max-w-60 lg:max-w-80 xl:max-w-90"
@@ -65,18 +66,22 @@ const Home = () => {
                     margin="-mb-8 sm:-mb-20 lg:-mb-20 xl:-mb-24 mr-30 sm:mr-70 lg:mr-90 xl:mr-144"
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
-                <img
-                    src={Gremlin}
+                <Image
+                    src='/Gremlin.1.webp'
                     alt="Gremlin"
-                    className="flex justify-center items-center w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[700px] ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50 z-10 relative"
+                    width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[700px]'
+                    margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
+                    distance='z-10 relative'
                 />
             </div>
 
             <div className='flex flex-col items-center justify-center gap-6 mb-4 mt-22'>
-                <img
-                    src={Joystick}
+                <Image
+                    src='/Joystick.webp'
                     alt="Joystick"
-                    className="flex justify-center items-center w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[660px] -ml-14 sm:-ml-30 lg:-ml-40 xl:mr-30 z-10 relative"
+                    width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[660px]'
+                    margin='-ml-14 sm:-ml-30 lg:-ml-40 xl:mr-30'
+                    distance='z-10 relative'
                 />
                 <BoxText
                     text={t("home.goals")}

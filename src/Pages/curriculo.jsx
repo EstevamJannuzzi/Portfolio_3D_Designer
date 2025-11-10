@@ -1,8 +1,7 @@
 import React from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Title from '../assets/Components/Title.jsx'
-import Frog from '../assets/images/Frog.webp'
-import User from '../assets/images/User.webp'
+import Image from '../assets/Components/Image.jsx'
 import BoxtextResume from '../assets/Components/BoxtextResume.jsx'
 import { useTranslation } from 'react-i18next'
 
@@ -16,15 +15,18 @@ const Curriculo = () => {
           text={t("resume.title")}
           size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
         />
-        <img
-          src={Frog}
+        <Image
+          src='/Frog.webp'
           alt="Frog"
-          className="flex justify-center items-center w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px] mt-6 mb-6"
+          width='w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px]'
+          margin='mt-6 mb-6'
         />
-        <img
-          src={User}
+        <Image
+          src='/User.webp'
           alt="Estevam Jannuzzi"
-          className="rounded-full w-40 h-40 sm:w-60 sm:h-60 lg:w-70 lg:h-70 xl:w-90 xl:h-90 mb-8 outline-4 outline-offset-8 outline-solid outline-orange dark:outline-green"
+          width='w-40 h-40 sm:w-60 sm:h-60 lg:w-70 lg:h-70 xl:w-90 xl:h-90'
+          margin='mb-8'
+          special='rounded-full outline-4 outline-offset-8 outline-solid outline-orange dark:outline-green'
         />
         <BoxtextResume
           title={t("resume.professionalSummaryTitle")}
