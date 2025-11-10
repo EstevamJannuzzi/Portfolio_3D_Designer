@@ -37,6 +37,15 @@ const Home = () => {
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
                     distance='z-10 relative'
+                    special='block dark:hidden'
+                />
+                <Image
+                    src='/DingBo.1_green.webp'
+                    alt="DingBo"
+                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
+                    margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
+                    distance='z-10 relative'
+                    special='hidden dark:block'
                 />
             </div>
 
@@ -47,6 +56,15 @@ const Home = () => {
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
                     margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
                     distance='z-10 relative'
+                    special='block dark:hidden'
+                />
+                <Image
+                    src='/carnivor.1_green.webp'
+                    alt="Carnivor"
+                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
+                    margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
+                    distance='z-10 relative'
+                    special='hidden dark:block'
                 />
                 <BoxText
                     text={t("home.experience")}
@@ -72,6 +90,15 @@ const Home = () => {
                     width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[700px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
                     distance='z-10 relative'
+                    special='block dark:hidden'
+                />
+                <Image
+                    src='/Gremlin.1_green.webp'
+                    alt="Gremlin"
+                    width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[700px]'
+                    margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
+                    distance='z-10 relative'
+                    special='hidden dark:block'
                 />
             </div>
 
@@ -82,6 +109,15 @@ const Home = () => {
                     width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[660px]'
                     margin='-ml-14 sm:-ml-30 lg:-ml-40 xl:mr-30'
                     distance='z-10 relative'
+                    special='block dark:hidden'
+                />
+                <Image
+                    src='/Joystick_green.webp'
+                    alt="Joystick"
+                    width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[660px]'
+                    margin='-ml-14 sm:-ml-30 lg:-ml-40 xl:mr-30'
+                    distance='z-10 relative'
+                    special='hidden dark:block'
                 />
                 <BoxText
                     text={t("home.goals")}

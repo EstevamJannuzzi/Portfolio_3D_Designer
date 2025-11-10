@@ -20,6 +20,14 @@ const Curriculo = () => {
           alt="Frog"
           width='w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px]'
           margin='mt-6 mb-6'
+          special='block dark:hidden'
+        />
+        <Image
+          src='/Frog_green.webp'
+          alt="Frog"
+          width='w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px]'
+          margin='mt-6 mb-6'
+          special='hidden dark:block'
         />
         <Image
           src='/User.webp'
