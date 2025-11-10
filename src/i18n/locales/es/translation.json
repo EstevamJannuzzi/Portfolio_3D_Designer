@@ -14,7 +14,11 @@
         "goals": "Busco oportunidades en diseño 3D, tech art, visualización digital y proyectos que valoren la creatividad, la técnica y la innovación. ¿Nos conectamos?"
     },
     "portfolio": {
-        "title": "Portafolio"
+        "title": "Portafolio",
+        "video": "Videos",
+        "image": "Imágenes",
+        "site": "Sitios web",
+        "channel": "Canales"
     },
     "resume": {
         "title": "Currículum",

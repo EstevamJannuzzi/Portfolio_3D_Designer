@@ -14,7 +14,11 @@
         "goals": "I am seeking opportunities in 3D design, tech art, digital visualization, and projects that value creativity, technical skill, and innovation. Let's connect!"
     },
     "portfolio": {
-        "title": "Portfolio"
+        "title": "Portfolio",
+        "video": "Videos",
+        "image": "Images",
+        "site": "Websites",
+        "channel": "Channels"
     },
     "resume": {
         "title": "Resume",

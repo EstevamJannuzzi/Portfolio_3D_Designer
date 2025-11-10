@@ -1,7 +1,7 @@
 import React from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Title from '../assets/Components/Title.jsx'
-import BoxContato from '../assets/Components/BoxContato.jsx'
+import BoxContent from '../assets/Components/BoxContent.jsx'
 import Image from '../assets/Components/Image.jsx'
 import { FaWhatsapp, FaInstagram, FaArtstation } from 'react-icons/fa'
 import { HiOutlineMail } from "react-icons/hi"
@@ -30,19 +30,19 @@ const Contatos = () => {
 
       <div className="flex flex-inline items-center justify-center gap-4 mt-16 mb-6">
 
-        <BoxContato
+        <BoxContent
           icon={<FaWhatsapp size={70} />}
           text={t("contacts.whatsapp")}
           link="https://wa.me/5511952029128"
         />
 
-        <BoxContato
+        <BoxContent
           icon={<HiOutlineMail size={70} />}
           text={t("contacts.email")}
           link="mailto:estevamjannuzzi@gmail.com"
         />
 
-        <BoxContato
+        <BoxContent
           icon={<FaInstagram size={70} />}
           text={t("contacts.instagram")}
           link="https://www.instagram.com/estevam_jannuzzi/"
@@ -52,19 +52,19 @@ const Contatos = () => {
 
       <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">
 
-        <BoxContato
+        <BoxContent
           icon={<PiLinkedinLogo size={70} />}
           text={t("contacts.linkedin")}
           link="https://www.linkedin.com/in/estevam-jannuzzi-217355bb/"
         />
 
-        <BoxContato
+        <BoxContent
           icon={<FiYoutube size={70} />}
           text={t("contacts.youtube")}
           link="https://www.youtube.com/@vfx_3D_world"
         />
 
-        <BoxContato
+        <BoxContent
           icon={<FaArtstation size={70} />}
           text={t("contacts.artstation")}
           link="https://www.artstation.com/estevamjannuzzi4"
@@ -74,7 +74,7 @@ const Contatos = () => {
 
       <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">
 
-        <BoxContato
+        <BoxContent
           icon={<VscGithub size={70} />}
           text={t("contacts.github")}
           link="https://github.com/EstevamJannuzzi"
