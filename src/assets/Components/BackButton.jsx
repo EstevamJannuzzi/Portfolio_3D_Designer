@@ -18,10 +18,10 @@ const BackButton = ({ to = -1, text }) => {
       "
     >
       {/* Ícone de voltar */}
-      <GoSignIn className="text-[40px]" />
+      <GoSignIn className="text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[26px]" />
 
       {/* Texto com tradução */}
-      <span className="text-lg font-medium">
+      <span className="text-[12px] sm:text-[14px] lg:text-[16px] xl:text-[18px]">
         {text || t("buttons.back")}
       </span>
     </button>

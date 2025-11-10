@@ -9,7 +9,7 @@ const Imagens = () => {
 
     return (
         <DefaultScreen className='z-30'>
-            <div className='-ml-28 sm:-ml-70 lg:-ml-110 xl:-ml-150 mt-4'>
+            <div className="mb-8 flex justify-center relative z-20">
                 <BackButton to="/portfolio" />
             </div>
             <div className='flex flex-col items-center justify-center gap-2 text-center'>
@@ -18,8 +18,8 @@ const Imagens = () => {
                     size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
                 />
             </div>
-            
-            <div className='-ml-28 sm:-ml-70 lg:-ml-110 xl:-ml-150 mt-4'>
+
+            <div className="mt-8 flex justify-center relative z-20">
                 <BackButton to="/portfolio" />
             </div>
         </DefaultScreen>
