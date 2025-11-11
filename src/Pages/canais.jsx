@@ -14,12 +14,14 @@ const Canais = () => {
             <div className="mb-8 flex justify-center relative z-20">
                 <BackButton to="/portfolio" />
             </div>
+            
             <div className='flex flex-col items-center justify-center gap-2 text-center'>
                 <Title
                     text={t("channel.title")}
                     size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
                 />
             </div>
+
             <div className='flex flex-col justify-center items-center mt-6'>
                 <Image
                     src='/canalSilvia.webp'
