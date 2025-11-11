@@ -2,7 +2,7 @@ import React from 'react'
 
 const Link = ({ text, link }) => {
     return (
-        <div className="flex flex-col items-center justify-center font-text text-dark-gray dark:text-light-gray text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px] cursor-pointer">
+        <div className="flex flex-col items-center justify-center font-text text-orange dark:text-green hover:text-green dark:hover:text-orange text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px] cursor-pointer">
             <a
                 href={link}
                 target='_blank'
