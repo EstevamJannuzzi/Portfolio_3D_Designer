@@ -7,6 +7,7 @@ import { LiaFileVideoSolid } from "react-icons/lia"
 import { FaRegImage } from "react-icons/fa6"
 import { CgWebsite } from "react-icons/cg"
 import { FiYoutube } from "react-icons/fi"
+import { CgSoftwareDownload } from "react-icons/cg"
 import { useTranslation } from 'react-i18next'
 
 const Portfolio = () => {
@@ -44,12 +45,21 @@ const Portfolio = () => {
             text={t("portfolio.site")}
             link="/websites"
           />
+
           <BoxContent
             icon={<FiYoutube size={70} />}
             target="_self"
             text={t("portfolio.channel")}
             link="/canais"
           />
+          
+          <BoxContent
+            icon={<CgSoftwareDownload size={70} />}
+            target="_self"
+            text={t("portfolio.programming")}
+            link="/programacao"
+          />
+
         </div>
       </div>
       <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">

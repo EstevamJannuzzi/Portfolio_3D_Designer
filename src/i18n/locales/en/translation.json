@@ -18,7 +18,8 @@
         "video": "Videos",
         "image": "Images",
         "site": "Websites",
-        "channel": "Channels"
+        "channel": "Channels",
+        "programming": "Programming"
     },
     "buttons": {
         "back": "Back"
@@ -36,6 +37,10 @@
     "channel": {
         "title": "Channels",
         "text": "Channel Silvia Eiko Artesanato"
+    },
+    "programming": {
+        "title": "Programming",
+        "text": "Tic Tac Toe"
     },
     "resume": {
         "title": "Resume",

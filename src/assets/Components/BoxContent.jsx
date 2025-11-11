@@ -10,7 +10,7 @@ const BoxContent = ({ text, icon, link, target='_blank' }) => {
                 className="flex flex-col items-center gap-2 text-orange hover:text-green dark:text-green dark:hover:text-orange text-[16px] sm:text-[18px] lg:text-[20px]"
             >
                 {icon}
-                <span className='font-text text-[18px] sm:text-[26px] lg:text-[28px] xl:text-[32px]'>{text}</span>
+                <span className='font-text text-[14px] sm:text-[22px] lg:text-[28px] xl:text-[32px]'>{text}</span>
             </a>
         </div>
     )

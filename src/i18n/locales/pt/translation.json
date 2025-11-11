@@ -18,7 +18,8 @@
         "video": "Vídeos",
         "image": "Imagens",
         "site": "WebSites",
-        "channel": "Canais"
+        "channel": "Canais",
+        "programming": "Programação"
     },
     "buttons": {
         "back": "Voltar"
@@ -36,6 +37,10 @@
     "channel": {
         "title": "Canais",
         "text": "Canal Silvia Eiko Artesanato"
+    },
+    "programming": {
+        "title": "Programação",
+        "text": "Jogo da Velha"
     },
     "resume": {
         "title": "Currículo",

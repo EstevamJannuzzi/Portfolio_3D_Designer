@@ -18,7 +18,8 @@
         "video": "Videos",
         "image": "Imágenes",
         "site": "Sitios web",
-        "channel": "Canales"
+        "channel": "Canales",
+        "programming": "Programación"
     },
     "buttons": {
         "back": "Volver"
@@ -36,6 +37,10 @@
     "channel": {
         "title": "Canales",
         "text": "Canale Silvia Eiko Artesanato"
+    },
+    "programming": {
+        "title": "Programación",
+        "text": "Tres en raya"
     },
     "resume": {
         "title": "Currículum",

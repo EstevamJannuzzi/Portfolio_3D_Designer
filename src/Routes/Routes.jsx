@@ -8,6 +8,7 @@ import Contatos from '../Pages/contatos.jsx'
 import Imagens from '../Pages/imagens.jsx'
 import WebSites from '../Pages/websites.jsx'
 import Canais from '../Pages/canais.jsx'
+import Programacao from '../Pages/programacao.jsx'
 
 const Routes = () => {
   return (
@@ -19,6 +20,7 @@ const Routes = () => {
           <Route path="/imagens" element={<Imagens />} />
           <Route path="/websites" element={<WebSites />} />
           <Route path="/canais" element={<Canais />} />
+          <Route path="/programacao" element={<Programacao />} />
           <Route path="/curriculo" element={<Curriculo />} />
           <Route path="/contatos" element={<Contatos />} />
         </ReactRoutes>
