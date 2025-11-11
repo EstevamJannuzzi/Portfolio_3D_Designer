@@ -2,13 +2,13 @@ import React from 'react';
 
 const Iframe = ({
   src,
-  title = 'Video',
+  title,
   allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen',
   referrerPolicy = 'strict-origin-when-cross-origin',
   allowFullScreen = true,
   wrapperClass = 'relative flex justify-center items-center w-full',
-  width = 'w-full',
-  height = 'h-[400px]',
+  width = 'w-[380px] sm:w-[640px] md:w-[640px] lg:w-[750px] xl:w-[500px]',
+  height = 'h-[164px] sm:h-[360px] md:h-[360px] lg:h-[420px] xl:h-[280px]',
   className = 'rounded-xl z-10',
 }) => {
   return (

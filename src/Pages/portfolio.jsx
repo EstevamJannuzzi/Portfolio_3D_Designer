@@ -20,38 +20,38 @@ const Portfolio = () => {
           size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
         />
       </div>
-      <div className="flex flex-inline items-center justify-center gap-4 mt-16 mb-6">
 
-        <BoxContent
-          icon={<LiaFileVideoSolid size={70} />}
-          target="_self"
-          text={t("portfolio.video")}
-          link="/video"
-        />
+      <div className="relative flex justify-center items-center mt-8">
+        <div className="grid grid-cols-2 gap-6">
 
-        <BoxContent
-          icon={<FaRegImage size={70} />}
-          target="_self"
-          text={t("portfolio.image")}
-          link="/imagens"
-        />
+          <BoxContent
+            icon={<LiaFileVideoSolid size={70} />}
+            target="_self"
+            text={t("portfolio.video")}
+            link="/video"
+          />
+
+          <BoxContent
+            icon={<FaRegImage size={70} />}
+            target="_self"
+            text={t("portfolio.image")}
+            link="/imagens"
+          />
+
+          <BoxContent
+            icon={<CgWebsite size={70} />}
+            target="_self"
+            text={t("portfolio.site")}
+            link="/websites"
+          />
+          <BoxContent
+            icon={<FiYoutube size={70} />}
+            target="_self"
+            text={t("portfolio.channel")}
+            link="/canais"
+          />
+        </div>
       </div>
-
-      <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">
-        <BoxContent
-          icon={<CgWebsite size={70} />}
-          target="_self"
-          text={t("portfolio.site")}
-          link="/websites"
-        />
-        <BoxContent
-          icon={<FiYoutube size={70} />}
-          target="_self"
-          text={t("portfolio.channel")}
-          link="/canais"
-        />
-      </div>
-
       <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">
 
         <Image

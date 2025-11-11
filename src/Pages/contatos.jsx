@@ -28,58 +28,51 @@ const Contatos = () => {
         />
       </div>
 
-      <div className="flex flex-inline items-center justify-center gap-4 mt-16 mb-6">
+      <div className="relative flex justify-center items-center mt-8">
+        <div className="grid grid-cols-3 gap-6">
 
-        <BoxContent
-          icon={<FaWhatsapp size={70} />}
-          text={t("contacts.whatsapp")}
-          link="https://wa.me/5511952029128"
-        />
+          <BoxContent
+            icon={<FaWhatsapp size={70} />}
+            text={t("contacts.whatsapp")}
+            link="https://wa.me/5511952029128"
+          />
 
-        <BoxContent
-          icon={<HiOutlineMail size={70} />}
-          text={t("contacts.email")}
-          link="mailto:estevamjannuzzi@gmail.com"
-        />
+          <BoxContent
+            icon={<HiOutlineMail size={70} />}
+            text={t("contacts.email")}
+            link="mailto:estevamjannuzzi@gmail.com"
+          />
 
-        <BoxContent
-          icon={<FaInstagram size={70} />}
-          text={t("contacts.instagram")}
-          link="https://www.instagram.com/estevam_jannuzzi/"
-        />
+          <BoxContent
+            icon={<FaInstagram size={70} />}
+            text={t("contacts.instagram")}
+            link="https://www.instagram.com/estevam_jannuzzi/"
+          />
 
-      </div>
+          <BoxContent
+            icon={<PiLinkedinLogo size={70} />}
+            text={t("contacts.linkedin")}
+            link="https://www.linkedin.com/in/estevam-jannuzzi-217355bb/"
+          />
 
-      <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">
+          <BoxContent
+            icon={<FiYoutube size={70} />}
+            text={t("contacts.youtube")}
+            link="https://www.youtube.com/@vfx_3D_world"
+          />
 
-        <BoxContent
-          icon={<PiLinkedinLogo size={70} />}
-          text={t("contacts.linkedin")}
-          link="https://www.linkedin.com/in/estevam-jannuzzi-217355bb/"
-        />
+          <BoxContent
+            icon={<FaArtstation size={70} />}
+            text={t("contacts.artstation")}
+            link="https://www.artstation.com/estevamjannuzzi4"
+          />
 
-        <BoxContent
-          icon={<FiYoutube size={70} />}
-          text={t("contacts.youtube")}
-          link="https://www.youtube.com/@vfx_3D_world"
-        />
-
-        <BoxContent
-          icon={<FaArtstation size={70} />}
-          text={t("contacts.artstation")}
-          link="https://www.artstation.com/estevamjannuzzi4"
-        />
-
-      </div>
-
-      <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">
-
-        <BoxContent
-          icon={<VscGithub size={70} />}
-          text={t("contacts.github")}
-          link="https://github.com/EstevamJannuzzi"
-        />
-
+          <BoxContent
+            icon={<VscGithub size={70} />}
+            text={t("contacts.github")}
+            link="https://github.com/EstevamJannuzzi"
+          />
+        </div>
       </div>
 
       <div className="flex justify-center items-center mt-10 mb-8">
@@ -89,6 +82,7 @@ const Contatos = () => {
           width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[700px]"
         />
       </div>
+
     </DefaultScreen>
   )
 }
