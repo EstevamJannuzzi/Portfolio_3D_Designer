@@ -40,7 +40,8 @@
     },
     "programming": {
         "title": "Programação",
-        "text": "Jogo da Velha"
+        "text": "Jogo da Velha",
+        "text_A": "Jogo Apostas"
     },
     "resume": {
         "title": "Currículo",

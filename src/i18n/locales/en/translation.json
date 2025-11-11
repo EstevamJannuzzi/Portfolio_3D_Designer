@@ -40,7 +40,8 @@
     },
     "programming": {
         "title": "Programming",
-        "text": "Tic Tac Toe"
+        "text": "Tic Tac Toe",
+        "text_A": "Betting Game"
     },
     "resume": {
         "title": "Resume",

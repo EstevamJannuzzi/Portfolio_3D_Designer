@@ -40,7 +40,8 @@
     },
     "programming": {
         "title": "Programación",
-        "text": "Tres en raya"
+        "text": "Tres en raya",
+        "text_A": "Juego Apuestas"
     },
     "resume": {
         "title": "Currículum",
