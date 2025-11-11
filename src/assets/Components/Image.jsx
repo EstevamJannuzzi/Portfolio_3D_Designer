@@ -1,6 +1,6 @@
 import React from "react"
 
-const Image = ({ src, alt, width, margin, distance, special }) => {
+const Image = ({ src, alt='Imagem', width, margin, distance, special }) => {
   return (
     <img
       src={src}
