@@ -35,6 +35,7 @@ const WebSites = () => {
                 <BoxContent
                     text={t("site.text")}
                     link='https://www.mentalplus.app/'
+                    width='w-[220px] sm:w-[340px] lg:w-[420px] xl:w-[450px]'
                 />
             </div>
 
