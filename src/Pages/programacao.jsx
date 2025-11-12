@@ -4,17 +4,19 @@ import Title from '../assets/Components/Title.jsx'
 import { useTranslation } from 'react-i18next'
 import BackButton from '../assets/Components/BackButton.jsx'
 import Image from '../assets/Components/Image.jsx'
-import Link from '../assets/Components/Link.jsx'
+import BoxContent from '../assets/Components/BoxContent.jsx'
 
 const Programacao = () => {
     const { t } = useTranslation()
 
     return (
         <DefaultScreen className='z-30'>
+            {/* Botão de voltar no topo */}
             <div className="mb-8 flex justify-center relative z-20">
                 <BackButton to="/portfolio" />
             </div>
 
+            {/* Título */}
             <div className='flex flex-col items-center justify-center gap-2 text-center'>
                 <Title
                     text={t("programming.title")}
@@ -22,8 +24,10 @@ const Programacao = () => {
                 />
             </div>
 
+            {/* Conteúdo principal */}
             <div className="relative flex justify-center items-center mt-8">
                 <div className="grid grid-cols-2 gap-6">
+                    {/* Primeiro Jogo */}
                     <div className='flex flex-col justify-center items-center mt-6'>
                         <Image
                             src='/tictactoe.webp'
@@ -31,12 +35,14 @@ const Programacao = () => {
                             width='w-[160px] sm:w-[280px] lg:w-[340px] xl:w-[420px]'
                             margin='mb-4'
                         />
-                        <Link
+                        <BoxContent
                             text={t("programming.text")}
                             link='/Programs/TicTacToe_v2.exe'
                             download={true}
                         />
                     </div>
+
+                    {/* Segundo Jogo */}
                     <div className='flex flex-col justify-center items-center mt-6'>
                         <Image
                             src='/Apostas.webp'
@@ -44,7 +50,7 @@ const Programacao = () => {
                             width='w-[160px] sm:w-[280px] lg:w-[340px] xl:w-[420px]'
                             margin='mb-4'
                         />
-                        <Link
+                        <BoxContent
                             text={t("programming.text_A")}
                             link='/Programs/Apostas.exe'
                             download={true}
@@ -53,10 +59,11 @@ const Programacao = () => {
                 </div>
             </div>
 
+            {/* Botão de voltar no fim */}
             <div className="mt-8 flex justify-center relative z-20">
                 <BackButton to="/portfolio" />
             </div>
-        </DefaultScreen >
+        </DefaultScreen>
     )
 }
 
