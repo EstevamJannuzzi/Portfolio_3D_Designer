@@ -13,6 +13,17 @@ import { useTranslation } from 'react-i18next'
 const Contatos = () => {
   const { t } = useTranslation()
 
+  // ✅ Simplificação: array com todos os contatos
+  const contacts = [
+    { icon: <FaWhatsapp size={70} />, text: t("contacts.whatsapp"), link: "https://wa.me/5511952029128" },
+    { icon: <HiOutlineMail size={70} />, text: t("contacts.email"), link: "mailto:estevamjannuzzi@gmail.com" },
+    { icon: <FaInstagram size={70} />, text: t("contacts.instagram"), link: "https://www.instagram.com/estevam_jannuzzi/" },
+    { icon: <PiLinkedinLogo size={70} />, text: t("contacts.linkedin"), link: "https://www.linkedin.com/in/estevam-jannuzzi-217355bb/" },
+    { icon: <FiYoutube size={70} />, text: t("contacts.youtube"), link: "https://www.youtube.com/@vfx_3D_world" },
+    { icon: <FaArtstation size={70} />, text: t("contacts.artstation"), link: "https://www.artstation.com/estevamjannuzzi4" },
+    { icon: <VscGithub size={70} />, text: t("contacts.github"), link: "https://github.com/EstevamJannuzzi" },
+  ]
+
   return (
     <DefaultScreen className='z-30'>
       <div className='flex flex-col items-center justify-center gap-2 text-center'>
@@ -30,48 +41,14 @@ const Contatos = () => {
 
       <div className="relative flex justify-center items-center mt-8">
         <div className="grid grid-cols-3 gap-6">
-
-          <BoxContent
-            icon={<FaWhatsapp size={70} />}
-            text={t("contacts.whatsapp")}
-            link="https://wa.me/5511952029128"
-          />
-
-          <BoxContent
-            icon={<HiOutlineMail size={70} />}
-            text={t("contacts.email")}
-            link="mailto:estevamjannuzzi@gmail.com"
-          />
-
-          <BoxContent
-            icon={<FaInstagram size={70} />}
-            text={t("contacts.instagram")}
-            link="https://www.instagram.com/estevam_jannuzzi/"
-          />
-
-          <BoxContent
-            icon={<PiLinkedinLogo size={70} />}
-            text={t("contacts.linkedin")}
-            link="https://www.linkedin.com/in/estevam-jannuzzi-217355bb/"
-          />
-
-          <BoxContent
-            icon={<FiYoutube size={70} />}
-            text={t("contacts.youtube")}
-            link="https://www.youtube.com/@vfx_3D_world"
-          />
-
-          <BoxContent
-            icon={<FaArtstation size={70} />}
-            text={t("contacts.artstation")}
-            link="https://www.artstation.com/estevamjannuzzi4"
-          />
-
-          <BoxContent
-            icon={<VscGithub size={70} />}
-            text={t("contacts.github")}
-            link="https://github.com/EstevamJannuzzi"
-          />
+          {contacts.map((contact, index) => (
+            <BoxContent
+              key={index}
+              icon={contact.icon}
+              text={contact.text}
+              link={contact.link}
+            />
+          ))}
         </div>
       </div>
 
@@ -82,7 +59,6 @@ const Contatos = () => {
           width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[700px]"
         />
       </div>
-
     </DefaultScreen>
   )
 }

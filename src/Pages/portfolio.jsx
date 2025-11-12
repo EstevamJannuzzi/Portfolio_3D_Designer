@@ -5,13 +5,21 @@ import BoxContent from '../assets/Components/BoxContent.jsx'
 import Image from '../assets/Components/Image.jsx'
 import { LiaFileVideoSolid } from "react-icons/lia"
 import { FaRegImage } from "react-icons/fa6"
-import { CgWebsite } from "react-icons/cg"
+import { CgWebsite, CgSoftwareDownload } from "react-icons/cg"
 import { FiYoutube } from "react-icons/fi"
-import { CgSoftwareDownload } from "react-icons/cg"
 import { useTranslation } from 'react-i18next'
 
 const Portfolio = () => {
   const { t } = useTranslation()
+
+  // ✅ Simplificação: definindo os dados dos BoxContent em um array
+  const boxes = [
+    { icon: <LiaFileVideoSolid size={70} />, text: t("portfolio.video"), link: "/video" },
+    { icon: <FaRegImage size={70} />, text: t("portfolio.image"), link: "/imagens" },
+    { icon: <CgWebsite size={70} />, text: t("portfolio.site"), link: "/websites" },
+    { icon: <FiYoutube size={70} />, text: t("portfolio.channel"), link: "/canais" },
+    { icon: <CgSoftwareDownload size={70} />, text: t("portfolio.programming"), link: "/programacao" },
+  ]
 
   return (
     <DefaultScreen className='z-30'>
@@ -24,46 +32,19 @@ const Portfolio = () => {
 
       <div className="relative flex justify-center items-center mt-8">
         <div className="grid grid-cols-2 gap-6">
-
-          <BoxContent
-            icon={<LiaFileVideoSolid size={70} />}
-            target="_self"
-            text={t("portfolio.video")}
-            link="/video"
-          />
-
-          <BoxContent
-            icon={<FaRegImage size={70} />}
-            target="_self"
-            text={t("portfolio.image")}
-            link="/imagens"
-          />
-
-          <BoxContent
-            icon={<CgWebsite size={70} />}
-            target="_self"
-            text={t("portfolio.site")}
-            link="/websites"
-          />
-
-          <BoxContent
-            icon={<FiYoutube size={70} />}
-            target="_self"
-            text={t("portfolio.channel")}
-            link="/canais"
-          />
-          
-          <BoxContent
-            icon={<CgSoftwareDownload size={70} />}
-            target="_self"
-            text={t("portfolio.programming")}
-            link="/programacao"
-          />
-
+          {boxes.map((box, index) => (
+            <BoxContent
+              key={index}
+              icon={box.icon}
+              target="_self"
+              text={box.text}
+              link={box.link}
+            />
+          ))}
         </div>
       </div>
-      <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">
 
+      <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">
         <Image
           src='/BBB.8.webp'
           alt="Contatos Ding"
@@ -76,7 +57,6 @@ const Portfolio = () => {
           width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[700px]"
           special='hidden dark:block'
         />
-
       </div>
     </DefaultScreen>
   )
