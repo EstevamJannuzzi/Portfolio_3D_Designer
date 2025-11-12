@@ -35,7 +35,7 @@ const Canais = () => {
                 <BoxContent
                     text={t("channel.text")}
                     link='https://www.youtube.com/@SilviaEikoArtesanato'
-                    width='w-[220px] sm:w-[340px] lg:w-[420px] xl:w-[450px]'
+                    width='w-[220px] sm:w-[340px] lg:w-[420px] xl:w-[550px]'
                 />
             </div>
 
