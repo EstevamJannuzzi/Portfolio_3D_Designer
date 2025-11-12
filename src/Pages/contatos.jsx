@@ -40,7 +40,7 @@ const Contatos = () => {
       </div>
 
       <div className="relative flex justify-center items-center mt-8">
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-4">
           {contacts.map((contact, index) => (
             <BoxContent
               key={index}
