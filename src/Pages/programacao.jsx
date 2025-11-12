@@ -23,16 +23,8 @@ const Programacao = () => {
             src: '/Apostas.webp',
             alt: 'Game Aposta',
             text: t('programming.text_A'),
-            link: '/Programs/Apostas.exe',
+            link: '/Programs/Apostas_V3.exe',
         },
-        // 🔧 Basta adicionar mais jogos aqui no futuro:
-        // {
-        //   id: 3,
-        //   src: '/meuJogo.webp',
-        //   alt: 'Nome do jogo',
-        //   text: t('programming.text_MeuJogo'),
-        //   link: '/Programs/MeuJogo.exe',
-        // },
     ]
 
     return (
