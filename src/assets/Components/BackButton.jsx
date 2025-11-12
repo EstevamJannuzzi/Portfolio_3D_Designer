@@ -13,7 +13,7 @@ const BackButton = ({ to = -1, text }) => {
       className="
         flex items-center gap-2
         text-orange dark:text-green
-        hover:text-green dark:hover:text-orange
+        hover:text-primary dark:hover:text-orange
         cursor-pointer transition-colors duration-200
       "
     >
