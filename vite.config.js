@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  base: "/PORTFOLIO_3D_DESIGNER/",
 })
