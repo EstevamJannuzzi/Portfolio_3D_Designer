@@ -11,6 +11,9 @@ import { PiBriefcaseLight } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
 import ReactCountryFlag from "react-country-flag";
 
+// Caminho base GitHub Pages
+const base = "/Portfolio_3D_Designer";
+
 export default function MenuBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -31,14 +34,12 @@ export default function MenuBar() {
     { name: t("menu.contatos"), to: "/contatos", icon: <LuContact className="mr-2" size={22} /> },
   ];
 
-  // Mapeia idiomas -> bandeiras
   const flags = [
     { code: "pt", country: "BR" },
     { code: "en", country: "US" },
     { code: "es", country: "ES" },
   ];
 
-  // Componente do botão de bandeira
   const FlagButton = ({ countryCode, onClick, title }) => (
     <button
       onClick={onClick}
@@ -60,17 +61,17 @@ export default function MenuBar() {
 
   return (
     <header className="w-full flex items-center justify-between bg-dark-gray/75 dark:bg-primary/20 backdrop-blur-md sm:h-[60px] lg:h-[140px] gap-4 py-3 px-6 fixed top-0 left-0 z-50 shadow-sm">
+      
       {/* LOGO */}
       <div className="flex items-center gap-x-4 xl:gap-x-6 ml-0 sm:ml-90 lg:ml-6 xl:ml-0">
         <Link to="/" className="transition-transform hover:scale-110 cursor-pointer">
           <Image
-            src="/logo3D.webp"
+            src={`${base}/logo3D.webp`}
             alt="Logo"
             width="w-[44px] sm:w-[60px] lg:w-[100px] xl:w-[120px]"
           />
         </Link>
       </div>
-
 
       {/* MENU DESKTOP */}
       <div className="hidden lg:flex items-center space-x-8 relative">
@@ -79,10 +80,11 @@ export default function MenuBar() {
             <Link
               key={link.to}
               to={link.to}
-              className={`flex items-center font-medium transition-all duration-300 ease-in-out cursor-pointer ${location.pathname === link.to
-                ? "text-green dark:text-orange text-[24px] scale-110"
-                : "text-orange dark:text-green text-[20px] hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110"
-                }`}
+              className={`flex items-center font-medium transition-all duration-300 ease-in-out cursor-pointer ${
+                location.pathname === link.to
+                  ? "text-green dark:text-orange text-[24px] scale-110"
+                  : "text-orange dark:text-green text-[20px] hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110"
+              }`}
             >
               {link.icon}
               {link.name}
@@ -90,11 +92,10 @@ export default function MenuBar() {
           ))}
         </nav>
 
-        {/* 🌗 DarkMode + Idioma */}
         <div className="flex items-center gap-4 relative">
           <DarkMode />
 
-          {/* 🌍 Botão de idioma */}
+          {/* LANG BUTTON */}
           <div className="relative">
             <button
               onClick={toggleLangMenu}
@@ -133,7 +134,7 @@ export default function MenuBar() {
       <div className="lg:hidden flex items-center gap-4">
         <DarkMode />
 
-        {/* 🌍 Botão idioma (mobile) */}
+        {/* LANG MOBILE */}
         <div className="relative">
           <button
             onClick={toggleLangMenu}
@@ -166,7 +167,7 @@ export default function MenuBar() {
           </AnimatePresence>
         </div>
 
-        {/* Botão menu mobile */}
+        {/* TOGGLE MENU */}
         <button
           onClick={toggleMenu}
           className="text-orange dark:text-green hover:text-green dark:hover:text-orange transition-transform duration-200 hover:scale-110 cursor-pointer"
@@ -181,7 +182,7 @@ export default function MenuBar() {
         </button>
       </div>
 
-      {/* MENU MOBILE */}
+      {/* MOBILE MENU */}
       <AnimatePresence>
         {menuOpen && (
           <>
@@ -193,6 +194,7 @@ export default function MenuBar() {
               className="fixed inset-0 bg-black/20 lg:hidden"
               onClick={toggleMenu}
             />
+
             <motion.nav
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -212,10 +214,11 @@ export default function MenuBar() {
                     <Link
                       to={link.to}
                       onClick={() => setMenuOpen(false)}
-                      className={`block text-lg font-medium text-center py-4 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${location.pathname === link.to
-                        ? "text-green dark:text-orange text-[24px] scale-110"
-                        : "text-orange dark:text-green hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110 text-[20px]"
-                        }`}
+                      className={`block text-lg font-medium text-center py-4 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${
+                        location.pathname === link.to
+                          ? "text-green dark:text-orange text-[24px] scale-110"
+                          : "text-orange dark:text-green hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110 text-[20px]"
+                      }`}
                     >
                       {link.icon}
                       {link.name}
