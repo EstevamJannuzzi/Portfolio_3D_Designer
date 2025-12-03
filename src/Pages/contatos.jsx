@@ -33,7 +33,7 @@ const Contatos = () => {
         />
         <Title
           text={t("contacts.subtitle")}
-          size="text-[20px] sm:text-[22px] lg:text-[28px] xl:text-[36px]"
+          size="text-[17px] sm:text-[22px] lg:text-[28px] xl:text-[36px]"
           color="text-white"
           darkcolor="dark:text-white"
         />

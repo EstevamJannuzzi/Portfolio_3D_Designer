@@ -59,14 +59,14 @@ export default function MenuBar() {
   );
 
   return (
-    <header className="w-full flex items-center justify-between bg-dark-gray/75 dark:bg-primary/20 backdrop-blur-md gap-4 py-3 px-6 fixed top-0 left-0 z-50 shadow-sm">
+    <header className="w-full flex items-center justify-between bg-dark-gray/75 dark:bg-primary/20 backdrop-blur-md sm:h-[60px] lg:h-[140px] gap-4 py-3 px-6 fixed top-0 left-0 z-50 shadow-sm">
       {/* LOGO */}
       <div className="flex items-center gap-x-4 xl:gap-x-6 ml-0 sm:ml-90 lg:ml-6 xl:ml-0">
         <Link to="/" className="transition-transform hover:scale-110 cursor-pointer">
           <Image
             src="/logo3D.webp"
             alt="Logo"
-            width="w-[60px] sm:w-[86px] lg:w-[100px] xl:w-[120px]"
+            width="w-[44px] sm:w-[60px] lg:w-[100px] xl:w-[120px]"
           />
         </Link>
       </div>
