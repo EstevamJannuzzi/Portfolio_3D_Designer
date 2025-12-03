@@ -22,4 +22,34 @@
     </script>
   </head>
   <body></body>
+</html><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecionando...</title>
+    <script>
+      // 1. O nome do seu repositório onde o projeto está hospedado.
+      // Corrigido para o nome do seu repositório: Portfolio_3D_Designer
+      var repo = "/Portfolio_3D_Designer";
+
+      // 2. Obtém o caminho completo acessado (ex: /Portfolio_3D_Designer/video)
+      var path = window.location.pathname;
+
+      // 3. Remove o prefixo do repositório para obter o caminho da rota (ex: /video)
+      var cleanPath = path.replace(repo, "");
+
+      // 4. Lógica de Redirecionamento:
+      // Se houver um caminho além da raiz (ex: /video, /imagens),
+      // redireciona para a rota com o hash: /#/video, /#/imagens
+      if (cleanPath && cleanPath !== "/") {
+        window.location.replace(repo + "/#/" + cleanPath.replace("/", ""));
+      } else {
+        // Se for a raiz ou um erro genérico, redireciona para a raiz com hash: /#/
+        window.location.replace(repo + "/#/");
+      }
+    </script>
+  </head>
+  <body>
+    <p>Se você não for redirecionado automaticamente, clique <a href="/">aqui</a>.</p>
+  </body>
 </html>
