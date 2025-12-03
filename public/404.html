@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecionando...</title>
+    <script>
+      // Se o usuário acessa /imagens, /video etc
+      // GitHub Pages redireciona para index.html, mas precisamos voltar o hash (#)
+      var path = window.location.pathname.replace("/Portfolio_3D_Designer", "");
+      if (path && path !== "/") {
+        window.location.replace("/Portfolio_3D_Designer/#" + path);
+      } else {
+        window.location.replace("/Portfolio_3D_Designer/");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
