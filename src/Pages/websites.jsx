@@ -16,7 +16,8 @@ const WebSites = () => {
         <DefaultScreen className='z-30'>
             {/* Botão de voltar no topo */}
             <div className="mb-8 flex justify-center relative z-20">
-                <BackButton to={`${base}/portfolio`} />
+                {/* ❗ Quando usa HashRouter, o caminho aqui deve ser APENAS "/portfolio" */}
+                <BackButton to="/portfolio" />
             </div>
 
             {/* Título */}
@@ -30,11 +31,12 @@ const WebSites = () => {
             {/* Conteúdo principal */}
             <div className='flex flex-col justify-center items-center mt-6'>
                 <Image
-                    src={`${base}/siteMentalPlus.webp`}
+                    src={`${base}/imagespage/siteMentalPlus.webp`}
                     alt='Site MentalPlus'
                     width='w-[340px] sm:w-[580px] lg:w-[680px] xl:w-[780px]'
                     margin='mb-4'
                 />
+
                 <BoxContent
                     text={t("site.text")}
                     link='https://www.mentalplus.app/'
@@ -42,9 +44,9 @@ const WebSites = () => {
                 />
             </div>
 
-            {/* Botão de voltar no fim */}
+            {/* Botão de voltar inferior */}
             <div className="mt-8 flex justify-center relative z-20">
-                <BackButton to={`${base}/portfolio`} />
+                <BackButton to="/portfolio" />
             </div>
         </DefaultScreen>
     )

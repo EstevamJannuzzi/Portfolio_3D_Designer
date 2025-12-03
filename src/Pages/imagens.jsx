@@ -9,19 +9,13 @@ const Imagens = () => {
   const { t } = useTranslation()
   const [selectedImage, setSelectedImage] = useState(null)
 
-  // Caminho base para GitHub Pages
+  // Caminho base para arquivos locais no GitHub Pages
   const base = "/Portfolio_3D_Designer"
 
-  // 🔒 Bloqueia scroll da página quando a imagem está ampliada
+  // 🔒 Bloqueia scroll da página quando o modal está aberto
   useEffect(() => {
-    if (selectedImage) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'auto'
-    }
-    return () => {
-      document.body.style.overflow = 'auto'
-    }
+    document.body.style.overflow = selectedImage ? 'hidden' : 'auto'
+    return () => { document.body.style.overflow = 'auto' }
   }, [selectedImage])
 
   const images = [
@@ -73,25 +67,29 @@ const Imagens = () => {
   ]
 
   return (
-    <DefaultScreen className={`z-30 ${selectedImage ? 'pointer-events-none' : ''}`}>
+    <DefaultScreen className="z-30">
+
+      {/* Botão superior */}
       <div className="mb-8 flex justify-center relative z-20">
         <BackButton to="/portfolio" />
       </div>
 
-      <div className='flex flex-col items-center justify-center gap-2 text-center'>
+      {/* Título */}
+      <div className="flex flex-col items-center justify-center gap-2 text-center">
         <Title
           text={t("image.title")}
           size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
         />
       </div>
 
+      {/* Grid de imagens */}
       <div className="relative flex justify-center items-center mt-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
           {images.map((src, i) => (
             <button
               key={i}
               onClick={() => setSelectedImage(src)}
-              className="transition-transform hover:scale-105"
+              className="transition-transform hover:scale-105 cursor-pointer"
             >
               <Image
                 src={src}
@@ -102,22 +100,20 @@ const Imagens = () => {
         </div>
       </div>
 
-      {/* Modal para imagem ampliada */}
+      {/* Modal da imagem ampliada */}
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-[9999] cursor-zoom-out"
+          className="fixed inset-0 bg-black/80 flex justify-center items-center z-[9999] cursor-zoom-out"
           onClick={() => setSelectedImage(null)}
         >
           <img
             src={selectedImage}
-            alt="Ampliada"
+            alt="Imagem ampliada"
             className="max-h-[90vh] max-w-[90vw] object-contain rounded-2xl shadow-2xl"
           />
+
           <button
-            onClick={(e) => {
-              e.stopPropagation()
-              setSelectedImage(null)
-            }}
+            onClick={e => { e.stopPropagation(); setSelectedImage(null) }}
             className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-gray-300"
           >
             ✕
@@ -125,9 +121,11 @@ const Imagens = () => {
         </div>
       )}
 
+      {/* Botão inferior */}
       <div className="mt-8 flex justify-center relative z-20">
         <BackButton to="/portfolio" />
       </div>
+
     </DefaultScreen>
   )
 }

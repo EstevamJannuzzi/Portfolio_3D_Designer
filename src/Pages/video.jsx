@@ -5,13 +5,13 @@ import { useTranslation } from 'react-i18next'
 import BackButton from '../assets/Components/BackButton.jsx'
 import Iframe from '../assets/Components/Iframe.jsx'
 
-// Caminho base para GitHub Pages
+// Base para GitHub Pages (para arquivos locais, NÃO para rotas)
 const base = "/Portfolio_3D_Designer"
 
 const Video = () => {
   const { t } = useTranslation()
 
-  // Lista de vídeos com caminho base aplicado apenas se fosse arquivo local
+  // Lista de vídeos — YouTube não usa base
   const videos = [
     { src: "https://www.youtube.com/embed/QmksXw9t8B0", title: "Demoreel" },
     { src: "https://www.youtube.com/embed/AJsSvmtwu8g", title: "Robo Ding-Bo" },
@@ -29,9 +29,11 @@ const Video = () => {
 
   return (
     <DefaultScreen className="z-30 relative">
+      
       {/* Botão superior */}
       <div className="mb-8 flex justify-center relative z-20">
-        <BackButton to={`${base}/portfolio`} />
+        {/* ROTA via Hashrouter → NÃO usa base */}
+        <BackButton to="/portfolio" />
       </div>
 
       {/* Título */}
@@ -53,8 +55,9 @@ const Video = () => {
 
       {/* Botão inferior */}
       <div className="mt-8 flex justify-center relative z-20">
-        <BackButton to={`${base}/portfolio`} />
+        <BackButton to="/portfolio" />
       </div>
+
     </DefaultScreen>
   )
 }
