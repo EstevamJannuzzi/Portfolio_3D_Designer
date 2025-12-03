@@ -1,6 +1,7 @@
 import React from 'react'
-import { HashRouter as Router, Routes as ReactRoutes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
+// Páginas
 import Home from '../Pages/home.jsx'
 import Portfolio from '../Pages/portfolio.jsx'
 import Video from '../Pages/video.jsx'
@@ -11,22 +12,29 @@ import WebSites from '../Pages/websites.jsx'
 import Canais from '../Pages/canais.jsx'
 import Programacao from '../Pages/programacao.jsx'
 
-const Routes = () => {
+const AppRoutes = () => {
   return (
     <Router>
-      <ReactRoutes>
+      <Routes>
+        {/* Página inicial */}
         <Route path="/" element={<Home />} />
+
+        {/* Portfólio */}
         <Route path="/portfolio" element={<Portfolio />} />
+
+        {/* Subpáginas */}
         <Route path="/video" element={<Video />} />
         <Route path="/imagens" element={<Imagens />} />
         <Route path="/websites" element={<WebSites />} />
         <Route path="/canais" element={<Canais />} />
         <Route path="/programacao" element={<Programacao />} />
+
+        {/* Outras */}
         <Route path="/curriculo" element={<Curriculo />} />
         <Route path="/contatos" element={<Contatos />} />
-      </ReactRoutes>
+      </Routes>
     </Router>
   )
 }
 
-export default Routes
+export default AppRoutes
