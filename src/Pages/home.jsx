@@ -8,8 +8,11 @@ import { useTranslation } from 'react-i18next'
 const Home = () => {
     const { t } = useTranslation()
 
+    const base = "/Portfolio_3D_Designer"
+
     return (
         <DefaultScreen className='z-30'>
+
             <div className='flex flex-col items-center justify-center gap-2'>
                 <Title
                     text={t("home.title")}
@@ -23,6 +26,7 @@ const Home = () => {
                 />
             </div>
 
+            {/* BLOCO 1 */}
             <div className="relative flex flex-col items-center justify-center gap-6 mt-20 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-14">
                 <BoxText
                     text={t("home.professionalSummary")}
@@ -32,7 +36,7 @@ const Home = () => {
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
                 <Image
-                    src='/DingBo_1.webp'
+                    src={`${base}/DingBo_1.webp`}
                     alt="DingBo"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
@@ -40,7 +44,7 @@ const Home = () => {
                     special='block dark:hidden'
                 />
                 <Image
-                    src='/DingBo_1_green.webp'
+                    src={`${base}/DingBo_1_green.webp`}
                     alt="DingBo"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
@@ -49,9 +53,10 @@ const Home = () => {
                 />
             </div>
 
+            {/* BLOCO 2 */}
             <div className='flex flex-col items-center justify-center gap-6 mb-12 mt-22'>
                 <Image
-                    src='/carnivor_1.webp'
+                    src={`${base}/carnivor_1.webp`}
                     alt="Carnivor"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
                     margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
@@ -59,7 +64,7 @@ const Home = () => {
                     special='block dark:hidden'
                 />
                 <Image
-                    src='/carnivor_1_green.webp'
+                    src={`${base}/carnivor_1_green.webp`}
                     alt="Carnivor"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
                     margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
@@ -76,6 +81,7 @@ const Home = () => {
                 />
             </div>
 
+            {/* BLOCO 3 */}
             <div className="relative flex flex-col items-center justify-center gap-6 mt-16 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-18">
                 <BoxText
                     text={t("home.techSkills")}
@@ -85,7 +91,7 @@ const Home = () => {
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
                 <Image
-                    src='/Gremlin_1.webp'
+                    src={`${base}/Gremlin_1.webp`}
                     alt="Gremlin"
                     width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[700px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
@@ -93,7 +99,7 @@ const Home = () => {
                     special='block dark:hidden'
                 />
                 <Image
-                    src='/Gremlin_1_green.webp'
+                    src={`${base}/Gremlin_1_green.webp`}
                     alt="Gremlin"
                     width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[700px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
@@ -102,9 +108,10 @@ const Home = () => {
                 />
             </div>
 
+            {/* BLOCO 4 */}
             <div className='flex flex-col items-center justify-center gap-6 mb-4 mt-22'>
                 <Image
-                    src='/Joystick.webp'
+                    src={`${base}/Joystick.webp`}
                     alt="Joystick"
                     width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[660px]'
                     margin='-ml-14 sm:-ml-30 lg:-ml-40 xl:mr-30'
@@ -112,7 +119,7 @@ const Home = () => {
                     special='block dark:hidden'
                 />
                 <Image
-                    src='/Joystick_green.webp'
+                    src={`${base}/Joystick_green.webp`}
                     alt="Joystick"
                     width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[660px]'
                     margin='-ml-14 sm:-ml-30 lg:-ml-40 xl:mr-30'
@@ -128,6 +135,7 @@ const Home = () => {
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
             </div>
+
         </DefaultScreen>
     )
 }
