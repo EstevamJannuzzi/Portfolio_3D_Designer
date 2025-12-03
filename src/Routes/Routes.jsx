@@ -23,12 +23,11 @@ const AppRoutes = () => {
         <Route path="/portfolio" element={<Portfolio />} />
 
         {/* Subpáginas */}
-        <Route path="/video" element={<Video />} />
-        <Route path="/imagens" element={<Imagens />} />
-        <Route path="/websites" element={<WebSites />} />
-        <Route path="/canais" element={<Canais />} />
-        <Route path="/programacao" element={<Programacao />} />
-
+        <Route path="/estevamjannuzzi.github.io/video" element={<Video />} />
+        <Route path="/estevamjannuzzi.github.io/imagens" element={<Imagens />} />
+        <Route path="/estevamjannuzzi.github.io/websites" element={<WebSites />} />
+        <Route path="/estevamjannuzzi.github.io/canais" element={<Canais />} />
+        <Route path="/estevamjannuzzi.github.io/programacao" element={<Programacao />} />
         {/* Outras */}
         <Route path="/curriculo" element={<Curriculo />} />
         <Route path="/contatos" element={<Contatos />} />
