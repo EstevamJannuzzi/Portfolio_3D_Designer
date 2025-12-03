@@ -32,7 +32,7 @@ const Home = () => {
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
                 <Image
-                    src='/DingBo.1.webp'
+                    src='/DingBo_1.webp'
                     alt="DingBo"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
@@ -40,7 +40,7 @@ const Home = () => {
                     special='block dark:hidden'
                 />
                 <Image
-                    src='/DingBo.1_green.webp'
+                    src='/DingBo_1_green.webp'
                     alt="DingBo"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
@@ -51,7 +51,7 @@ const Home = () => {
 
             <div className='flex flex-col items-center justify-center gap-6 mb-12 mt-22'>
                 <Image
-                    src='/carnivor.1.webp'
+                    src='/carnivor_1.webp'
                     alt="Carnivor"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
                     margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
@@ -59,7 +59,7 @@ const Home = () => {
                     special='block dark:hidden'
                 />
                 <Image
-                    src='/carnivor.1_green.webp'
+                    src='/carnivor_1_green.webp'
                     alt="Carnivor"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
                     margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
@@ -85,7 +85,7 @@ const Home = () => {
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
                 <Image
-                    src='/Gremlin.1.webp'
+                    src='/Gremlin_1.webp'
                     alt="Gremlin"
                     width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[700px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
@@ -93,7 +93,7 @@ const Home = () => {
                     special='block dark:hidden'
                 />
                 <Image
-                    src='/Gremlin.1_green.webp'
+                    src='/Gremlin_1_green.webp'
                     alt="Gremlin"
                     width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[700px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
