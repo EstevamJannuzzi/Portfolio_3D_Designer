@@ -9,26 +9,30 @@ import BoxContent from '../assets/Components/BoxContent.jsx'
 const Programacao = () => {
     const { t } = useTranslation()
 
-    // ✅ Lista de jogos reutilizável
+    // Caminho base para GitHub Pages
+    const base = "/Portfolio_3D_Designer"
+
+    // Lista de jogos reutilizável
     const games = [
         {
             id: 1,
-            src: '/tictactoe.webp',
+            src: `${base}/tictactoe.webp`,
             alt: 'Game Jogo da Velha',
             text: t('programming.text'),
-            link: '/Programs/TicTacToe_v2.exe',
+            link: `${base}/Programs/TicTacToe_v2.exe`,
         },
         {
             id: 2,
-            src: '/Apostas.webp',
+            src: `${base}/Apostas.webp`,
             alt: 'Game Aposta',
             text: t('programming.text_A'),
-            link: '/Programs/Apostas_V3.exe',
+            link: `${base}/Programs/Apostas_V3.exe`,
         },
     ]
 
     return (
         <DefaultScreen className='z-30'>
+
             {/* Botão de voltar no topo */}
             <div className="mb-8 flex justify-center relative z-20">
                 <BackButton to="/portfolio" />
@@ -56,6 +60,7 @@ const Programacao = () => {
                                 width='w-[160px] sm:w-[280px] lg:w-[340px] xl:w-[420px]'
                                 margin='mb-4'
                             />
+
                             <BoxContent
                                 text={game.text}
                                 link={game.link}
@@ -71,6 +76,7 @@ const Programacao = () => {
             <div className="mt-8 flex justify-center relative z-20">
                 <BackButton to="/portfolio" />
             </div>
+
         </DefaultScreen>
     )
 }

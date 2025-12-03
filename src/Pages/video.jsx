@@ -5,10 +5,13 @@ import { useTranslation } from 'react-i18next'
 import BackButton from '../assets/Components/BackButton.jsx'
 import Iframe from '../assets/Components/Iframe.jsx'
 
+// Caminho base para GitHub Pages
+const base = "/Portfolio_3D_Designer"
+
 const Video = () => {
   const { t } = useTranslation()
 
-  // ✅ Simplificação: todos os vídeos em um array
+  // Lista de vídeos com caminho base aplicado apenas se fosse arquivo local
   const videos = [
     { src: "https://www.youtube.com/embed/QmksXw9t8B0", title: "Demoreel" },
     { src: "https://www.youtube.com/embed/AJsSvmtwu8g", title: "Robo Ding-Bo" },
@@ -28,7 +31,7 @@ const Video = () => {
     <DefaultScreen className="z-30 relative">
       {/* Botão superior */}
       <div className="mb-8 flex justify-center relative z-20">
-        <BackButton to="/portfolio" />
+        <BackButton to={`${base}/portfolio`} />
       </div>
 
       {/* Título */}
@@ -50,7 +53,7 @@ const Video = () => {
 
       {/* Botão inferior */}
       <div className="mt-8 flex justify-center relative z-20">
-        <BackButton to="/portfolio" />
+        <BackButton to={`${base}/portfolio`} />
       </div>
     </DefaultScreen>
   )

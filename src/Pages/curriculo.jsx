@@ -8,38 +8,51 @@ import { useTranslation } from 'react-i18next'
 const Curriculo = () => {
   const { t } = useTranslation()
 
+  // Caminho base para GitHub Pages
+  const base = "/Portfolio_3D_Designer"
+
   return (
     <DefaultScreen className='z-30'>
       <div className='flex flex-col items-center justify-center gap-2 text-center'>
+
         <Title
           text={t("resume.title")}
           size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
         />
+
+        {/* Frog Claro */}
         <Image
-          src='/Frog.webp'
+          src={`${base}/Frog.webp`}
           alt="Frog"
           width='w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px]'
           margin='mt-6 mb-6'
           special='block dark:hidden'
         />
+
+        {/* Frog Dark */}
         <Image
-          src='/Frog_green.webp'
-          alt="Frog"
+          src={`${base}/Frog_green.webp`}
+          alt="Frog Green"
           width='w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px]'
           margin='mt-6 mb-6'
           special='hidden dark:block'
         />
+
+        {/* Foto do Usuário */}
         <Image
-          src='/User.webp'
+          src={`${base}/User.webp`}
           alt="Estevam Jannuzzi"
           width='w-40 h-40 sm:w-60 sm:h-60 lg:w-70 lg:h-70 xl:w-90 xl:h-90'
           margin='mb-8'
           special='rounded-full outline-4 outline-offset-8 outline-solid outline-orange dark:outline-green'
         />
+
+        {/* Seções de conteúdo */}
         <BoxtextResume
           title={t("resume.professionalSummaryTitle")}
           description={t("resume.professionalSummary")}
         />
+
         <BoxtextResume
           title={t("resume.educationTitle")}
           description={
@@ -49,6 +62,7 @@ const Curriculo = () => {
             </>
           }
         />
+
         <BoxtextResume
           title={t("resume.languagesTitle")}
           description={
@@ -58,6 +72,7 @@ const Curriculo = () => {
             </>
           }
         />
+
         <BoxtextResume
           title={t("resume.experienceTitle")}
           description={
@@ -86,6 +101,7 @@ const Curriculo = () => {
             </>
           }
         />
+
         <BoxtextResume
           title={t("resume.coursesTitle")}
           description={
@@ -96,14 +112,12 @@ const Curriculo = () => {
             </>
           }
         />
+
         <BoxtextResume
           title={t("resume.participationTitle")}
-          description={
-            <>
-              <p>{t("resume.participation1")}</p>
-            </>
-          }
+          description={<p>{t("resume.participation1")}</p>}
         />
+
       </div>
     </DefaultScreen>
   )

@@ -9,8 +9,12 @@ import BoxContent from '../assets/Components/BoxContent.jsx'
 const Canais = () => {
     const { t } = useTranslation()
 
+    // Caminho base obrigatório no GitHub Pages
+    const base = "/Portfolio_3D_Designer"
+
     return (
         <DefaultScreen className='z-30'>
+            
             {/* Botão de voltar no topo */}
             <div className="mb-8 flex justify-center relative z-20">
                 <BackButton to="/portfolio" />
@@ -27,11 +31,12 @@ const Canais = () => {
             {/* Conteúdo principal */}
             <div className='flex flex-col justify-center items-center mt-6'>
                 <Image
-                    src='/canalSilvia.webp'
+                    src={`${base}/canalSilvia.webp`}
                     alt='Canal SilviaEikoArtesanato'
                     width='w-[340px] sm:w-[580px] lg:w-[680px] xl:w-[780px]'
                     margin='mb-4'
                 />
+
                 <BoxContent
                     text={t("channel.text")}
                     link='https://www.youtube.com/@SilviaEikoArtesanato'
@@ -43,6 +48,7 @@ const Canais = () => {
             <div className="mt-8 flex justify-center relative z-20">
                 <BackButton to="/portfolio" />
             </div>
+
         </DefaultScreen>
     )
 }
