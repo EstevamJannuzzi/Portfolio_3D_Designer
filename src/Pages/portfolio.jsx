@@ -17,11 +17,11 @@ const Portfolio = () => {
 
   // Dados dos BoxContent
   const boxes = [
-    { icon: <LiaFileVideoSolid size={70} />, text: t("portfolio.video"), link: "/video" },
-    { icon: <FaRegImage size={70} />, text: t("portfolio.image"), link: "/imagens" },
-    { icon: <CgWebsite size={70} />, text: t("portfolio.site"), link: "/websites" },
-    { icon: <FiYoutube size={70} />, text: t("portfolio.channel"), link: "/canais" },
-    { icon: <CgSoftwareDownload size={70} />, text: t("portfolio.programming"), link: "/programacao" },
+    { icon: <LiaFileVideoSolid size={70} />, text: t("portfolio.video"), link: "/#/video" },
+    { icon: <FaRegImage size={70} />, text: t("portfolio.image"), link: "/#/imagens" },
+    { icon: <CgWebsite size={70} />, text: t("portfolio.site"), link: "/#/websites" },
+    { icon: <FiYoutube size={70} />, text: t("portfolio.channel"), link: "/#/canais" },
+    { icon: <CgSoftwareDownload size={70} />, text: t("portfolio.programming"), link: "/#/programacao" },
   ]
 
   return (
