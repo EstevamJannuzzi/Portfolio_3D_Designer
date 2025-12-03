@@ -12,16 +12,13 @@ import { useTranslation } from 'react-i18next'
 const Portfolio = () => {
   const { t } = useTranslation()
 
-  // Caminho base para GitHub Pages
-  const base = "/Portfolio_3D_Designer"
-
-  // Dados dos BoxContent
+  // ✅ Simplificação: definindo os dados dos BoxContent em um array
   const boxes = [
-    { icon: <LiaFileVideoSolid size={70} />, text: t("portfolio.video"), link: "/#/video" },
-    { icon: <FaRegImage size={70} />, text: t("portfolio.image"), link: "/#/imagens" },
-    { icon: <CgWebsite size={70} />, text: t("portfolio.site"), link: "/#/websites" },
-    { icon: <FiYoutube size={70} />, text: t("portfolio.channel"), link: "/#/canais" },
-    { icon: <CgSoftwareDownload size={70} />, text: t("portfolio.programming"), link: "/#/programacao" },
+    { icon: <LiaFileVideoSolid size={70} />, text: t("portfolio.video"), link: "#/video" },
+    { icon: <FaRegImage size={70} />, text: t("portfolio.image"), link: "#/imagens" },
+    { icon: <CgWebsite size={70} />, text: t("portfolio.site"), link: "#/websites" },
+    { icon: <FiYoutube size={70} />, text: t("portfolio.channel"), link: "#/canais" },
+    { icon: <CgSoftwareDownload size={70} />, text: t("portfolio.programming"), link: "#/programacao" },
   ]
 
   return (
@@ -49,13 +46,13 @@ const Portfolio = () => {
 
       <div className="flex flex-inline items-center justify-center gap-4 mt-6 mb-6">
         <Image
-          src={`${base}/BBB_8.webp`}
+          src='/BBB_8.webp'
           alt="Contatos Ding"
           width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[700px]"
           special='block dark:hidden'
         />
         <Image
-          src={`${base}/BBB_8_green.webp`}
+          src='/BBB_8_green.webp'
           alt="Contatos Ding"
           width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[700px]"
           special='hidden dark:block'
