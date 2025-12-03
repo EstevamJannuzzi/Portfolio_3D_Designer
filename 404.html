@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <title>Redirecionando...</title>
     <script>
-      // Pega o caminho real acessado, ex: /imagens, /video
+      // Caminho acessado: ex. /video, /imagens
       var path = window.location.pathname;
 
-      // Redireciona para HashRouter
-      if (path && path !== "/") {
-        window.location.replace("/#/".concat(path.replace("/", "")));
+      // Nome do repositório no GitHub Pages
+      var repo = "/estevamjannuzzi.github.io";
+
+      // Remove o prefixo do repositório
+      var cleanPath = path.replace(repo, "");
+
+      // Se acessou /video → redireciona para /#/video
+      if (cleanPath && cleanPath !== "/") {
+        window.location.replace(repo + "/#/" + cleanPath.replace("/", ""));
       } else {
-        window.location.replace("/#/"); 
+        window.location.replace(repo + "/#/");
       }
     </script>
   </head>
