@@ -124,7 +124,7 @@ const Portfolio = () => {
 
       {/* Vídeos */}
       <div className="relative flex justify-center items-center mt-8 mb-10">
-        <div className="grid grid-cols-1 gap-8 xl:grid-cols-3 xl:gap-x-16">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 xl:gap-x-16">
           {videos.map((video, index) => (
             <Iframe key={index} src={video.src} title={video.title} />
           ))}
@@ -142,7 +142,7 @@ const Portfolio = () => {
       </div>
       {/* Grid de imagens */}
       <div className="relative flex justify-center items-center mt-8 mb-10">
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {images.map((src, i) => (
             <button
               key={i}
@@ -151,7 +151,6 @@ const Portfolio = () => {
             >
               <Image
                 src={src}
-                width="w-[100px] sm:w-[180px] lg:w-[300px] xl:w-[600px]"
               />
             </button>
           ))}
