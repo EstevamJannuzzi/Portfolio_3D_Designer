@@ -191,7 +191,7 @@ const Portfolio = () => {
           {/* Fechar */}
           <button
             onClick={e => { e.stopPropagation(); setSelectedIndex(null) }}
-            className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-gray-300"
+            className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-gray-300 cursor-pointer"
           >
             ✕
           </button>
