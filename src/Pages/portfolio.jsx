@@ -5,14 +5,18 @@ import { useTranslation } from 'react-i18next'
 import Iframe from '../assets/Components/Iframe.jsx'
 import Image from '../assets/Components/Image.jsx'
 import BoxContent from '../assets/Components/BoxContent.jsx'
+import { MdNavigateNext, MdNavigateBefore } from "react-icons/md"
+
 
 const base = "/Portfolio_3D_Designer"
 
 const Portfolio = () => {
   const { t } = useTranslation()
-  const [selectedImage, setSelectedImage] = useState(null)
 
-  // Lista de vídeos — YouTube não usa base
+  // ✔️ Correto: índice da imagem selecionada
+  const [selectedIndex, setSelectedIndex] = useState(null)
+
+  // Lista de vídeos
   const videos = [
     { src: "https://www.youtube.com/embed/QmksXw9t8B0", title: "Demoreel" },
     { src: "https://www.youtube.com/embed/AJsSvmtwu8g", title: "Robo Ding-Bo" },
@@ -28,12 +32,13 @@ const Portfolio = () => {
     { src: "https://www.youtube.com/embed/lqbd8t6QA9M", title: "AIRPLANE CLOSER" }
   ]
 
-  // 🔒 Bloqueia scroll da página quando o modal está aberto
+  // Bloqueia scroll quando modal está aberto
   useEffect(() => {
-    document.body.style.overflow = selectedImage ? 'hidden' : 'auto'
+    document.body.style.overflow = selectedIndex !== null ? 'hidden' : 'auto'
     return () => { document.body.style.overflow = 'auto' }
-  }, [selectedImage])
+  }, [selectedIndex])
 
+  // Lista de imagens
   const images = [
     `${base}/imagespage/Atari2600_01.webp`,
     `${base}/imagespage/Atari2600_02.webp`,
@@ -82,7 +87,18 @@ const Portfolio = () => {
     `${base}/imagespage/Shark03.webp`
   ]
 
-  // Lista de jogos reutilizável
+  // Botões de navegação
+  const nextImage = (e) => {
+    e.stopPropagation()
+    setSelectedIndex((prev) => (prev + 1) % images.length)
+  }
+
+  const prevImage = (e) => {
+    e.stopPropagation()
+    setSelectedIndex((prev) => (prev - 1 + images.length) % images.length)
+  }
+
+  // Jogos
   const games = [
     {
       id: 1,
@@ -100,29 +116,22 @@ const Portfolio = () => {
     },
   ]
 
-
   return (
     <DefaultScreen className='z-30'>
 
+      {/* Título principal */}
       <div className='flex flex-col items-center justify-center gap-2 text-center mb-8'>
         <Title
           text={t("portfolio.title")}
           size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
         />
-
       </div>
 
-
       {/* Vídeos */}
-      {/* Título */}
       <div className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title
-          text={t("video.title")}
-          size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
-        />
+        <Title text={t("video.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]" />
       </div>
 
-      {/* Vídeos */}
       <div className="relative flex justify-center items-center mt-8 mb-10">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 xl:gap-x-16">
           {videos.map((video, index) => (
@@ -131,44 +140,57 @@ const Portfolio = () => {
         </div>
       </div>
 
-
       {/* Imagens */}
-      {/* Título */}
       <div className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title
-          text={t("image.title")}
-          size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
-        />
+        <Title text={t("image.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]" />
       </div>
-      {/* Grid de imagens */}
+
       <div className="relative flex justify-center items-center mt-8 mb-10">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {images.map((src, i) => (
             <button
               key={i}
-              onClick={() => setSelectedImage(src)}
+              onClick={() => setSelectedIndex(i)}
               className="transition-transform hover:scale-105 cursor-pointer"
             >
-              <Image
-                src={src}
-              />
+              <Image src={src} />
             </button>
           ))}
         </div>
       </div>
-      {/* Modal da imagem ampliada */}
-      {selectedImage && (
+
+      {/* Modal */}
+      {selectedIndex !== null && (
         <div
           className="fixed inset-0 bg-black/80 flex justify-center items-center z-[9999] cursor-zoom-out"
-          onClick={() => setSelectedImage(null)}
+          onClick={() => setSelectedIndex(null)}
         >
+          {/* Anterior */}
+          <button
+            onClick={prevImage}
+            className="absolute left-6 text-white px-1 py-1 bg-black/40 rounded-full hover:bg-black/60 cursor-pointer"
+          >
+            <MdNavigateBefore size={50} />
+          </button>
+
+          {/* Imagem */}
           <img
-            src={selectedImage}
+            src={images[selectedIndex]}
             alt="Imagem ampliada"
             className="max-h-[90vh] max-w-[90vw] object-contain rounded-2xl shadow-2xl"
           />
+
+          {/* Próximo */}
           <button
-            onClick={e => { e.stopPropagation(); setSelectedImage(null) }}
+            onClick={nextImage}
+            className="absolute right-6 text-white px-1 py-1 bg-black/40 rounded-full hover:bg-black/60 cursor-pointer"
+          >
+            <MdNavigateNext size={50} />
+          </button>
+
+          {/* Fechar */}
+          <button
+            onClick={e => { e.stopPropagation(); setSelectedIndex(null) }}
             className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-gray-300"
           >
             ✕
@@ -176,16 +198,11 @@ const Portfolio = () => {
         </div>
       )}
 
-
       {/* Websites */}
-      {/* Título */}
       <div className='flex flex-col items-center justify-center gap-2 text-center'>
-        <Title
-          text={t("site.title")}
-          size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
-        />
+        <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]" />
       </div>
-      {/* Conteúdo principal */}
+
       <div className='flex flex-col justify-center items-center mt-6 mb-10'>
         <Image
           src={`${base}/siteMentalPlus.webp`}
@@ -200,16 +217,11 @@ const Portfolio = () => {
         />
       </div>
 
-
       {/* Canais */}
-      {/* Título */}
       <div className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title
-          text={t("channel.title")}
-          size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
-        />
+        <Title text={t("channel.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]" />
       </div>
-      {/* Conteúdo principal */}
+
       <div className="flex flex-col justify-center items-center mt-6 mb-10">
         <Image
           src={`${base}/canalSilvia.webp`}
@@ -224,23 +236,15 @@ const Portfolio = () => {
         />
       </div>
 
-
       {/* Programação */}
-      {/* Título */}
       <div className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title
-          text={t("programming.title")}
-          size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
-        />
+        <Title text={t("programming.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]" />
       </div>
-      {/* Conteúdo principal */}
+
       <div className="relative flex justify-center items-center mt-8 mb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           {games.map((game) => (
-            <div
-              key={game.id}
-              className="flex flex-col justify-center items-center"
-            >
+            <div key={game.id} className="flex flex-col justify-center items-center">
               <Image
                 src={game.src}
                 alt={game.alt}
