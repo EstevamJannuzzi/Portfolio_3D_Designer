@@ -5,10 +5,7 @@ const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
-    // Não mostrar no mobile portrait
-    const isMobilePortrait = window.innerWidth <= 640 && window.innerHeight > window.innerWidth;
-    
-    if (!isMobilePortrait && window.scrollY > 300) {
+    if (window.scrollY > 300) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -24,10 +21,8 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisibility);
-    window.addEventListener('resize', toggleVisibility); // para quando mudar orientação
     return () => {
       window.removeEventListener('scroll', toggleVisibility);
-      window.removeEventListener('resize', toggleVisibility);
     };
   }, []);
 
