@@ -26,7 +26,7 @@ const BoxContent = ({
                 ) : (
                     icon && <span>{icon}</span>
                 )}
-                <span className="font-text text-[14px] sm:text-[22px] lg:text-[28px] xl:text-[32px]">
+                <span className="font-text text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[18px]">
                     {text}
                 </span>
             </div>

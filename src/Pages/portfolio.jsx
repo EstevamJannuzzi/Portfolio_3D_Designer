@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { HashLink } from 'react-router-hash-link'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Title from '../assets/Components/Title.jsx'
 import { useTranslation } from 'react-i18next'
@@ -120,16 +121,33 @@ const Portfolio = () => {
     <DefaultScreen className='z-30'>
 
       {/* Título principal */}
-      <div className='flex flex-col items-center justify-center gap-2 text-center mb-8'>
+      <div className='flex flex-col items-center justify-center gap-2 text-center mb-10'>
         <Title
           text={t("portfolio.title")}
           size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
         />
+        <div className='grid grid-cols-3 sm:grid-cols-5 gap-3 mt-4 z-10'>
+          <HashLink smooth to="/portfolio#videos">
+            <BoxContent text={t("video.title")} width='w-[80px] sm:w-[100px] lg:w-[120px] xl:w-[130px]' />
+          </HashLink>
+          <HashLink smooth to="/portfolio#images">
+            <BoxContent text={t("image.title")} width='w-[80px] sm:w-[100px] lg:w-[120px] xl:w-[130px]' />
+          </HashLink>
+          <HashLink smooth to="/portfolio#sites">
+            <BoxContent text={t("site.title")} width='w-[80px] sm:w-[100px] lg:w-[120px] xl:w-[130px]' />
+          </HashLink>
+          <HashLink smooth to="/portfolio#channels">
+            <BoxContent text={t("channel.title")} width='w-[80px] sm:w-[100px] lg:w-[120px] xl:w-[130px]'/>
+          </HashLink>
+          <HashLink smooth to="/portfolio#programming">
+            <BoxContent text={t("programming.title")} width='w-[80px] sm:w-[100px] lg:w-[120px] xl:w-[130px]' />
+          </HashLink>
+        </div>
       </div>
 
       {/* Vídeos */}
-      <div className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title text={t("video.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]" />
+      <div id="videos" className="flex flex-col items-center justify-center gap-2 text-center -mt-34">
+        <Title text={t("video.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
       </div>
 
       <div className="relative flex justify-center items-center mt-8 mb-10">
@@ -141,8 +159,8 @@ const Portfolio = () => {
       </div>
 
       {/* Imagens */}
-      <div className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title text={t("image.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]" />
+      <div id='images' className="flex flex-col items-center justify-center gap-2 text-center">
+        <Title text={t("image.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
       </div>
 
       <div className="relative flex justify-center items-center mt-8 mb-10">
@@ -199,8 +217,8 @@ const Portfolio = () => {
       )}
 
       {/* Websites */}
-      <div className='flex flex-col items-center justify-center gap-2 text-center'>
-        <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]" />
+      <div id='sites' className='flex flex-col items-center justify-center gap-2 text-center'>
+        <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
       </div>
 
       <div className='flex flex-col justify-center items-center mt-6 mb-10'>
@@ -218,8 +236,8 @@ const Portfolio = () => {
       </div>
 
       {/* Canais */}
-      <div className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title text={t("channel.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]" />
+      <div id='channels' className="flex flex-col items-center justify-center gap-2 text-center">
+        <Title text={t("channel.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
       </div>
 
       <div className="flex flex-col justify-center items-center mt-6 mb-10">
@@ -237,8 +255,8 @@ const Portfolio = () => {
       </div>
 
       {/* Programação */}
-      <div className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title text={t("programming.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]" />
+      <div id='programming' className="flex flex-col items-center justify-center gap-2 text-center">
+        <Title text={t("programming.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
       </div>
 
       <div className="relative flex justify-center items-center mt-8 mb-8">
