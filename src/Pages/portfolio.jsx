@@ -217,26 +217,26 @@ const Portfolio = () => {
       )}
 
       {/* Websites */}
-      <div id='sites' className='flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30'>
-        <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
+      <div id='sites' className='flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30 z-70'>
+        <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40 z-20" />
       </div>
 
       <div className='flex flex-col justify-center items-center mt-6 mb-10'>
         <Image
           src={`${base}/siteMentalPlus.webp`}
           alt='Site MentalPlus'
-          width='w-[340px] sm:w-[580px] lg:w-[680px] xl:w-[780px]'
+          width='w-[320px] sm:w-[240px] lg:w-[300px] xl:w-[380px]'
           margin='mb-4'
         />
         <BoxContent
           text={t("site.text")}
           link='https://www.mentalplus.app/'
-          width='w-[220px] sm:w-[340px] lg:w-[420px] xl:w-[450px]'
+          width='w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]'
         />
       </div>
 
       {/* Canais */}
-      <div id='channels' className="flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30">
+      <div id='channels' className="flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30 z-60">
         <Title text={t("channel.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
       </div>
 
@@ -244,13 +244,13 @@ const Portfolio = () => {
         <Image
           src={`${base}/canalSilvia.webp`}
           alt="Canal Silvia Eiko Artesanato"
-          width="w-[340px] sm:w-[580px] lg:w-[680px] xl:w-[780px]"
+          width="w-[320px] sm:w-[240px] lg:w-[300px] xl:w-[380px]"
           margin="mb-4"
         />
         <BoxContent
           text={t("channel.text")}
           link="https://www.youtube.com/@SilviaEikoArtesanato"
-          width="w-[220px] sm:w-[340px] lg:w-[420px] xl:w-[550px]"
+          width="w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]"
         />
       </div>
 
@@ -266,14 +266,14 @@ const Portfolio = () => {
               <Image
                 src={game.src}
                 alt={game.alt}
-                width="w-[160px] sm:w-[260px] lg:w-[320px] xl:w-[380px]"
+                width="w-[160px] sm:w-[140px] lg:w-[180px] xl:w-[240px]"
                 margin="mb-4"
               />
               <BoxContent
                 text={game.text}
                 link={game.link}
                 download={true}
-                width="w-[160px] sm:w-[260px] lg:w-[300px] xl:w-[350px]"
+                width="w-[160px] sm:w-[140px] lg:w-[170px] xl:w-[240px]"
               />
             </div>
           ))}
