@@ -217,7 +217,6 @@ const Portfolio = () => {
       )}
 
 
-
       {/* Websites */}
       <div id='sites' className='flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30'>
         <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40 z-20" />
@@ -256,8 +255,6 @@ const Portfolio = () => {
           width="w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]"
         />
       </div>
-
-
 
 
       {/* Programação */}
