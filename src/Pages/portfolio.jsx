@@ -147,7 +147,7 @@ const Portfolio = () => {
 
       {/* Vídeos */}
       <div id="videos" className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title text={t("video.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
+        <Title text={t("video.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40" />
       </div>
 
       <div className="relative flex justify-center items-center mt-8 mb-10">
@@ -160,7 +160,7 @@ const Portfolio = () => {
 
       {/* Imagens */}
       <div id='images' className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title text={t("image.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
+        <Title text={t("image.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40" />
       </div>
 
       <div className="relative flex justify-center items-center mt-8 mb-10">
@@ -219,7 +219,7 @@ const Portfolio = () => {
 
       {/* Websites */}
       <div id='sites' className='flex flex-col items-center justify-center gap-2 text-cente'>
-        <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
+        <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40" />
       </div>
 
       <div className='flex flex-col justify-center items-center mt-6 mb-10'>
@@ -239,7 +239,7 @@ const Portfolio = () => {
 
       {/* Canais */}
       <div id='channels' className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title text={t("channel.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
+        <Title text={t("channel.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40" />
       </div>
 
       <div className="flex flex-col justify-center items-center mt-6 mb-10">
@@ -259,7 +259,7 @@ const Portfolio = () => {
 
       {/* Programação */}
       <div id='programming' className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title text={t("programming.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
+        <Title text={t("programming.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40" />
       </div>
 
       <div className="relative flex justify-center items-center mt-8 mb-8">
