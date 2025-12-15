@@ -217,7 +217,7 @@ const Portfolio = () => {
       )}
 
       {/* Websites */}
-      <div id='sites' className='flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30 z-70'>
+      <div id='sites' className='flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30'>
         <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40 z-20" />
       </div>
 
@@ -236,7 +236,7 @@ const Portfolio = () => {
       </div>
 
       {/* Canais */}
-      <div id='channels' className="flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30 z-60">
+      <div id='channels' className="flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30">
         <Title text={t("channel.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
       </div>
 
