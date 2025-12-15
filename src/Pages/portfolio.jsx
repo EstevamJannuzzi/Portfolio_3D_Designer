@@ -216,49 +216,49 @@ const Portfolio = () => {
         </div>
       )}
 
-      <div className='relative flex flex-col sm:flex-row justify-center items-center gap-x-10 z-30'>
-        <div className='relative flex flex-col z-20'>
-          {/* Websites */}
-          <div id='sites' className='flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30'>
-            <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40 z-20" />
-          </div>
 
-          <div className='flex flex-col justify-center items-center mt-6 mb-10'>
-            <Image
-              src={`${base}/siteMentalPlus.webp`}
-              alt='Site MentalPlus'
-              width='w-[320px] sm:w-[240px] lg:w-[300px] xl:w-[380px]'
-              margin='mb-4'
-            />
-            <BoxContent
-              text={t("site.text")}
-              link='https://www.mentalplus.app/'
-              width='w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]'
-            />
-          </div>
-        </div>
-        <div className='flex flex-col'>
-          {/* Canais */}
-          <div id='channels' className="flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30">
-            <Title text={t("channel.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
-          </div>
 
-          <div className="flex flex-col justify-center items-center mt-6 mb-10">
-            <Image
-              src={`${base}/canalSilvia.webp`}
-              alt="Canal Silvia Eiko Artesanato"
-              width="w-[320px] sm:w-[240px] lg:w-[300px] xl:w-[380px]"
-              margin="mb-4"
-            />
-            <BoxContent
-              text={t("channel.text")}
-              link="https://www.youtube.com/@SilviaEikoArtesanato"
-              width="w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]"
-            />
-          </div>
-        </div>
-
+      {/* Websites */}
+      <div id='sites' className='flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30'>
+        <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40 z-20" />
       </div>
+
+      <div className='flex flex-col justify-center items-center mt-6 mb-10'>
+        <Image
+          src={`${base}/siteMentalPlus.webp`}
+          alt='Site MentalPlus'
+          width='w-[320px] sm:w-[240px] lg:w-[300px] xl:w-[380px]'
+          margin='mb-4'
+        />
+        <BoxContent
+          text={t("site.text")}
+          link='https://www.mentalplus.app/'
+          width='w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]'
+        />
+      </div>
+
+
+      {/* Canais */}
+      <div id='channels' className="flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30">
+        <Title text={t("channel.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-40" />
+      </div>
+
+      <div className="flex flex-col justify-center items-center mt-6 mb-10">
+        <Image
+          src={`${base}/canalSilvia.webp`}
+          alt="Canal Silvia Eiko Artesanato"
+          width="w-[320px] sm:w-[240px] lg:w-[300px] xl:w-[380px]"
+          margin="mb-4"
+        />
+        <BoxContent
+          text={t("channel.text")}
+          link="https://www.youtube.com/@SilviaEikoArtesanato"
+          width="w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]"
+        />
+      </div>
+
+
+
 
       {/* Programação */}
       <div id='programming' className="flex flex-col items-center justify-center gap-2 text-center -mt-38 sm:-mt-26 lg:-mt-30 xl:-mt-30">
