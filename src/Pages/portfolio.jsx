@@ -10,6 +10,9 @@ import { MdNavigateNext, MdNavigateBefore } from "react-icons/md"
 import videos from '../assets/Data/videos.js'
 import images from '../assets/Data/imagens.js'
 import programacaos from '../assets/Data/programacaos.js'
+import websites from '../assets/Data/websites.js'
+import canais from '../assets/Data/canais.js'
+
 
 const base = "/Portfolio_3D_Designer"
 
@@ -137,43 +140,70 @@ const Portfolio = () => {
 
 
       {/* Websites */}
-      <div id='sites' className='flex flex-col items-center justify-center gap-2 text-cente'>
-        <Title text={t("site.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40" />
+      <div id='sites' className='flex flex-col items-center justify-center gap-2 text-center'>
+        <Title
+          text={t("site.title")}
+          size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40"
+        />
       </div>
 
-      <div className='flex flex-col justify-center items-center mt-6 mb-10'>
-        <Image
-          src={`${base}/siteMentalPlus.webp`}
-          alt='Site MentalPlus'
-          width='w-[320px] sm:w-[240px] lg:w-[300px] xl:w-[380px]'
-          margin='mb-4'
-        />
-        <BoxContent
-          text={t("site.text")}
-          link='https://www.mentalplus.app/'
-          width='w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]'
-        />
+      <div className='relative flex justify-center items-center mt-6 mb-10'>
+
+        {websites.map((site) => (
+          <div
+            key={site.id}
+            className='flex flex-col justify-center items-center'
+          >
+            <Image
+              src={site.src}
+              alt={site.alt}
+              width='w-[320px] sm:w-[240px] lg:w-[300px] xl:w-[380px]'
+              margin='mb-4'
+            />
+
+            <BoxContent
+              text={t(site.textKey)}
+              link={site.link}
+              width='w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]'
+            />
+          </div>
+        ))}
+
       </div>
 
 
       {/* Canais */}
       <div id='channels' className="flex flex-col items-center justify-center gap-2 text-center">
-        <Title text={t("channel.title")} size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40" />
+        <Title
+          text={t("channel.title")}
+          size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40"
+        />
       </div>
 
-      <div className="flex flex-col justify-center items-center mt-6 mb-10">
-        <Image
-          src={`${base}/canalSilvia.webp`}
-          alt="Canal Silvia Eiko Artesanato"
-          width="w-[320px] sm:w-[240px] lg:w-[300px] xl:w-[380px]"
-          margin="mb-4"
-        />
-        <BoxContent
-          text={t("channel.text")}
-          link="https://www.youtube.com/@SilviaEikoArtesanato"
-          width="w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]"
-        />
+      <div className="relative flex justify-center items-center mt-6 mb-10">
+
+        {canais.map((canal) => (
+          <div
+            key={canal.id}
+            className="flex flex-col justify-center items-center"
+          >
+            <Image
+              src={canal.src}
+              alt={canal.alt}
+              width="w-[320px] sm:w-[240px] lg:w-[300px] xl:w-[380px]"
+              margin="mb-4"
+            />
+
+            <BoxContent
+              text={t(canal.textKey)}
+              link={canal.link}
+              width="w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]"
+            />
+          </div>
+        ))}
+
       </div>
+
 
 
       {/* Programação */}
