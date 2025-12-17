@@ -45,7 +45,8 @@ const images = [
   `${base}/imagespage/refriRender_Other.webp`,
   `${base}/imagespage/renderFinalRefri.webp`,
   `${base}/imagespage/Shark02.webp`,
-  `${base}/imagespage/Shark03.webp`
+  `${base}/imagespage/Shark03.webp`,
+  `${base}/imagespage/lamp_3.webp`,
 ]
 
 export default images
