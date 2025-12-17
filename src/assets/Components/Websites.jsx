@@ -10,7 +10,6 @@ const Websites = () => {
 
   return (
     <>
-      {/* Websites */}
       <div
         id="sites"
         className="flex flex-col items-center justify-center gap-2 text-center"

@@ -10,7 +10,6 @@ const Canais = () => {
 
   return (
     <>
-      {/* Canais */}
       <div
         id="channels"
         className="flex flex-col items-center justify-center gap-2 text-center"

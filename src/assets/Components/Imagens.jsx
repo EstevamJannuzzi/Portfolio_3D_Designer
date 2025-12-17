@@ -9,7 +9,6 @@ const Imagens = () => {
   const { t } = useTranslation()
   const [selectedIndex, setSelectedIndex] = useState(null)
 
-  // Bloqueia scroll quando modal está aberto
   useEffect(() => {
     document.body.style.overflow = selectedIndex !== null ? 'hidden' : 'auto'
     return () => { document.body.style.overflow = 'auto' }
@@ -27,7 +26,6 @@ const Imagens = () => {
 
   return (
     <>
-      {/* Imagens */}
       <div
         id='images'
         className="flex flex-col items-center justify-center gap-2 text-center"

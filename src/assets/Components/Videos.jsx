@@ -9,7 +9,6 @@ const Videos = () => {
 
   return (
     <>
-      {/* Vídeos */}
       <div
         id="videos"
         className="flex flex-col items-center justify-center gap-2 text-center"
