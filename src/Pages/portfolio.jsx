@@ -16,13 +16,14 @@ const Portfolio = () => {
 
   return (
     <DefaultScreen className='z-30'>
-
-      {/* Título principal */}
+      
       <div className='flex flex-col items-center justify-center gap-2 text-center mb-10'>
+
         <Title
           text={t("portfolio.title")}
           size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
         />
+
         <div className='grid grid-cols-3 sm:grid-cols-5 gap-3 mt-4 z-10'>
           <HashLink smooth to="/portfolio#videos">
             <BoxContent text={t("video.title")} width='w-[80px] sm:w-[100px] lg:w-[120px] xl:w-[130px]' />
@@ -40,6 +41,7 @@ const Portfolio = () => {
             <BoxContent text={t("programming.title")} width='w-[80px] sm:w-[100px] lg:w-[120px] xl:w-[130px]' />
           </HashLink>
         </div>
+
       </div>
 
       <Videos />
@@ -47,7 +49,6 @@ const Portfolio = () => {
       <Websites />
       <Canais />
       <Programacao />
-
 
     </DefaultScreen>
   )
