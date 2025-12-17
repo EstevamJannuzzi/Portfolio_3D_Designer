@@ -24,7 +24,7 @@ const Curriculo = () => {
         <Image
           src={`${base}/Frog.webp`}
           alt="Frog"
-          width='w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px]'
+          width='w-[220px] sm:w-[300px] lg:w-[400px] xl:w-[520px]'
           margin='mt-6 mb-6'
           special='block dark:hidden'
         />
@@ -33,7 +33,7 @@ const Curriculo = () => {
         <Image
           src={`${base}/Frog_green.webp`}
           alt="Frog Green"
-          width='w-[260px] sm:w-[500px] lg:w-[600px] xl:w-[900px]'
+          width='w-[220px] sm:w-[300px] lg:w-[400px] xl:w-[520px]'
           margin='mt-6 mb-6'
           special='hidden dark:block'
         />
@@ -42,7 +42,7 @@ const Curriculo = () => {
         <Image
           src={`${base}/User.webp`}
           alt="Estevam Jannuzzi"
-          width='w-40 h-40 sm:w-60 sm:h-60 lg:w-70 lg:h-70 xl:w-90 xl:h-90'
+          width='w-30 h-30 sm:w-40 sm:h-40 lg:w-50 lg:h-50 xl:w-60 xl:h-60'
           margin='mb-8'
           special='rounded-full outline-4 outline-offset-8 outline-solid outline-orange dark:outline-green'
         />
