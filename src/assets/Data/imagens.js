@@ -47,6 +47,8 @@ const images = [
   `${base}/imagespage/Shark02.webp`,
   `${base}/imagespage/Shark03.webp`,
   `${base}/imagespage/lamp_3.webp`,
+  `${base}/imagespage/pumpkin.webp`,
+  `${base}/imagespage/white-darkmode.webp`
 ]
 
 export default images
