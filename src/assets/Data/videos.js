@@ -11,7 +11,9 @@ const videos = [
   { src: "https://www.youtube.com/embed/Rqfn1l8XViU", title: "Old 80 Toy" },
   { src: "https://www.youtube.com/embed/RAsFtOOBYwI", title: "Brinquedos Genius" },
   { src: "https://www.youtube.com/embed/lqbd8t6QA9M", title: "AIRPLANE CLOSER" },
-  { src: "https://www.youtube.com/embed/jJyuzuz9YC8", title: "Cubo Mágico" }
+  { src: "https://www.youtube.com/embed/jJyuzuz9YC8", title: "Cubo Mágico" },
+  { src: "https://www.youtube.com/embed/-yNDb2rvUIo", title: "Aquário" },
+  { src: "https://www.youtube.com/embed/FqltJnBIJyc", title: "Lata de Refri 3D" }
 ]
 
 export default videos
