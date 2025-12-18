@@ -5,26 +5,16 @@ import BoxContent from '../assets/Components/BoxContent.jsx'
 import Image from '../assets/Components/Image.jsx'
 import { FaWhatsapp, FaInstagram, FaArtstation } from 'react-icons/fa'
 import { HiOutlineMail } from "react-icons/hi"
-import { PiLinkedinLogo } from "react-icons/pi"
-import { FiYoutube } from "react-icons/fi"
-import { VscGithub } from "react-icons/vsc"
 import { useTranslation } from 'react-i18next'
 
 const Contatos = () => {
   const { t } = useTranslation()
 
-  // Caminho base para GitHub Pages
   const base = "/Portfolio_3D_Designer"
 
-  // Lista de contatos
   const contacts = [
     { icon: <FaWhatsapp size={70} />, text: t("contacts.whatsapp"), link: "https://wa.me/5511952029128" },
     { icon: <HiOutlineMail size={70} />, text: t("contacts.email"), link: "mailto:estevamjannuzzi@gmail.com" },
-    { icon: <FaInstagram size={70} />, text: t("contacts.instagram"), link: "https://www.instagram.com/estevam_jannuzzi/" },
-    { icon: <PiLinkedinLogo size={70} />, text: t("contacts.linkedin"), link: "https://www.linkedin.com/in/estevam-jannuzzi-217355bb/" },
-    { icon: <FiYoutube size={70} />, text: t("contacts.youtube"), link: "https://www.youtube.com/@vfx_3D_world" },
-    { icon: <FaArtstation size={70} />, text: t("contacts.artstation"), link: "https://www.artstation.com/estevamjannuzzi4" },
-    { icon: <VscGithub size={70} />, text: t("contacts.github"), link: "https://github.com/EstevamJannuzzi" },
   ]
 
   return (
@@ -47,7 +37,7 @@ const Contatos = () => {
 
       {/* Grid de contatos */}
       <div className="relative flex justify-center items-center mt-8">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 gap-4">
           {contacts.map((contact, index) => (
             <BoxContent
               key={index}
@@ -64,7 +54,7 @@ const Contatos = () => {
         <Image
           src={`${base}/ContatosDing.webp`}
           alt="Contatos Ding"
-          width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[700px]"
+          width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[480px]"
         />
       </div>
 

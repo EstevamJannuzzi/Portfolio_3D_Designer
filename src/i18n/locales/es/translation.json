@@ -88,14 +88,9 @@
     },
     "contacts": {
         "title": "Contacto",
-        "subtitle": "A continuación, mis formas de contacto y redes sociales.",
+        "subtitle": "A continuación, mis formas de contacto.",
         "whatsapp": "Whatsapp",
-        "email": "Correo electrónico",
-        "instagram": "Instagram",
-        "linkedin": "LinkedIn",
-        "youtube": "YouTube",
-        "artstation": "ArtStation",
-        "github": "GitHub"
+        "email": "Correo electrónico"
     },
     "footer": {
         "madeBy": "Creado por Estevam Jannuzzi",
