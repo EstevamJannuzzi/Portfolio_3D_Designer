@@ -38,7 +38,7 @@ const Home = () => {
                 <Image
                     src={`${base}/DingBo_1.webp`}
                     alt="DingBo"
-                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
+                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
                     distance='z-10 relative'
                     special='block dark:hidden'
@@ -46,7 +46,7 @@ const Home = () => {
                 <Image
                     src={`${base}/DingBo_1_green.webp`}
                     alt="DingBo"
-                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
+                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
                     distance='z-10 relative'
                     special='hidden dark:block'
@@ -58,7 +58,7 @@ const Home = () => {
                 <Image
                     src={`${base}/carnivor_1.webp`}
                     alt="Carnivor"
-                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
+                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
                     margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
                     distance='z-10 relative'
                     special='block dark:hidden'
@@ -66,7 +66,7 @@ const Home = () => {
                 <Image
                     src={`${base}/carnivor_1_green.webp`}
                     alt="Carnivor"
-                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[700px]'
+                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
                     margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
                     distance='z-10 relative'
                     special='hidden dark:block'
@@ -76,7 +76,7 @@ const Home = () => {
                     width="max-w-46 sm:max-w-80 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     position='right'
-                    margin="-mt-72 sm:-mt-90 lg:-mt-110 xl:-mt-150 ml-30 sm:ml-50 lg:ml-80 xl:ml-140"
+                    margin="-mt-72 sm:-mt-90 lg:-mt-110 xl:-mt-130 ml-30 sm:ml-50 lg:ml-80 xl:ml-100"
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
             </div>
@@ -93,7 +93,7 @@ const Home = () => {
                 <Image
                     src={`${base}/Gremlin_1.webp`}
                     alt="Gremlin"
-                    width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[700px]'
+                    width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[480px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
                     distance='z-10 relative'
                     special='block dark:hidden'
@@ -101,7 +101,7 @@ const Home = () => {
                 <Image
                     src={`${base}/Gremlin_1_green.webp`}
                     alt="Gremlin"
-                    width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[700px]'
+                    width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[480px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
                     distance='z-10 relative'
                     special='hidden dark:block'
@@ -113,7 +113,7 @@ const Home = () => {
                 <Image
                     src={`${base}/Joystick.webp`}
                     alt="Joystick"
-                    width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[660px]'
+                    width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[480px]'
                     margin='-ml-14 sm:-ml-30 lg:-ml-40 xl:mr-30'
                     distance='z-10 relative'
                     special='block dark:hidden'
@@ -121,7 +121,7 @@ const Home = () => {
                 <Image
                     src={`${base}/Joystick_green.webp`}
                     alt="Joystick"
-                    width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[660px]'
+                    width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[480px]'
                     margin='-ml-14 sm:-ml-30 lg:-ml-40 xl:mr-30'
                     distance='z-10 relative'
                     special='hidden dark:block'
@@ -131,7 +131,7 @@ const Home = () => {
                     width="max-w-40 sm:max-w-80 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     position='right'
-                    margin="-mt-60 sm:-mt-80 lg:-mt-106 xl:-mt-150 ml-30 sm:ml-50 lg:ml-94 xl:ml-130"
+                    margin="-mt-60 sm:-mt-80 lg:-mt-106 xl:-mt-100 ml-30 sm:ml-50 lg:ml-94 xl:ml-100"
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
             </div>
