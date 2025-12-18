@@ -3,7 +3,7 @@ import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Title from '../assets/Components/Title.jsx'
 import BoxContent from '../assets/Components/BoxContent.jsx'
 import Image from '../assets/Components/Image.jsx'
-import { FaWhatsapp, FaInstagram, FaArtstation } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 import { HiOutlineMail } from "react-icons/hi"
 import { useTranslation } from 'react-i18next'
 

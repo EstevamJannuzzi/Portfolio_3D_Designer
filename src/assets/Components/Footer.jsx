@@ -1,8 +1,9 @@
 import React from 'react'
 import { PiLinkedinLogo } from "react-icons/pi";
 import { FiYoutube } from "react-icons/fi";
-import { FaArtstation } from "react-icons/fa";
+import { FaArtstation, FaInstagram } from "react-icons/fa";
 import { VscGithub } from "react-icons/vsc";
+
 import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
@@ -25,6 +26,9 @@ const Footer = () => {
         </a>
         <a href='https://github.com/EstevamJannuzzi' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-orange dark:hover:text-green'>
           <VscGithub size={24} />
+        </a>
+        <a href='https://www.instagram.com/estevam_jannuzzi/' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-orange dark:hover:text-green'>
+          <FaInstagram size={24} />
         </a>
       </div>
     </div>
