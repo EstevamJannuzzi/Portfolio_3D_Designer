@@ -17,7 +17,7 @@ const Curriculo = () => {
 
         <Title
           text={t("resume.title")}
-          size="text-[28px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
+          size="text-[32px] sm:text-[34px] lg:text-[38px] xl:text-[60px]"
         />
 
         {/* Frog Claro */}
