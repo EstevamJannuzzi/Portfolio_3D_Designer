@@ -24,7 +24,7 @@ const Contatos = () => {
       <div className='flex flex-col items-center justify-center gap-2 text-center'>
         <Title
           text={t("contacts.title")}
-          size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
+          size="text-[28px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
         />
 
         <Title

@@ -21,7 +21,7 @@ const Portfolio = () => {
 
         <Title
           text={t("portfolio.title")}
-          size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
+          size="text-[28px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
         />
 
         <div className='grid grid-cols-3 sm:grid-cols-5 gap-3 mt-4 z-10'>

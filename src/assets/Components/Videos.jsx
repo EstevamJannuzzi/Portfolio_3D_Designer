@@ -15,7 +15,7 @@ const Videos = () => {
       >
         <Title
           text={t("video.title")}
-          size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40"
+          size="text-[26px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40"
         />
       </div>
 
