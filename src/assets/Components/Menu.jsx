@@ -7,7 +7,7 @@ import Image from "./Image";
 import DarkMode from "./darkmode";
 import { IoHomeOutline, IoDocumentAttachOutline } from "react-icons/io5";
 import { LuContact } from "react-icons/lu";
-import { PiBriefcaseLight } from "react-icons/pi";
+import { PiBriefcaseLight, PiVideoLight, PiImageLight, PiGlobeLight, PiYoutubeLogoLight, PiCodeLight } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
 import ReactCountryFlag from "react-country-flag";
 
@@ -29,7 +29,11 @@ export default function MenuBar() {
 
   const links = [
     { name: t("menu.home"), to: "/", icon: <IoHomeOutline className="mr-2" size={22} /> },
-    { name: t("menu.portfolio"), to: "/portfolio", icon: <PiBriefcaseLight className="mr-2" size={22} /> },
+    { name: t("menu.videos"), to: "/videos", icon: <PiVideoLight className="mr-2" size={22} /> },
+    { name: t("menu.imagens"), to: "/imagens", icon: <PiImageLight className="mr-2" size={22} /> },
+    { name: t("menu.websites"), to: "/websites", icon: <PiGlobeLight className="mr-2" size={22} /> },
+    { name: t("menu.canais"), to: "/canais", icon: <PiYoutubeLogoLight className="mr-2" size={22} /> },
+    { name: t("menu.programacao"), to: "/programacao", icon: <PiCodeLight className="mr-2" size={22} /> },
     { name: t("menu.curriculo"), to: "/curriculo", icon: <IoDocumentAttachOutline className="mr-2" size={22} /> },
     { name: t("menu.contatos"), to: "/contatos", icon: <LuContact className="mr-2" size={22} /> },
   ];
@@ -61,7 +65,7 @@ export default function MenuBar() {
 
   return (
     <header className="w-full flex items-center justify-between bg-dark-gray/75 dark:bg-primary/20 backdrop-blur-md sm:h-[60px] lg:h-[140px] gap-4 py-3 px-6 fixed top-0 left-0 z-50 shadow-sm">
-      
+
       {/* LOGO */}
       <div className="flex items-center gap-x-4 xl:gap-x-6 ml-0 sm:ml-90 lg:ml-6 xl:ml-0">
         <Link to="/" className="transition-transform hover:scale-110 cursor-pointer">
@@ -80,11 +84,10 @@ export default function MenuBar() {
             <Link
               key={link.to}
               to={link.to}
-              className={`flex items-center font-medium transition-all duration-300 ease-in-out cursor-pointer ${
-                location.pathname === link.to
-                  ? "text-green dark:text-orange text-[24px] scale-110"
-                  : "text-orange dark:text-green text-[20px] hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110"
-              }`}
+              className={`flex items-center font-medium transition-all duration-300 ease-in-out cursor-pointer ${location.pathname === link.to
+                ? "text-green dark:text-orange text-[24px] scale-110"
+                : "text-orange dark:text-green text-[20px] hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110"
+                }`}
             >
               {link.icon}
               {link.name}
@@ -214,11 +217,10 @@ export default function MenuBar() {
                     <Link
                       to={link.to}
                       onClick={() => setMenuOpen(false)}
-                      className={`block text-lg font-medium text-center py-4 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${
-                        location.pathname === link.to
-                          ? "text-green dark:text-orange text-[24px] scale-110"
-                          : "text-orange dark:text-green hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110 text-[20px]"
-                      }`}
+                      className={`block text-lg font-medium text-center py-4 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${location.pathname === link.to
+                        ? "text-green dark:text-orange text-[24px] scale-110"
+                        : "text-orange dark:text-green hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110 text-[20px]"
+                        }`}
                     >
                       {link.icon}
                       {link.name}

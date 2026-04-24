@@ -1,7 +1,11 @@
 {
     "menu": {
         "home": "Home",
-        "portfolio": "Portfólio",
+        "videos": "Vídeos",
+        "imagens": "Imagens",
+        "websites": "Websites",
+        "canais": "Canais",
+        "programacao": "Programação",
         "curriculo": "Currículo",
         "contatos": "Contatos"
     },
@@ -12,14 +16,6 @@
         "experience": "Sou formado em Design Gráfico desde 2011, com mais de uma década de experiência em criação visual e modelagem 3D. Tenho domínio técnico em Maya, ZBrush, Photoshop, KeyShot e Substance 3D Painter ferramentas que utilizo para transformar ideias em imagens impactantes, seja em projetos de produto, animação, visualização arquitetônica ou motion design.",
         "techSkills": "Além do design, sou entusiasta de tecnologia e programação, com foco em React JS e Python. Essa combinação me permite integrar arte e lógica, criando soluções visuais interativas e funcionais.",
         "goals": "Busco oportunidades em design 3D, tech art, visualização digital e projetos que valorizem criatividade, técnica e inovação. Vamos nos conectar?"
-    },
-    "portfolio": {
-        "title": "Portfólio",
-        "video": "Vídeos",
-        "image": "Imagens",
-        "site": "WebSites",
-        "channel": "Canais",
-        "programming": "Programação"
     },
     "buttons": {
         "back": "Voltar"

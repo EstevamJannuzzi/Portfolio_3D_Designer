@@ -1,7 +1,11 @@
 {
     "menu": {
         "home": "Home",
-        "portfolio": "Portfolio",
+        "videos": "Videos",
+        "imagens": "Images",
+        "websites": "Websites",
+        "canais": "Channels",
+        "programacao": "Programming",
         "curriculo": "Resume",
         "contatos": "Contact"
     },
@@ -12,14 +16,6 @@
         "experience": "I have a degree in Graphic Design since 2011, with over a decade of experience in visual creation and 3D modeling. I have technical proficiency in Maya, ZBrush, Photoshop, KeyShot, and Substance 3D Painter, which I use to turn ideas into impactful visuals for product design, animation, architectural visualization, or motion design projects.",
         "techSkills": "Besides design, I am passionate about technology and programming, focusing on React JS and Python. This combination allows me to integrate art and logic, creating interactive and functional visual solutions.",
         "goals": "I am seeking opportunities in 3D design, tech art, digital visualization, and projects that value creativity, technical skill, and innovation. Let's connect!"
-    },
-    "portfolio": {
-        "title": "Portfolio",
-        "video": "Videos",
-        "image": "Images",
-        "site": "Websites",
-        "channel": "Channels",
-        "programming": "Programming"
     },
     "buttons": {
         "back": "Back"
