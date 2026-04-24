@@ -20,32 +20,33 @@ const Curriculo = () => {
           size="text-[32px] sm:text-[34px] lg:text-[38px] xl:text-[60px]"
         />
 
-        {/* Frog Claro */}
-        <Image
-          src={`${base}/Frog.webp`}
-          alt="Frog"
-          width='w-[220px] sm:w-[300px] lg:w-[400px] xl:w-[520px]'
-          margin='mt-6 mb-6'
-          special='block dark:hidden'
-        />
+        <div className='flex items-center justify-center gap-4 mt-4 mb-4'>
+          {/* Frog Claro */}
+          <Image
+            src={`${base}/Frog.webp`}
+            alt="Frog"
+            width='w-24 sm:w-30 lg:w-32 xl:w-44'
+            margin='mt-6 mb-6'
+            special='block dark:hidden'
+          />
 
-        {/* Frog Dark */}
-        <Image
-          src={`${base}/Frog_green.webp`}
-          alt="Frog Green"
-          width='w-[220px] sm:w-[300px] lg:w-[400px] xl:w-[520px]'
-          margin='mt-6 mb-6'
-          special='hidden dark:block'
-        />
+          {/* Frog Dark */}
+          <Image
+            src={`${base}/Frog_green.webp`}
+            alt="Frog Green"
+            width='w-24 sm:w-30 lg:w-32 xl:w-44'
+            margin='mt-6 mb-6'
+            special='hidden dark:block'
+          />
 
-        {/* Foto do Usuário */}
-        <Image
-          src={`${base}/User.webp`}
-          alt="Estevam Jannuzzi"
-          width='w-30 h-30 sm:w-40 sm:h-40 lg:w-50 lg:h-50 xl:w-60 xl:h-60'
-          margin='mb-8'
-          special='rounded-full outline-4 outline-offset-8 outline-solid outline-orange dark:outline-green'
-        />
+          {/* Foto do Usuário */}
+          <Image
+            src={`${base}/User.webp`}
+            alt="Estevam Jannuzzi"
+            width='w-20 sm:w-28 lg:w-26 xl:w-40'
+            special='rounded-full outline-2 outline-offset-6 outline-solid outline-orange dark:outline-green'
+          />
+        </div>
 
         {/* Seções de conteúdo */}
         <BoxtextResume

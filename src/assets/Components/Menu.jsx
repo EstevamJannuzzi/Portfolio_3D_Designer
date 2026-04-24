@@ -72,21 +72,21 @@ export default function MenuBar() {
           <Image
             src={`${base}/logo3D.webp`}
             alt="Logo"
-            width="w-[44px] sm:w-[60px] lg:w-[100px] xl:w-[120px]"
+            width="w-[44px] sm:w-[60px] lg:w-[90px] xl:w-[110px]"
           />
         </Link>
       </div>
 
       {/* MENU DESKTOP */}
-      <div className="hidden lg:flex items-center space-x-8 relative">
-        <nav className="flex items-center space-x-8">
+      <div className="hidden lg:flex items-center space-x-6 relative">
+        <nav className="flex items-center space-x-6">
           {links.map((link) => (
             <Link
               key={link.to}
               to={link.to}
               className={`flex items-center font-medium transition-all duration-300 ease-in-out cursor-pointer ${location.pathname === link.to
-                ? "text-green dark:text-orange text-[24px] scale-110"
-                : "text-orange dark:text-green text-[20px] hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110"
+                ? "text-green dark:text-orange text-[18px] scale-110"
+                : "text-orange dark:text-green text-[14px] hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110"
                 }`}
             >
               {link.icon}
@@ -217,9 +217,9 @@ export default function MenuBar() {
                     <Link
                       to={link.to}
                       onClick={() => setMenuOpen(false)}
-                      className={`block text-lg font-medium text-center py-4 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${location.pathname === link.to
-                        ? "text-green dark:text-orange text-[24px] scale-110"
-                        : "text-orange dark:text-green hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110 text-[20px]"
+                      className={`block text-lg font-medium text-center py-1 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${location.pathname === link.to
+                        ? "text-green dark:text-orange text-[16px] scale-110"
+                        : "text-orange dark:text-green hover:text-green dark:hover:text-orange hover:-translate-y-1 hover:scale-110 text-[14px]"
                         }`}
                     >
                       {link.icon}
