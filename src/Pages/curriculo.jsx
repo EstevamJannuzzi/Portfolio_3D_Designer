@@ -23,7 +23,7 @@ const Curriculo = () => {
         <div className='flex items-center justify-center gap-4 mt-4 mb-4'>
           {/* Frog Claro */}
           <Image
-            src={`${base}/Frog.webp`}
+            src={`${base}/frog_light.webp`}
             alt="Frog"
             width='w-24 sm:w-30 lg:w-32 xl:w-44'
             margin='mt-6 mb-6'
@@ -32,7 +32,7 @@ const Curriculo = () => {
 
           {/* Frog Dark */}
           <Image
-            src={`${base}/Frog_green.webp`}
+            src={`${base}/frog_dark.webp`}
             alt="Frog Green"
             width='w-24 sm:w-30 lg:w-32 xl:w-44'
             margin='mt-6 mb-6'
