@@ -21,7 +21,7 @@ const Home = () => {
                 <Title
                     text={t("home.name")}
                     size="text-[26px] sm:text-[38px] lg:text-[42px] xl:text-[66px]"
-                    color="text-white"
+                    color="text-blue-iris"
                     darkcolor="dark:text-white"
                 />
             </div>

@@ -15,19 +15,19 @@ const Footer = () => {
         {new Date().getFullYear()} {t("footer.madeBy")}&copy;. {t("footer.rightsReserved")}
       </span>
       <div className='flex gap-4 mt-2 md:mt-0 md:ml-auto'>
-        <a href='https://www.linkedin.com/in/estevam-jannuzzi-217355bb/' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-orange dark:hover:text-green'>
+        <a href='https://www.linkedin.com/in/estevam-jannuzzi-217355bb/' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
           <PiLinkedinLogo size={24} />
         </a>
-        <a href='https://www.youtube.com/@vfx_3D_world' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-orange dark:hover:text-green'>
+        <a href='https://www.youtube.com/@vfx_3D_world' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
           <FiYoutube size={24} />
         </a>
-        <a href='https://www.artstation.com/estevamjannuzzi4' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-orange dark:hover:text-green'>
+        <a href='https://www.artstation.com/estevamjannuzzi4' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
           <FaArtstation size={24} />
         </a>
-        <a href='https://github.com/EstevamJannuzzi' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-orange dark:hover:text-green'>
+        <a href='https://github.com/EstevamJannuzzi' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
           <VscGithub size={24} />
         </a>
-        <a href='https://www.instagram.com/estevam_jannuzzi/' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-orange dark:hover:text-green'>
+        <a href='https://www.instagram.com/estevam_jannuzzi/' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
           <FaInstagram size={24} />
         </a>
       </div>

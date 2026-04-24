@@ -12,8 +12,8 @@ const BackButton = ({ to = -1, text }) => {
       onClick={() => navigate(to)}
       className="
         flex items-center gap-2
-        text-orange dark:text-green
-        hover:text-primary dark:hover:text-orange
+        text-sky-blue dark:text-blue-iris
+        hover:text-primary dark:hover:text-sky-blue
         cursor-pointer transition-colors duration-200
       "
     >

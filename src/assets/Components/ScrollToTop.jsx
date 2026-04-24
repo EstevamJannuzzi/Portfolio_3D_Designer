@@ -29,7 +29,7 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-32 sm:bottom-20 lg:bottom-20 xl:bottom-20 right-2 sm:right-6 lg:right-12 xl:right-12 transition-opacity text-orange hover:text-green dark:text-green dark:hover:text-orange text-3xl 
+      className={`fixed bottom-32 sm:bottom-20 lg:bottom-20 xl:bottom-20 right-2 sm:right-6 lg:right-12 xl:right-12 transition-opacity text-sky-blue hover:text-blue-iris dark:text-blue-iris dark:hover:text-sky-blue text-3xl 
               ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'} cursor-pointer z-50`}
     >
       <IoIosArrowDropup size={50} />

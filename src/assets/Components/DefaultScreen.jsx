@@ -5,7 +5,7 @@ import ScrollToTop from './ScrollToTop.jsx'
 
 const DefaultScreen = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col bg-light-gray dark:bg-black transition-colors">
+    <div className="min-h-screen flex flex-col bg-light-gray dark:bg-secondary transition-colors">
       <Menu />
 
       <main className="flex-grow pt-[72px] mb-30 sm:mb-24 lg:mb-24 xl:mb-20">

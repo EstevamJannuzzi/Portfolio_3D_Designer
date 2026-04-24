@@ -26,9 +26,9 @@ const DarkMode = () => {
       aria-label="Alternar modo escuro"
     >
       {isDark ? (
-        <Sun className="w-6 h-6 text-orange dark:text-green hover:text-green dark:hover:text-orange transition-colors" />
+        <Sun className="w-6 h-6 text-sky-blue dark:text-blue-iris hover:text-blue-iris dark:hover:text-sky-blue transition-colors" />
       ) : (
-        <Moon className="w-6 h-6 text-orange dark:text-green hover:text-green dark:hover:text-orange transition-colors" />
+        <Moon className="w-6 h-6 text-sky-blue dark:text-blue-iris hover:text-blue-iris dark:hover:text-sky-blue transition-colors" />
       )}
     </button>
   );
