@@ -86,7 +86,7 @@ export default function MenuBar() {
               to={link.to}
               className={`flex items-center font-medium transition-all duration-300 ease-in-out cursor-pointer ${location.pathname === link.to
                 ? "text-blue-iris dark:text-sky-blue text-[18px] scale-110"
-                : "text-sky-blue dark:text-blue-iris text-[14px] hover:text-blue-iris dark:hover:text-sky-blue hover:-translate-y-1 hover:scale-110"
+                : "text-sky-blue dark:text-white text-[14px] hover:text-blue-iris dark:hover:text-sky-blue hover:-translate-y-1 hover:scale-110"
                 }`}
             >
               {link.icon}
@@ -102,7 +102,7 @@ export default function MenuBar() {
           <div className="relative">
             <button
               onClick={toggleLangMenu}
-              className="text-sky-blue dark:text-blue-iris hover:text-blue-iris dark:hover:text-sky-blue transition-transform duration-200 hover:scale-110 cursor-pointer"
+              className="text-sky-blue dark:text-white hover:text-blue-iris dark:hover:text-sky-blue transition-transform duration-200 hover:scale-110 cursor-pointer"
             >
               <Globe size={24} />
             </button>
@@ -141,7 +141,7 @@ export default function MenuBar() {
         <div className="relative">
           <button
             onClick={toggleLangMenu}
-            className="text-sky-blue dark:text-blue-iris hover:text-blue-iris dark:hover:text-sky-blue transition-transform duration-200 hover:scale-110 cursor-pointer"
+            className="text-sky-blue dark:text-white hover:text-blue-iris dark:hover:text-sky-blue transition-transform duration-200 hover:scale-110 cursor-pointer"
           >
             <Globe size={24} />
           </button>
@@ -173,7 +173,7 @@ export default function MenuBar() {
         {/* TOGGLE MENU */}
         <button
           onClick={toggleMenu}
-          className="text-sky-blue dark:text-blue-iris hover:text-blue-iris dark:hover:text-sky-blue transition-transform duration-200 hover:scale-110 cursor-pointer"
+          className="text-sky-blue dark:text-white hover:text-blue-iris dark:hover:text-sky-blue transition-transform duration-200 hover:scale-110 cursor-pointer"
         >
           <motion.div
             initial={{ rotate: 0 }}
@@ -219,7 +219,7 @@ export default function MenuBar() {
                       onClick={() => setMenuOpen(false)}
                       className={`block text-lg font-medium text-center py-1 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${location.pathname === link.to
                         ? "text-blue-iris dark:text-sky-blue text-[16px] scale-110"
-                        : "text-sky-blue dark:text-blue-iris hover:text-blue-iris dark:hover:text-sky-blue hover:-translate-y-1 hover:scale-110 text-[14px]"
+                        : "text-sky-blue dark:text-white hover:text-blue-iris dark:hover:text-sky-blue hover:-translate-y-1 hover:scale-110 text-[14px]"
                         }`}
                     >
                       {link.icon}
