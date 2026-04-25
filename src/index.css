@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary: #3348EA; /* Blue */
+  --color-primary: #3551BF; /* Blue */
   --color-secondary: #171821; /* Black */
   --color-white: #FFFFFF; /* White */
   --color-blue-iris: #5574F2; /* Blue Iris */
