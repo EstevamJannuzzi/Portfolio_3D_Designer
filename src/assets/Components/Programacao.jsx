@@ -1,12 +1,27 @@
 import React from 'react'
 import Title from './Title.jsx'
 import Image from './Image.jsx'
-import BoxContent from './BoxContent.jsx'
+import Button from './Button.jsx'
 import { useTranslation } from 'react-i18next'
 import programacaos from '../Data/programacaos.js'
 
 const Programacao = () => {
   const { t } = useTranslation()
+
+  const handleButtonClick = (link, isDownload) => {
+    if (isDownload) {
+      const a = document.createElement('a')
+      a.href = link
+      // Extrai o nome do arquivo da URL
+      const fileName = link.split('/').pop()
+      a.download = fileName
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+    } else {
+      window.open(link, '_blank', 'noopener noreferrer')
+    }
+  }
 
   return (
     <>
@@ -34,9 +49,9 @@ const Programacao = () => {
                 margin="mb-4"
               />
 
-              <BoxContent
+              <Button
                 text={t(programacao.textKey)}
-                link={programacao.link}
+                onClick={() => handleButtonClick(programacao.link, true)}
                 download={true}
                 width="w-[160px] sm:w-[140px] lg:w-[170px] xl:w-[240px]"
               />

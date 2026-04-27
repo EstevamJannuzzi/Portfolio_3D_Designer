@@ -1,12 +1,16 @@
 import React from 'react'
 import Title from './Title.jsx'
 import Image from './Image.jsx'
-import BoxContent from './BoxContent.jsx'
+import Button from './Button.jsx'
 import { useTranslation } from 'react-i18next'
 import websites from '../Data/websites.js'
 
 const Websites = () => {
   const { t } = useTranslation()
+
+  const handleButtonClick = (link) => {
+    window.open(link, '_blank', 'noopener noreferrer')
+  }
 
   return (
     <>
@@ -34,9 +38,9 @@ const Websites = () => {
                 margin="mb-4"
               />
 
-              <BoxContent
+              <Button
                 text={t(site.textKey)}
-                link={site.link}
+                onClick={() => handleButtonClick(site.link)}
                 width="w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]"
               />
             </div>

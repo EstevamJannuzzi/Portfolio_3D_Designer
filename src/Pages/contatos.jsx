@@ -1,7 +1,7 @@
 import React from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Title from '../assets/Components/Title.jsx'
-import BoxContent from '../assets/Components/BoxContent.jsx'
+import Button from '../assets/Components/Button.jsx'
 import Image from '../assets/Components/Image.jsx'
 import { FaWhatsapp } from 'react-icons/fa'
 import { HiOutlineMail } from "react-icons/hi"
@@ -13,9 +13,17 @@ const Contatos = () => {
   const base = "/Portfolio_3D_Designer"
 
   const contacts = [
-    { icon: <FaWhatsapp size={70} />, text: t("contacts.whatsapp"), link: "https://wa.me/5511952029128" },
+    { icon: <FaWhatsapp size={70} />, text: t("contacts.whatsapp"), link: "https://wa.me/5511952029128?text=Olá! Como posso te ajudar?" },
     { icon: <HiOutlineMail size={70} />, text: t("contacts.email"), link: "mailto:estevamjannuzzi@gmail.com" },
   ]
+
+  const handleButtonClick = (link) => {
+    if (link.startsWith('mailto:')) {
+      window.location.href = link
+    } else {
+      window.open(link, '_blank', 'noopener noreferrer')
+    }
+  }
 
   return (
     <DefaultScreen className='z-30'>
@@ -39,11 +47,11 @@ const Contatos = () => {
       <div className="relative flex justify-center items-center mt-8">
         <div className="grid grid-cols-2 gap-4">
           {contacts.map((contact, index) => (
-            <BoxContent
+            <Button
               key={index}
               icon={contact.icon}
               text={contact.text}
-              link={contact.link}
+              onClick={() => handleButtonClick(contact.link)}
             />
           ))}
         </div>
