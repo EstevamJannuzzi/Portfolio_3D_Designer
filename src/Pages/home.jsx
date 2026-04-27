@@ -39,19 +39,19 @@ const Home = () => {
                     src={`${base}/dingbo.webp`}
                     alt="DingBo"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
-                    margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
+                    margin='ml-28 sm:ml-30 lg:ml-30 xl:ml-60 -mt-60 sm:-mt-50 lg:-mt-50 xl:-mt-30'
                     distance='z-10 relative'
                     special='block'
                 />
             </div>
 
             {/* BLOCO 2 */}
-            <div className='flex flex-col items-center justify-center gap-6 mb-12 mt-22'>
+            <div className='flex flex-col items-center justify-center gap-6 mb-12 mt-28 sm:mt-22'>
                 <Image
                     src={`${base}/carnivor.webp`}
                     alt="Carnivor"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
-                    margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
+                    margin='-ml-34 sm:-ml-50 lg:-ml-50 xl:mr-20'
                     distance='z-10 relative'
                     special='block'
                 />
@@ -66,7 +66,7 @@ const Home = () => {
             </div>
 
             {/* BLOCO 3 */}
-            <div className="relative flex flex-col items-center justify-center gap-6 mt-16 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-18">
+            <div className="relative flex flex-col items-center justify-center gap-6 mt-8 sm:mt-16 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-18">
                 <BoxText
                     text={t("home.techSkills")}
                     width="max-w-40 sm:max-w-60 lg:max-w-80 xl:max-w-90"
@@ -78,19 +78,19 @@ const Home = () => {
                     src={`${base}/gremlin.webp`}
                     alt="Gremlin"
                     width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[480px]'
-                    margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
+                    margin='ml-32 sm:ml-30 lg:ml-30 xl:ml-30 -mt-60 sm:-mt-50'
                     distance='z-10 relative'
                     special='block'
                 />
             </div>
 
             {/* BLOCO 4 */}
-            <div className='flex flex-col items-center justify-center gap-6 mb-4 mt-18 sm:mt-8'>
+            <div className='flex flex-col items-center justify-center gap-6 mb-4 mt-30 sm:mt-8'>
                 <Image
                     src={`${base}/joystick.webp`}
                     alt="Joystick"
                     width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[480px]'
-                    margin='-ml-14 sm:-ml-30 lg:-ml-40 xl:mr-30'
+                    margin='-ml-30 sm:-ml-30 lg:-ml-40 xl:mr-30'
                     distance='z-10 relative'
                     special='block'
                 />
