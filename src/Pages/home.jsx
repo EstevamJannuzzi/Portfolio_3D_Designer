@@ -36,40 +36,24 @@ const Home = () => {
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
                 <Image
-                    src={`${base}/dingbo_light.webp`}
+                    src={`${base}/dingbo.webp`}
                     alt="DingBo"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
                     distance='z-10 relative'
-                    special='block dark:hidden'
-                />
-                <Image
-                    src={`${base}/dingbo_dark.webp`}
-                    alt="DingBo"
-                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
-                    margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-50 xl:-mt-30'
-                    distance='z-10 relative'
-                    special='hidden dark:block'
+                    special='block'
                 />
             </div>
 
             {/* BLOCO 2 */}
             <div className='flex flex-col items-center justify-center gap-6 mb-12 mt-22'>
                 <Image
-                    src={`${base}/carnivor_light.webp`}
+                    src={`${base}/carnivor.webp`}
                     alt="Carnivor"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
                     margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
                     distance='z-10 relative'
-                    special='block dark:hidden'
-                />
-                <Image
-                    src={`${base}/carnivor_dark.webp`}
-                    alt="Carnivor"
-                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
-                    margin='-ml-22 sm:-ml-50 lg:-ml-50 xl:mr-20'
-                    distance='z-10 relative'
-                    special='hidden dark:block'
+                    special='block'
                 />
                 <BoxText
                     text={t("home.experience")}
@@ -91,40 +75,24 @@ const Home = () => {
                     size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
                 />
                 <Image
-                    src={`${base}/gremlin_light.webp`}
+                    src={`${base}/gremlin.webp`}
                     alt="Gremlin"
                     width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[480px]'
                     margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
                     distance='z-10 relative'
-                    special='block dark:hidden'
-                />
-                <Image
-                    src={`${base}/gremlin_dark.webp`}
-                    alt="Gremlin"
-                    width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[480px]'
-                    margin='ml-22 sm:ml-30 lg:ml-30 xl:ml-30 -mt-50'
-                    distance='z-10 relative'
-                    special='hidden dark:block'
+                    special='block'
                 />
             </div>
 
             {/* BLOCO 4 */}
-            <div className='flex flex-col items-center justify-center gap-6 mb-4 mt-22'>
+            <div className='flex flex-col items-center justify-center gap-6 mb-4 mt-18 sm:mt-8'>
                 <Image
-                    src={`${base}/joystick_light.webp`}
+                    src={`${base}/joystick.webp`}
                     alt="Joystick"
                     width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[480px]'
                     margin='-ml-14 sm:-ml-30 lg:-ml-40 xl:mr-30'
                     distance='z-10 relative'
-                    special='block dark:hidden'
-                />
-                <Image
-                    src={`${base}/joystick_dark.webp`}
-                    alt="Joystick"
-                    width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[480px]'
-                    margin='-ml-14 sm:-ml-30 lg:-ml-40 xl:mr-30'
-                    distance='z-10 relative'
-                    special='hidden dark:block'
+                    special='block'
                 />
                 <BoxText
                     text={t("home.goals")}
