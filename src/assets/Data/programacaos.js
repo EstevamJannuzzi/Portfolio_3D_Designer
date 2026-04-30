@@ -15,6 +15,13 @@ const programacaos = [
     textKey: "programming.text_A",
     link: `${base}/Programs/Apostas_V3.exe`,
   },
+  {
+    id: 3,
+    src: `${base}/PDFImagesConverter.webp`,
+    alt: "PDF Images Converter",
+    textKey: "programming.text_B",
+    link: `${base}/Programs/PDFImagesConverter.exe`,
+  },
 ]
 
 export default programacaos

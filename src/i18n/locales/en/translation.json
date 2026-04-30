@@ -37,7 +37,8 @@
     "programming": {
         "title": "Programming",
         "text": "Tic Tac Toe",
-        "text_A": "Betting Game"
+        "text_A": "Betting Game",
+        "text_B": "PDF Images Converter"
     },
     "resume": {
         "title": "Resume",
