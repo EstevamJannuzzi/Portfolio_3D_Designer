@@ -33,13 +33,6 @@ const Contatos = () => {
           text={t("contacts.title")}
           size="text-[32px] sm:text-[34px] lg:text-[38px] xl:text-[60px]"
         />
-
-        <Title
-          text={t("contacts.subtitle")}
-          size="text-[17px] sm:text-[22px] lg:text-[28px] xl:text-[36px]"
-          color="text-blue-iris"
-          darkcolor="dark:text-white"
-        />
       </div>
 
       {/* Grid de contatos */}
