@@ -85,9 +85,8 @@
     },
     "contacts": {
         "title": "Contact",
-        "subtitle": "Here are my contact methods",
-        "whatsapp": "WhatsApp",
-        "email": "Email"
+        "subtitle": "My Contact Information",
+        "whatsapp": "WhatsApp"
     },
     "footer": {
         "madeBy": "Created by Estevam Jannuzzi",

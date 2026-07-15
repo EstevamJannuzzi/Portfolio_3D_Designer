@@ -14,7 +14,6 @@ const Contatos = () => {
 
   const contacts = [
     { icon: <FaWhatsapp size={70} />, text: t("contacts.whatsapp"), link: "https://wa.me/5511952029128?text=Olá! Como posso te ajudar?" },
-    { icon: <HiOutlineMail size={70} />, text: t("contacts.email"), link: "mailto:estevamjannuzzi@gmail.com" },
   ]
 
   const handleButtonClick = (link) => {
@@ -45,7 +44,7 @@ const Contatos = () => {
 
       {/* Grid de contatos */}
       <div className="relative flex justify-center items-center mt-8">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4">
           {contacts.map((contact, index) => (
             <Button
               key={index}
