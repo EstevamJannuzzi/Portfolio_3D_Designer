@@ -26,6 +26,16 @@ const Home = () => {
                 />
             </div>
 
+            <div className="fixed -rotate-44 top-40 sm:top-30 lg:top-50 xl:top-60 -right-18 sm:-right-24 lg:-right-26 xl:-right-54">
+                <Image
+                    src={`${base}/Gremlin1080_Final.webp`}
+                    alt="Gremlin"
+                    width='w-[200px] sm:w-[280px] lg:w-[300px] xl:w-[600px]'
+                    margin='m-0'
+                    special='block'
+                />
+            </div>
+
             {/* BLOCO 1 */}
             <div className="relative flex flex-col items-center justify-center gap-6 mt-20 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-14">
                 <BoxText
