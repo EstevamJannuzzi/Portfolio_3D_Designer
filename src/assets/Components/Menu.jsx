@@ -78,7 +78,7 @@ export default function MenuBar() {
       </div>
 
       {/* MENU DESKTOP */}
-      <div className="hidden lg:flex items-center space-x-6 relative">
+      <div className="hidden xl:flex items-center space-x-6 relative">
         <nav className="flex items-center space-x-6">
           {links.map((link) => (
             <Link
@@ -134,7 +134,7 @@ export default function MenuBar() {
       </div>
 
       {/* MOBILE HEADER */}
-      <div className="lg:hidden flex items-center gap-4">
+      <div className="xl:hidden flex items-center gap-4">
         <DarkMode />
 
         {/* LANG MOBILE */}
@@ -194,7 +194,7 @@ export default function MenuBar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-black/20 lg:hidden"
+              className="fixed inset-0 bg-black/20 xl:hidden"
               onClick={toggleMenu}
             />
 
@@ -203,7 +203,7 @@ export default function MenuBar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ type: "spring", bounce: 0, duration: 0.4 }}
-              className="absolute top-full left-0 w-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 lg:hidden shadow-lg"
+              className="absolute top-full left-0 w-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 xl:hidden shadow-lg"
             >
               <ul className="flex flex-col items-center py-4">
                 {links.map((link, i) => (
