@@ -26,13 +26,13 @@ const Home = () => {
                 />
             </div>
 
-            <div className="fixed -rotate-44 top-40 sm:top-30 lg:top-50 xl:top-60 -right-18 sm:-right-24 lg:-right-26 xl:-right-54">
+            <div className="fixed -rotate-44 top-40 sm:top-24 lg:top-46 xl:top-50 -right-13 sm:-right-18 lg:-right-22 xl:-right-36">
                 <Image
                     src={`${base}/Gremlin1080_Final.webp`}
                     alt="Gremlin"
-                    width='w-[200px] sm:w-[280px] lg:w-[300px] xl:w-[600px]'
+                    width='w-[150px] sm:w-[210px] lg:w-[220px] xl:w-[400px]'
                     margin='m-0'
-                    special='block'
+                    special='block fill-white drop-shadow-xl/50 dark:fill-white dark:drop-shadow-xl/50'
                 />
             </div>
 

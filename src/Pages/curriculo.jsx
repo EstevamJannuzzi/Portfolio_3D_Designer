@@ -21,7 +21,7 @@ const Curriculo = () => {
         />
 
         <div className='flex items-center justify-center gap-4 mt-4 mb-4'>
-          
+
           {/* Foto do Usuário */}
           <Image
             src={`${base}/User.webp`}
@@ -31,76 +31,88 @@ const Curriculo = () => {
           />
         </div>
 
-        {/* Seções de conteúdo */}
-        <BoxtextResume
-          title={t("resume.professionalSummaryTitle")}
-          description={t("resume.professionalSummary")}
-        />
+        <div className="fixed top-38 sm:top-34 lg:top-46 xl:top-70 -right-6 sm:-right-12 lg:-right-19 xl:-right-18">
+          <Image
+            src={`${base}/JetBike_Yellow.webp`}
+            alt="JetBike"
+            width='w-[130px] sm:w-[180px] lg:w-[280px] xl:w-[400px]'
+            margin='m-0'
+            special='block fill-white drop-shadow-xl/50 dark:fill-white dark:drop-shadow-xl/50'
+          />
+        </div>
 
-        <BoxtextResume
-          title={t("resume.educationTitle")}
-          description={
-            <>
-              <p>{t("resume.education1")}</p>
-              <p>{t("resume.education2")}</p>
-            </>
-          }
-        />
+        <div className='flex flex-col items-center justify-center gap-y-4 z-20'>
+          {/* Seções de conteúdo */}
+          <BoxtextResume
+            title={t("resume.professionalSummaryTitle")}
+            description={t("resume.professionalSummary")}
+          />
 
-        <BoxtextResume
-          title={t("resume.languagesTitle")}
-          description={
-            <>
-              <p>{t("resume.language1")}</p>
-              <p>{t("resume.language2")}</p>
-            </>
-          }
-        />
+          <BoxtextResume
+            title={t("resume.educationTitle")}
+            description={
+              <>
+                <p>{t("resume.education1")}</p>
+                <p>{t("resume.education2")}</p>
+              </>
+            }
+          />
 
-        <BoxtextResume
-          title={t("resume.experienceTitle")}
-          description={
-            <>
-              <p><strong>{t("resume.exp1.company")}</strong></p>
-              <p><strong>{t("resume.exp1.role")}</strong></p>
-              <p className="pl-4">{t("resume.exp1.period")}</p>
-              <p className="pl-4">{t("resume.exp1.details1")}</p>
-              <p className="pl-4 mb-4">{t("resume.exp1.details2")}</p>
+          <BoxtextResume
+            title={t("resume.languagesTitle")}
+            description={
+              <>
+                <p>{t("resume.language1")}</p>
+                <p>{t("resume.language2")}</p>
+              </>
+            }
+          />
 
-              <p><strong>{t("resume.exp2.company")}</strong></p>
-              <p><strong>{t("resume.exp2.role")}</strong></p>
-              <p className="pl-4">{t("resume.exp2.period")}</p>
-              <p className="pl-4">{t("resume.exp2.details1")}</p>
-              <p className="pl-4 mb-4">{t("resume.exp2.details2")}</p>
+          <BoxtextResume
+            title={t("resume.experienceTitle")}
+            description={
+              <>
+                <p><strong>{t("resume.exp1.company")}</strong></p>
+                <p><strong>{t("resume.exp1.role")}</strong></p>
+                <p className="pl-4">{t("resume.exp1.period")}</p>
+                <p className="pl-4">{t("resume.exp1.details1")}</p>
+                <p className="pl-4 mb-4">{t("resume.exp1.details2")}</p>
 
-              <p><strong>{t("resume.exp3.company")}</strong></p>
-              <p><strong>{t("resume.exp3.role")}</strong></p>
-              <p className="pl-4">{t("resume.exp3.period")}</p>
-              <p className="pl-4">{t("resume.exp3.details1")}</p>
-              <p className="pl-4">{t("resume.exp3.details2")}</p>
-              <p className="pl-4">{t("resume.exp3.details3")}</p>
-              <p className="pl-4">{t("resume.exp3.details4")}</p>
-              <p className="pl-4">{t("resume.exp3.details5")}</p>
-              <p className="pl-4">{t("resume.exp3.details6")}</p>
-            </>
-          }
-        />
+                <p><strong>{t("resume.exp2.company")}</strong></p>
+                <p><strong>{t("resume.exp2.role")}</strong></p>
+                <p className="pl-4">{t("resume.exp2.period")}</p>
+                <p className="pl-4">{t("resume.exp2.details1")}</p>
+                <p className="pl-4 mb-4">{t("resume.exp2.details2")}</p>
 
-        <BoxtextResume
-          title={t("resume.coursesTitle")}
-          description={
-            <>
-              <p>{t("resume.courses1")}</p>
-              <p>{t("resume.courses2")}</p>
-              <p>{t("resume.courses3")}</p>
-            </>
-          }
-        />
+                <p><strong>{t("resume.exp3.company")}</strong></p>
+                <p><strong>{t("resume.exp3.role")}</strong></p>
+                <p className="pl-4">{t("resume.exp3.period")}</p>
+                <p className="pl-4">{t("resume.exp3.details1")}</p>
+                <p className="pl-4">{t("resume.exp3.details2")}</p>
+                <p className="pl-4">{t("resume.exp3.details3")}</p>
+                <p className="pl-4">{t("resume.exp3.details4")}</p>
+                <p className="pl-4">{t("resume.exp3.details5")}</p>
+                <p className="pl-4">{t("resume.exp3.details6")}</p>
+              </>
+            }
+          />
 
-        <BoxtextResume
-          title={t("resume.participationTitle")}
-          description={<p>{t("resume.participation1")}</p>}
-        />
+          <BoxtextResume
+            title={t("resume.coursesTitle")}
+            description={
+              <>
+                <p>{t("resume.courses1")}</p>
+                <p>{t("resume.courses2")}</p>
+                <p>{t("resume.courses3")}</p>
+              </>
+            }
+          />
+
+          <BoxtextResume
+            title={t("resume.participationTitle")}
+            description={<p>{t("resume.participation1")}</p>}
+          />
+        </div>
 
       </div>
     </DefaultScreen>
