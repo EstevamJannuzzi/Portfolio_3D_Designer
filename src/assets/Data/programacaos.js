@@ -20,7 +20,7 @@ const programacaos = [
     src: `${base}/PDFImagesConverter.webp`,
     alt: "PDF Images Converter",
     textKey: "programming.text_B",
-    link: `${base}/Programs/PDFImagesConverter_v11.0.exe`,
+    link: `${base}/Programs/PDFImagesConverterInstaller.exe`,
   },
 ]
 
