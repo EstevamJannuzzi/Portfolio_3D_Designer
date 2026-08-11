@@ -31,11 +31,11 @@ const Curriculo = () => {
           />
         </div>
 
-        <div className="fixed -rotate-40 top-24 sm:top-26 lg:top-38 xl:top-40 -right-6 sm:-right-8 lg:-right-14 xl:-right-18">
+        <div className="fixed -rotate-40 top-24 sm:top-26 lg:top-38 xl:top-20 -right-6 sm:-right-8 lg:-right-14 xl:-right-18">
           <Image
             src={`${base}/pumpkin.webp`}
             alt="Pumpkin"
-            width='w-[130px] sm:w-[160px] lg:w-[180px] xl:w-[300px]'
+            width='w-[130px] sm:w-[160px] lg:w-[180px] xl:w-[280px]'
             margin='m-0'
             special='block fill-white drop-shadow-xl/50 dark:fill-white dark:drop-shadow-xl/50'
           />

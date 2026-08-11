@@ -16,21 +16,21 @@ const Home = () => {
             <div className='flex flex-col items-center justify-center gap-2'>
                 <Title
                     text={t("home.title")}
-                    size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[60px]"
+                    size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[50px]"
                 />
                 <Title
                     text={t("home.name")}
-                    size="text-[26px] sm:text-[38px] lg:text-[42px] xl:text-[66px]"
+                    size="text-[26px] sm:text-[38px] lg:text-[42px] xl:text-[56px]"
                     color="text-blue-iris"
                     darkcolor="dark:text-white"
                 />
             </div>
 
-            <div className="fixed -rotate-44 top-40 sm:top-24 lg:top-46 xl:top-50 -right-13 sm:-right-18 lg:-right-22 xl:-right-36">
+            <div className="fixed -rotate-44 top-40 sm:top-24 lg:top-46 xl:top-40 -right-13 sm:-right-18 lg:-right-22 xl:-right-34">
                 <Image
                     src={`${base}/Gremlin1080_Final.webp`}
                     alt="Gremlin"
-                    width='w-[150px] sm:w-[210px] lg:w-[220px] xl:w-[400px]'
+                    width='w-[150px] sm:w-[210px] lg:w-[220px] xl:w-[390px]'
                     margin='m-0'
                     special='block fill-white drop-shadow-xl/50 dark:fill-white dark:drop-shadow-xl/50'
                 />
@@ -48,8 +48,8 @@ const Home = () => {
                 <Image
                     src={`${base}/dingbo.webp`}
                     alt="DingBo"
-                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
-                    margin='ml-28 sm:ml-30 lg:ml-30 xl:ml-60 -mt-60 sm:-mt-50 lg:-mt-50 xl:-mt-30'
+                    width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[420px]'
+                    margin='ml-28 sm:ml-30 lg:ml-30 xl:ml-60 -mt-60 sm:-mt-50 lg:-mt-50 xl:-mt-40'
                     distance='z-10 relative'
                     special='block'
                 />
@@ -87,7 +87,7 @@ const Home = () => {
                 <Image
                     src={`${base}/gremlin.webp`}
                     alt="Gremlin"
-                    width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[480px]'
+                    width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[440px]'
                     margin='ml-32 sm:ml-30 lg:ml-30 xl:ml-30 -mt-60 sm:-mt-50'
                     distance='z-10 relative'
                     special='block'
@@ -99,7 +99,7 @@ const Home = () => {
                 <Image
                     src={`${base}/joystick.webp`}
                     alt="Joystick"
-                    width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[480px]'
+                    width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[400px]'
                     margin='-ml-30 sm:-ml-30 lg:-ml-40 xl:mr-30'
                     distance='z-10 relative'
                     special='block'

@@ -54,7 +54,7 @@ const Contatos = () => {
         <Image
           src={`${base}/ContatosDing.webp`}
           alt="Contatos Ding"
-          width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[480px]"
+          width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[390px]"
         />
       </div>
 
