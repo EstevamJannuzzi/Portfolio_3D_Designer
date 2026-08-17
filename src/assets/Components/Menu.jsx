@@ -5,9 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import Image from "./Image";
 import DarkMode from "./darkmode";
-import { IoHomeOutline, IoDocumentAttachOutline } from "react-icons/io5";
-import { LuContact } from "react-icons/lu";
-import { PiBriefcaseLight, PiVideoLight, PiImageLight, PiGlobeLight, PiYoutubeLogoLight, PiCodeLight } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
 import ReactCountryFlag from "react-country-flag";
 
@@ -28,14 +25,14 @@ export default function MenuBar() {
   };
 
   const links = [
-    { name: t("menu.home"), to: "/", icon: <IoHomeOutline className="mr-2" size={22} /> },
-    { name: t("menu.videos"), to: "/videos", icon: <PiVideoLight className="mr-2" size={22} /> },
-    { name: t("menu.imagens"), to: "/imagens", icon: <PiImageLight className="mr-2" size={22} /> },
-    { name: t("menu.websites"), to: "/websites", icon: <PiGlobeLight className="mr-2" size={22} /> },
-    { name: t("menu.canais"), to: "/canais", icon: <PiYoutubeLogoLight className="mr-2" size={22} /> },
-    { name: t("menu.programacao"), to: "/programacao", icon: <PiCodeLight className="mr-2" size={22} /> },
-    { name: t("menu.curriculo"), to: "/curriculo", icon: <IoDocumentAttachOutline className="mr-2" size={22} /> },
-    { name: t("menu.contatos"), to: "/contatos", icon: <LuContact className="mr-2" size={22} /> },
+    { name: t("menu.home"), to: "/" },
+    { name: t("menu.videos"), to: "/videos" },
+    { name: t("menu.imagens"), to: "/imagens" },
+    { name: t("menu.websites"), to: "/websites" },
+    { name: t("menu.canais"), to: "/canais" },
+    { name: t("menu.programacao"), to: "/programacao" },
+    { name: t("menu.curriculo"), to: "/curriculo" },
+    { name: t("menu.contatos"), to: "/contatos" },
   ];
 
   const flags = [
@@ -89,7 +86,6 @@ export default function MenuBar() {
                 : "text-sky-blue dark:text-white text-[14px] hover:text-blue-iris dark:hover:text-sky-blue hover:-translate-y-1 hover:scale-110"
                 }`}
             >
-              {link.icon}
               {link.name}
             </Link>
           ))}
@@ -222,7 +218,6 @@ export default function MenuBar() {
                         : "text-sky-blue dark:text-white hover:text-blue-iris dark:hover:text-sky-blue hover:-translate-y-1 hover:scale-110 text-[14px]"
                         }`}
                     >
-                      {link.icon}
                       {link.name}
                     </Link>
                   </motion.li>
