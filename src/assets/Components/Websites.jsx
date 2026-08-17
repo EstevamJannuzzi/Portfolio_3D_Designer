@@ -41,7 +41,7 @@ const Websites = () => {
               <Button
                 text={t(site.textKey)}
                 onClick={() => handleButtonClick(site.link)}
-                width="w-[190px] sm:w-[200px] lg:w-[240px] xl:w-[300px]"
+                width="w-[140px] xl:w-[180px]"
               />
             </div>
           ))}
