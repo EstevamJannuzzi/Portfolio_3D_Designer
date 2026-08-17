@@ -22,7 +22,7 @@ const Button = ({
                 ) : (
                     icon && <span>{icon}</span>
                 )}
-                <span className="font-text text-[12px] sm:text-[14px] lg:text-[14px] xl:text-[18px]">
+                <span className="font-text text-[12px] sm:text-[14px] xl:text-[16px]">
                     {text}
                 </span>
             </div>

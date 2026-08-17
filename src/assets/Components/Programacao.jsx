@@ -45,7 +45,7 @@ const Programacao = () => {
               <Image
                 src={programacao.src}
                 alt={programacao.alt}
-                width="w-[160px] sm:w-[140px] lg:w-[180px] xl:w-[240px]"
+                width="w-[160px] sm:w-[140px] lg:w-[180px] xl:w-[200px]"
                 margin="mb-4"
               />
 
@@ -53,7 +53,7 @@ const Programacao = () => {
                 text={t(programacao.textKey)}
                 onClick={() => handleButtonClick(programacao.link, true)}
                 download={true}
-                width="w-[160px] sm:w-[140px] lg:w-[170px] xl:w-[240px]"
+                width="w-[160px] sm:w-[140px] lg:w-[170px] xl:w-[200px]"
               />
             </div>
           ))}
