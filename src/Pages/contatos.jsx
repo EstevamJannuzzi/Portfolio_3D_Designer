@@ -13,7 +13,7 @@ const Contatos = () => {
   const base = "/Portfolio_3D_Designer"
 
   const contacts = [
-    { icon: <FaWhatsapp size={70} />, text: t("contacts.whatsapp"), link: "https://wa.me/5511952029128?text=Olá! Como posso te ajudar?" },
+    { icon: <FaWhatsapp size={50} />, text: t("contacts.whatsapp"), link: "https://wa.me/5511952029128?text=Olá! Como posso te ajudar?" },
   ]
 
   const handleButtonClick = (link) => {
@@ -50,7 +50,7 @@ const Contatos = () => {
       </div>
 
       {/* Imagem inferior */}
-      <div className="flex justify-center items-center mt-10 mb-8">
+      <div className="flex justify-center items-center mt-10 mb-2">
         <Image
           src={`${base}/ContatosDing.webp`}
           alt="Contatos Ding"
