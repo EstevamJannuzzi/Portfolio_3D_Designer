@@ -12,14 +12,14 @@ const programacaos = [
     id: 2,
     src: `${base}/Apostas.webp`,
     alt: "Game Aposta",
-    textKey: "programming.text_A",
+    textKey: "programming.text",
     link: `${base}/Programs/Apostas_V3.exe`,
   },
   {
     id: 3,
     src: `${base}/PDFImagesConverter.webp`,
     alt: "PDF Images Converter",
-    textKey: "programming.text_B",
+    textKey: "programming.text",
     link: `${base}/Programs/PDFImagesConverterInstaller.exe`,
   },
 ]
