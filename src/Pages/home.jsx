@@ -43,13 +43,13 @@ const Home = () => {
                     width="max-w-40 sm:max-w-60 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     margin="mb-4 sm:-mb-10 lg:mb-0 xl:-mb-24 mr-40 sm:mr-70 lg:mr-90 xl:mr-120"
-                    size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
+                    size="text-[12px] sm:text-[18px]"
                 />
                 <Image
                     src={`${base}/dingbo.webp`}
                     alt="DingBo"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[420px]'
-                    margin='ml-28 sm:ml-30 lg:ml-30 xl:ml-60 -mt-60 sm:-mt-50 lg:-mt-50 xl:-mt-40'
+                    margin='ml-28 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-40 xl:-mt-20'
                     distance='z-10 relative'
                     special='block'
                 />
@@ -71,7 +71,7 @@ const Home = () => {
                     distance="z-20 relative"
                     position='right'
                     margin="-mt-72 sm:-mt-90 lg:-mt-110 xl:-mt-130 ml-30 sm:ml-50 lg:ml-80 xl:ml-100"
-                    size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
+                    size="text-[12px] sm:text-[18px]"
                 />
             </div>
 
@@ -82,7 +82,7 @@ const Home = () => {
                     width="max-w-40 sm:max-w-60 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     margin="-mb-8 sm:-mb-20 lg:-mb-20 xl:-mb-24 mr-30 sm:mr-70 lg:mr-90 xl:mr-144"
-                    size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
+                    size="text-[12px] sm:text-[18px]"
                 />
                 <Image
                     src={`${base}/gremlin.webp`}
@@ -110,7 +110,7 @@ const Home = () => {
                     distance="z-20 relative"
                     position='right'
                     margin="-mt-60 sm:-mt-80 lg:-mt-106 xl:-mt-100 ml-30 sm:ml-50 lg:ml-94 xl:ml-100"
-                    size="text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px]"
+                    size="text-[12px] sm:text-[18px]"
                 />
             </div>
 

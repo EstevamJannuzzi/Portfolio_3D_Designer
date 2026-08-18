@@ -17,7 +17,7 @@ const Curriculo = () => {
 
         <Title
           text={t("resume.title")}
-          size="text-[32px] sm:text-[34px] lg:text-[38px] xl:text-[60px]"
+          size="text-[32px] sm:text-[34px] lg:text-[38px] xl:text-[44px]"
         />
 
         <div className='flex items-center justify-center gap-4 mt-4 mb-4'>

@@ -20,7 +20,7 @@ const Canais = () => {
       >
         <Title
           text={t("channel.title")}
-          size="text-[28px] sm:text-[32px] lg:text-[36px] xl:text-[60px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40"
+          size="text-[28px] sm:text-[32px] lg:text-[36px] xl:text-[44px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40"
         />
       </div>
 

@@ -10,11 +10,11 @@ const Footer = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='flex flex-col md:flex-row justify-between items-center w-full h-[110px] sm:h-[50px] lg:h-[60px] xl:h-[50px] font-text bg-dark-gray dark:bg-primary fixed bottom-0 left-0 px-14 pt-2 sm:pt-0 xl:pt-0 pb-6 sm:pb-0 xl:pb-0 z-50'>
-      <span className='text-center md:text-left text-[13px] sm:text-[16px]'>
+    <div className='flex flex-col md:flex-row justify-between items-center w-full h-[90px] sm:h-[44px] lg:h-[54px] xl:h-[44px] font-text bg-dark-gray dark:bg-primary fixed bottom-0 left-0 px-14 pt-2 sm:pt-0 pb-6 sm:pb-0 z-50'>
+      <span className='text-center md:text-left text-[10px] sm:text-[14px]'>
         {new Date().getFullYear()} {t("footer.madeBy")}&copy;. {t("footer.rightsReserved")}
       </span>
-      <div className='flex gap-4 mt-2 md:mt-0 md:ml-auto'>
+      <div className='flex gap-4 mt-0 md:ml-auto'>
         <a href='https://www.linkedin.com/in/estevam-jannuzzi-217355bb/' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
           <PiLinkedinLogo size={24} />
         </a>

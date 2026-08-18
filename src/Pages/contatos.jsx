@@ -13,7 +13,7 @@ const Contatos = () => {
   const base = "/Portfolio_3D_Designer"
 
   const contacts = [
-    { icon: <FaWhatsapp size={50} />, text: t("contacts.whatsapp"), link: "https://wa.me/5511952029128?text=Olá! Como posso te ajudar?" },
+    { icon: <FaWhatsapp size={30} />, text: t("contacts.whatsapp"), link: "https://wa.me/5511952029128?text=Olá! Como posso te ajudar?" },
   ]
 
   const handleButtonClick = (link) => {
@@ -31,7 +31,7 @@ const Contatos = () => {
       <div className='flex flex-col items-center justify-center gap-2 text-center'>
         <Title
           text={t("contacts.title")}
-          size="text-[32px] sm:text-[34px] lg:text-[38px] xl:text-[60px]"
+          size="text-[32px] sm:text-[34px] lg:text-[38px] xl:text-[44px]"
         />
       </div>
 
