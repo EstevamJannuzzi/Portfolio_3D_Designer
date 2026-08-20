@@ -35,6 +35,15 @@ const Contatos = () => {
         />
       </div>
 
+      {/* Imagem Superior */}
+      <div className="flex justify-center items-center mt-10 mb-2">
+        <Image
+          src={`${base}/ContatosDing.webp`}
+          alt="Contatos Ding"
+          width="w-[200px] sm:w-[180px] lg:w-[260px] xl:w-[280px]"
+        />
+      </div>
+
       {/* Grid de contatos */}
       <div className="relative flex justify-center items-center mt-8">
         <div className="grid grid-cols-1 gap-4">
@@ -43,21 +52,12 @@ const Contatos = () => {
               key={index}
               icon={contact.icon}
               text={contact.text}
+              width="w-[110px] lg:w-[120px] xl:w-[130px]"
               onClick={() => handleButtonClick(contact.link)}
             />
           ))}
         </div>
       </div>
-
-      {/* Imagem inferior */}
-      <div className="flex justify-center items-center mt-10 mb-2">
-        <Image
-          src={`${base}/ContatosDing.webp`}
-          alt="Contatos Ding"
-          width="w-[300px] sm:w-[420px] lg:w-[460px] xl:w-[390px]"
-        />
-      </div>
-
     </DefaultScreen>
   )
 }
