@@ -9,7 +9,7 @@ const DefaultScreen = ({ children }) => {
       <Menu />
 
       <main className="flex-grow pt-[72px] mb-30 sm:mb-24 lg:mb-24 xl:mb-20">
-        <div className="container mx-auto pt-8 sm:pt-10 lg:pt-28 xl:pt-16">
+        <div className="container mx-auto pt-8 sm:pt-10 xl:pt-16">
           {children}
         </div>
       </main>
