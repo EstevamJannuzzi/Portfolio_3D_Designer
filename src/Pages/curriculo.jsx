@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Title from '../assets/Components/Title.jsx'
 import Image from '../assets/Components/Image.jsx'
-import BoxtextResume from '../assets/Components/BoxtextResume.jsx'
+import Accordion from '../assets/Components/Accordion.jsx'
 import { useTranslation } from 'react-i18next'
 
 const Curriculo = () => {
   const { t } = useTranslation()
+  const [openAccordion, setOpenAccordion] = useState(null)
 
   // Caminho base para GitHub Pages
   const base = "/Portfolio_3D_Designer"
@@ -42,13 +43,17 @@ const Curriculo = () => {
         </div>
 
         <div className='flex flex-col items-center justify-center gap-y-4 z-20'>
-          {/* Seções de conteúdo */}
-          <BoxtextResume
+
+          <Accordion
             title={t("resume.professionalSummaryTitle")}
             description={t("resume.professionalSummary")}
+            isOpen={openAccordion === 0}
+            onToggle={() =>
+              setOpenAccordion(openAccordion === 0 ? null : 0)
+            }
           />
 
-          <BoxtextResume
+          <Accordion
             title={t("resume.educationTitle")}
             description={
               <>
@@ -56,9 +61,13 @@ const Curriculo = () => {
                 <p>{t("resume.education2")}</p>
               </>
             }
+            isOpen={openAccordion === 1}
+            onToggle={() =>
+              setOpenAccordion(openAccordion === 1 ? null : 1)
+            }
           />
 
-          <BoxtextResume
+          <Accordion
             title={t("resume.languagesTitle")}
             description={
               <>
@@ -66,9 +75,13 @@ const Curriculo = () => {
                 <p>{t("resume.language2")}</p>
               </>
             }
+            isOpen={openAccordion === 2}
+            onToggle={() =>
+              setOpenAccordion(openAccordion === 2 ? null : 2)
+            }
           />
 
-          <BoxtextResume
+          <Accordion
             title={t("resume.experienceTitle")}
             description={
               <>
@@ -95,9 +108,13 @@ const Curriculo = () => {
                 <p className="pl-4">{t("resume.exp3.details6")}</p>
               </>
             }
+            isOpen={openAccordion === 3}
+            onToggle={() =>
+              setOpenAccordion(openAccordion === 3 ? null : 3)
+            }
           />
 
-          <BoxtextResume
+          <Accordion
             title={t("resume.coursesTitle")}
             description={
               <>
@@ -106,12 +123,23 @@ const Curriculo = () => {
                 <p>{t("resume.courses3")}</p>
               </>
             }
+            isOpen={openAccordion === 4}
+            onToggle={() =>
+              setOpenAccordion(openAccordion === 4 ? null : 4)
+            }
           />
 
-          <BoxtextResume
+          <Accordion
             title={t("resume.participationTitle")}
-            description={<p>{t("resume.participation1")}</p>}
+            description={
+              <p>{t("resume.participation1")}</p>
+            }
+            isOpen={openAccordion === 5}
+            onToggle={() =>
+              setOpenAccordion(openAccordion === 5 ? null : 5)
+            }
           />
+
         </div>
 
       </div>
