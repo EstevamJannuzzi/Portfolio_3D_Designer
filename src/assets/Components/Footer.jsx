@@ -1,6 +1,5 @@
 import React from 'react'
 import { PiLinkedinLogo } from "react-icons/pi";
-import { FiYoutube } from "react-icons/fi";
 import { FaArtstation, FaInstagram } from "react-icons/fa";
 import { VscGithub } from "react-icons/vsc";
 
@@ -17,9 +16,6 @@ const Footer = () => {
       <div className='flex gap-4 mt-0 md:ml-auto'>
         <a href='https://www.linkedin.com/in/estevam-jannuzzi-217355bb/' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
           <PiLinkedinLogo size={24} />
-        </a>
-        <a href='https://www.youtube.com/@vfx_3D_world' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
-          <FiYoutube size={24} />
         </a>
         <a href='https://www.artstation.com/estevamjannuzzi4' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
           <FaArtstation size={24} />
