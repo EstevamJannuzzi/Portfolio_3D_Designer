@@ -1,8 +1,7 @@
 import React from 'react'
 import { PiLinkedinLogo } from "react-icons/pi";
-import { FaArtstation, FaInstagram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { VscGithub } from "react-icons/vsc";
-
 import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
@@ -16,9 +15,6 @@ const Footer = () => {
       <div className='flex gap-4 mt-0 md:ml-auto'>
         <a href='https://www.linkedin.com/in/estevam-jannuzzi-217355bb/' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
           <PiLinkedinLogo size={24} />
-        </a>
-        <a href='https://www.artstation.com/estevamjannuzzi4' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
-          <FaArtstation size={24} />
         </a>
         <a href='https://github.com/EstevamJannuzzi' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-sky-blue dark:hover:text-blue-iris'>
           <VscGithub size={24} />
