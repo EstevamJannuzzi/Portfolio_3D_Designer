@@ -3,11 +3,8 @@ import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Image from '../assets/Components/Image.jsx'
 import BoxText from '../assets/Components/BoxText.jsx'
 import Title from '../assets/Components/Title.jsx'
-import { useTranslation } from 'react-i18next'
 
 const Home = () => {
-    const { t } = useTranslation()
-
     const base = "/Portfolio_3D_Designer"
 
     return (
@@ -15,11 +12,11 @@ const Home = () => {
 
             <div className='flex flex-col items-center justify-center gap-2'>
                 <Title
-                    text={t("home.title")}
+                    text="Bem-vindo ao Portfólio de"
                     size="text-[20px] sm:text-[32px] lg:text-[36px] xl:text-[50px]"
                 />
                 <Title
-                    text={t("home.name")}
+                    text="Estevam Jannuzzi"
                     size="text-[26px] sm:text-[38px] lg:text-[42px] xl:text-[56px]"
                     color="text-white"
                 />
@@ -38,7 +35,7 @@ const Home = () => {
             {/* BLOCO 1 */}
             <div className="relative flex flex-col items-center justify-center gap-6 mt-20 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-14">
                 <BoxText
-                    text={t("home.professionalSummary")}
+                    text="Designer 3D  Especialista em Visualização Digital  Domínio em Maya, ZBrush, Photoshop, KeyShot e Substance 3D Painter."
                     width="max-w-40 sm:max-w-60 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     margin="mb-4 sm:-mb-10 lg:mb-0 xl:-mb-24 mr-40 sm:mr-70 lg:mr-90 xl:mr-120"
@@ -65,7 +62,7 @@ const Home = () => {
                     special='block'
                 />
                 <BoxText
-                    text={t("home.experience")}
+                    text="Sou formado em Design Gráfico desde 2011, com mais de uma década de experiência em criação visual e modelagem 3D. Tenho domínio técnico em Maya, ZBrush, Photoshop, KeyShot e Substance 3D Painter, ferramentas que utilizo para transformar ideias em imagens impactantes, seja em projetos de produto, animação, visualização arquitetônica ou motion design."
                     width="max-w-46 sm:max-w-80 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     position='right'
@@ -77,7 +74,7 @@ const Home = () => {
             {/* BLOCO 3 */}
             <div className="relative flex flex-col items-center justify-center gap-6 mt-8 sm:mt-16 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-18">
                 <BoxText
-                    text={t("home.techSkills")}
+                    text="Além do design, sou entusiasta de tecnologia e programação, com foco em React JS e Python. Essa combinação me permite integrar arte e lógica, criando soluções visuais interativas e funcionais."
                     width="max-w-40 sm:max-w-60 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     margin="-mb-8 sm:-mb-20 lg:-mb-20 xl:-mb-24 mr-30 sm:mr-70 lg:mr-90 xl:mr-144"
@@ -104,7 +101,7 @@ const Home = () => {
                     special='block'
                 />
                 <BoxText
-                    text={t("home.goals")}
+                    text="Busco oportunidades em design 3D, tech art, visualização digital e projetos que valorizem criatividade, técnica e inovação. Vamos nos conectar?"
                     width="max-w-40 sm:max-w-80 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     position='right'

@@ -7,7 +7,7 @@ const canais = [
     src: `${base}/canalSilvia.webp`,
     alt: "Canal Silvia Eiko Artesanato",
     link: "https://www.youtube.com/@SilviaEikoArtesanato",
-    textKey: "channel.text",
+    text: "Acessar",
   },
 ]
 

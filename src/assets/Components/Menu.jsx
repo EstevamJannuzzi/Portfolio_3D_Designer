@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import Image from "./Image";
-import { useTranslation } from "react-i18next";
 
 // Caminho base GitHub Pages
 const base = "/Portfolio_3D_Designer";
@@ -13,17 +12,15 @@ export default function MenuBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const location = useLocation();
-  const { t } = useTranslation();
-
   const links = [
-    { name: t("menu.home"), to: "/" },
-    { name: t("menu.videos"), to: "/videos" },
-    { name: t("menu.imagens"), to: "/imagens" },
-    { name: t("menu.websites"), to: "/websites" },
-    { name: t("menu.canais"), to: "/canais" },
-    { name: t("menu.programacao"), to: "/programacao" },
-    { name: t("menu.curriculo"), to: "/curriculo" },
-    { name: t("menu.contatos"), to: "/contatos" },
+    { name: "Início", to: "/" },
+    { name: "Vídeos", to: "/videos" },
+    { name: "Imagens", to: "/imagens" },
+    { name: "Websites", to: "/websites" },
+    { name: "Canais", to: "/canais" },
+    { name: "Programação", to: "/programacao" },
+    { name: "Currículo", to: "/curriculo" },
+    { name: "Contatos", to: "/contatos" },
   ];
 
   return (

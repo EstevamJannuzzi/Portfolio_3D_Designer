@@ -1,11 +1,8 @@
 import Title from './Title.jsx'
 import Iframe from './Iframe.jsx'
-import { useTranslation } from 'react-i18next'
 import videos from '../Data/videos.js'
 
 const Videos = () => {
-  const { t } = useTranslation()
-
   return (
     <>
       <div
@@ -13,7 +10,7 @@ const Videos = () => {
         className="flex flex-col items-center justify-center gap-2 text-center"
       >
         <Title
-          text={t("video.title")}
+          text="Vídeos"
           size="text-[28px] sm:text-[32px] lg:text-[36px] xl:text-[44px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40"
         />
       </div>

@@ -2,12 +2,9 @@ import React from 'react'
 import Title from './Title.jsx'
 import Image from './Image.jsx'
 import Button from './Button.jsx'
-import { useTranslation } from 'react-i18next'
 import websites from '../Data/websites.js'
 
 const Websites = () => {
-  const { t } = useTranslation()
-
   const handleButtonClick = (link) => {
     window.open(link, '_blank', 'noopener noreferrer')
   }
@@ -19,7 +16,7 @@ const Websites = () => {
         className="flex flex-col items-center justify-center gap-2 text-center"
       >
         <Title
-          text={t("site.title")}
+          text="Websites"
           size="text-[28px] sm:text-[32px] lg:text-[36px] xl:text-[44px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40"
         />
       </div>
@@ -39,7 +36,7 @@ const Websites = () => {
               />
 
               <Button
-                text={t(site.textKey)}
+                text={site.text}
                 onClick={() => handleButtonClick(site.link)}
                 width="w-[140px] xl:w-[180px]"
               />

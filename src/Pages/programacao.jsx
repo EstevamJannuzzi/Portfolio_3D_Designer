@@ -1,10 +1,8 @@
 import React from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
-import { useTranslation } from 'react-i18next'
 import Programacao from '../assets/Components/Programacao.jsx'
 
 function ProgramacaoPage() {
-    const { t } = useTranslation()
     const base = "/Portfolio_3D_Designer"
 
     return (

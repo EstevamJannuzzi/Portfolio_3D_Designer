@@ -7,7 +7,7 @@ const websites = [
     src: `${base}/siteMentalPlus.webp`,
     alt: "Site MentalPlus",
     link: "https://www.mentalplus.app/",
-    textKey: "site.text",
+    text: "Acessar",
   },
 ]
 

@@ -2,12 +2,9 @@ import React from 'react'
 import Title from './Title.jsx'
 import Image from './Image.jsx'
 import Button from './Button.jsx'
-import { useTranslation } from 'react-i18next'
 import programacaos from '../Data/programacaos.js'
 
 const Programacao = () => {
-  const { t } = useTranslation()
-
   const handleButtonClick = (link, isDownload) => {
     if (isDownload) {
       const a = document.createElement('a')
@@ -30,7 +27,7 @@ const Programacao = () => {
         className="flex flex-col items-center justify-center gap-2 text-center"
       >
         <Title
-          text={t("programming.title")}
+          text="Programação"
           size="text-[28px] sm:text-[32px] lg:text-[36px] xl:text-[44px] mt-24 sm:mt-20 lg:mt-40 xl:mt-40"
         />
       </div>
@@ -50,7 +47,7 @@ const Programacao = () => {
               />
 
               <Button
-                text={t(programacao.textKey)}
+                text={programacao.text}
                 onClick={() => handleButtonClick(programacao.link, true)}
                 download={true}
                 width="w-[160px] sm:w-[140px] lg:w-[170px] xl:w-[200px]"

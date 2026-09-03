@@ -4,15 +4,12 @@ import Title from '../assets/Components/Title.jsx'
 import Button from '../assets/Components/Button.jsx'
 import Image from '../assets/Components/Image.jsx'
 import { FaWhatsapp } from 'react-icons/fa'
-import { useTranslation } from 'react-i18next'
 
 const Contatos = () => {
-  const { t } = useTranslation()
-
   const base = "/Portfolio_3D_Designer"
 
   const contacts = [
-    { icon: <FaWhatsapp size={30} />, text: t("contacts.whatsapp"), link: "https://wa.me/5511952029128?text=Olá! Como posso te ajudar?" },
+    { icon: <FaWhatsapp size={30} />, text: "WhatsApp", link: "https://wa.me/5511952029128?text=Olá! Como posso te ajudar?" },
   ]
 
   const handleButtonClick = (link) => {
@@ -29,7 +26,7 @@ const Contatos = () => {
       {/* Títulos */}
       <div className='flex flex-col items-center justify-center gap-2 text-center'>
         <Title
-          text={t("contacts.title")}
+          text="Contato"
           size="text-[32px] sm:text-[34px] lg:text-[38px] xl:text-[44px]"
         />
       </div>
