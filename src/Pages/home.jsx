@@ -35,7 +35,7 @@ const Home = () => {
             {/* BLOCO 1 */}
             <div className="relative flex flex-col items-center justify-center gap-6 mt-20 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-14">
                 <BoxText
-                    text="Designer 3D  Especialista em Visualização Digital  Domínio em Maya, ZBrush, Photoshop, KeyShot e Substance 3D Painter."
+                    text="Designer 3D especialista em visualização digital. Domínio nas melhores ferramentas de mercado."
                     width="max-w-40 sm:max-w-60 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     margin="mb-4 sm:-mb-10 lg:mb-0 xl:-mb-24 mr-40 sm:mr-70 lg:mr-90 xl:mr-120"
@@ -62,7 +62,7 @@ const Home = () => {
                     special='block'
                 />
                 <BoxText
-                    text="Sou formado em Design Gráfico desde 2011, com mais de uma década de experiência em criação visual e modelagem 3D. Tenho domínio técnico em Maya, ZBrush, Photoshop, KeyShot e Substance 3D Painter, ferramentas que utilizo para transformar ideias em imagens impactantes, seja em projetos de produto, animação, visualização arquitetônica ou motion design."
+                    text="Com mais de uma década de experiência em criação visual e modelagem 3D. Transformo ideias em imagens impactantes, seja em projetos de produto, animação, visualização arquitetônica ou motion design."
                     width="max-w-46 sm:max-w-80 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     position='right'
@@ -101,7 +101,7 @@ const Home = () => {
                     special='block'
                 />
                 <BoxText
-                    text="Busco oportunidades em design 3D, tech art, visualização digital e projetos que valorizem criatividade, técnica e inovação. Vamos nos conectar?"
+                    text="Aberto a novos projetos e oportunidades em Design 3D, Tech Art e visualização digital, com foco em criatividade, excelência técnica e inovação."
                     width="max-w-40 sm:max-w-80 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     position='right'
