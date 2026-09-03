@@ -27,7 +27,7 @@
         "title": "Imagens"
     },
     "site": {
-        "title": "WebSites",
+        "title": "Websites",
         "text": "Acessar"
     },
     "channel": {
@@ -83,7 +83,7 @@
     },
     "contacts": {
         "title": "Contato",
-        "whatsapp": "Whatsapp"
+        "whatsapp": "WhatsApp"
     },
     "footer": {
         "madeBy": "Feito por Estevam Jannuzzi",
