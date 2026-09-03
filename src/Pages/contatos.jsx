@@ -4,7 +4,6 @@ import Title from '../assets/Components/Title.jsx'
 import Button from '../assets/Components/Button.jsx'
 import Image from '../assets/Components/Image.jsx'
 import { FaWhatsapp } from 'react-icons/fa'
-import { HiOutlineMail } from "react-icons/hi"
 import { useTranslation } from 'react-i18next'
 
 const Contatos = () => {

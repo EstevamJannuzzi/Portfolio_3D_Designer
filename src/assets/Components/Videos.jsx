@@ -1,4 +1,3 @@
-import React from 'react'
 import Title from './Title.jsx'
 import Iframe from './Iframe.jsx'
 import { useTranslation } from 'react-i18next'
@@ -25,7 +24,6 @@ const Videos = () => {
             <Iframe
               key={index}
               src={video.src}
-              title={video.title}
             />
           ))}
         </div>

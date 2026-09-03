@@ -1,6 +1,5 @@
 import React from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
-import Title from '../assets/Components/Title.jsx'
 import { useTranslation } from 'react-i18next'
 import Videos from '../assets/Components/Videos.jsx'
 
