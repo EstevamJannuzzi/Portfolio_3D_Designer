@@ -21,8 +21,7 @@ const Home = () => {
                 <Title
                     text={t("home.name")}
                     size="text-[26px] sm:text-[38px] lg:text-[42px] xl:text-[56px]"
-                    color="text-blue-iris"
-                    darkcolor="dark:text-white"
+                    color="text-white"
                 />
             </div>
 
@@ -32,7 +31,7 @@ const Home = () => {
                     alt="Gremlin"
                     width='w-[150px] sm:w-[210px] lg:w-[220px] xl:w-[390px]'
                     margin='m-0'
-                    special='block fill-white drop-shadow-xl/50 dark:fill-white dark:drop-shadow-xl/50'
+                    special='block fill-white drop-shadow-xl/50'
                 />
             </div>
 

@@ -11,9 +11,9 @@ const Button = ({
     return (
         <button
             onClick={onClick}
-            className={`${width} flex flex-col items-center justify-center font-text text-dark-gray dark:text-light-gray bg-white/65 dark:bg-dark-gray/85 rounded-lg p-2 text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px] border-b-8 border-sky-blue hover:border-blue-iris dark:border-blue-iris dark:hover:border-sky-blue hover:scale-105 transition-transform duration-300 cursor-pointer`}
+            className={`${width} flex flex-col items-center justify-center font-text text-light-gray bg-primary/35 rounded-lg p-2 text-[14px] sm:text-[18px] lg:text-[20px] xl:text-[22px] border-b-8 border-purple hover:border-light-purple hover:scale-105 transition-transform duration-300 cursor-pointer`}
         >
-            <div className="flex flex-row items-center gap-1 text-sky-blue hover:text-blue-iris dark:text-blue-iris dark:hover:text-sky-blue">
+            <div className="flex flex-row items-center gap-1 text-purple hover:text-light-purple">
                 {/* Se for download, mostra o ícone do Windows */}
                 {download ? (
                     <span>

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Title = ({ text, size, color='text-sky-blue', darkcolor='dark:text-blue-iris' }) => {
+const Title = ({ text, size, color='text-purple' }) => {
     return (
         <div>
-            <h1 className={`text-4xl font-bold ${color} ${darkcolor} ${size}`}>
+            <h1 className={`text-4xl font-bold ${color} ${size}`}>
                 {text}
             </h1>
         </div>

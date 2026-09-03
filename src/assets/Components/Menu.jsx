@@ -4,7 +4,6 @@ import { Menu, X, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import Image from "./Image";
-import DarkMode from "./darkmode";
 import { useTranslation } from "react-i18next";
 import ReactCountryFlag from "react-country-flag";
 
@@ -61,7 +60,7 @@ export default function MenuBar() {
   );
 
   return (
-    <header className="w-full flex items-center justify-between bg-dark-gray dark:bg-primary sm:h-[60px] lg:h-[90px] gap-4 py-3 px-6 fixed top-0 left-0 z-50 shadow-sm">
+    <header className="w-full flex items-center justify-between bg-primary sm:h-[60px] lg:h-[90px] gap-4 py-3 px-6 fixed top-0 left-0 z-50 shadow-sm">
 
       {/* LOGO */}
       <div className="flex items-center gap-x-4 xl:gap-x-6 ml-0 sm:ml-90 lg:ml-6 xl:ml-0">
@@ -82,8 +81,8 @@ export default function MenuBar() {
               key={link.to}
               to={link.to}
               className={`flex items-center font-medium transition-all duration-300 ease-in-out cursor-pointer ${location.pathname === link.to
-                ? "text-blue-iris dark:text-sky-blue text-[18px] scale-110"
-                : "text-sky-blue dark:text-white text-[14px] hover:text-blue-iris dark:hover:text-sky-blue hover:-translate-y-1 hover:scale-110"
+                ? "text-purple text-[18px] scale-110"
+                : "text-white text-[14px] hover:text-purple hover:-translate-y-1 hover:scale-110"
                 }`}
             >
               {link.name}
@@ -92,13 +91,12 @@ export default function MenuBar() {
         </nav>
 
         <div className="flex items-center gap-4 relative">
-          <DarkMode />
-
+          
           {/* LANG BUTTON */}
           <div className="relative">
             <button
               onClick={toggleLangMenu}
-              className="text-sky-blue dark:text-white hover:text-blue-iris dark:hover:text-sky-blue transition-transform duration-200 hover:scale-110 cursor-pointer"
+              className="text-white hover:text-purple transition-transform duration-200 hover:scale-110 cursor-pointer"
             >
               <Globe size={24} />
             </button>
@@ -110,7 +108,7 @@ export default function MenuBar() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute right-0 mt-2 bg-white/95 dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 py-2 px-3"
+                  className="absolute right-0 mt-2 bg-gray-900 rounded-xl shadow-lg border border-gray-700 py-2 px-3"
                 >
                   <div className="flex flex-col items-center gap-2">
                     {flags.map((f) => (
@@ -131,13 +129,12 @@ export default function MenuBar() {
 
       {/* MOBILE HEADER */}
       <div className="xl:hidden flex items-center gap-4">
-        <DarkMode />
-
+        
         {/* LANG MOBILE */}
         <div className="relative">
           <button
             onClick={toggleLangMenu}
-            className="text-sky-blue dark:text-white hover:text-blue-iris dark:hover:text-sky-blue transition-transform duration-200 hover:scale-110 cursor-pointer"
+            className="text-white hover:text-purple transition-transform duration-200 hover:scale-110 cursor-pointer"
           >
             <Globe size={24} />
           </button>
@@ -149,7 +146,7 @@ export default function MenuBar() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.2 }}
-                className="absolute right-0 mt-2 bg-white/95 dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 py-2 px-3"
+                className="absolute right-0 mt-2 bg-gray-900 rounded-xl shadow-lg border border-gray-700 py-2 px-3"
               >
                 <div className="flex flex-col items-center gap-2">
                   {flags.map((f) => (
@@ -169,7 +166,7 @@ export default function MenuBar() {
         {/* TOGGLE MENU */}
         <button
           onClick={toggleMenu}
-          className="text-sky-blue dark:text-white hover:text-blue-iris dark:hover:text-sky-blue transition-transform duration-200 hover:scale-110 cursor-pointer"
+          className="text-white hover:text-purple transition-transform duration-200 hover:scale-110 cursor-pointer"
         >
           <motion.div
             initial={{ rotate: 0 }}
@@ -199,7 +196,7 @@ export default function MenuBar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ type: "spring", bounce: 0, duration: 0.4 }}
-              className="absolute top-full left-0 w-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 xl:hidden shadow-lg"
+              className="absolute top-full left-0 w-full bg-gray-800/90 backdrop-blur-md border-t border-gray-700 xl:hidden shadow-lg"
             >
               <ul className="flex flex-col items-center py-4">
                 {links.map((link, i) => (
@@ -214,8 +211,8 @@ export default function MenuBar() {
                       to={link.to}
                       onClick={() => setMenuOpen(false)}
                       className={`block text-lg font-medium text-center py-1 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${location.pathname === link.to
-                        ? "text-blue-iris dark:text-sky-blue text-[16px] scale-110"
-                        : "text-sky-blue dark:text-white hover:text-blue-iris dark:hover:text-sky-blue hover:-translate-y-1 hover:scale-110 text-[14px]"
+                        ? "text-purple text-[16px] scale-110"
+                        : "text-white hover:text-purple hover:-translate-y-1 hover:scale-110 text-[14px]"
                         }`}
                     >
                       {link.name}

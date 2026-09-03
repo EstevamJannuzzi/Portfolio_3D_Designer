@@ -28,7 +28,7 @@ const Curriculo = () => {
             src={`${base}/User.webp`}
             alt="Estevam Jannuzzi"
             width='w-20 sm:w-28 lg:w-26 xl:w-40'
-            special='rounded-full outline-2 outline-offset-6 outline-solid outline-sky-blue dark:outline-blue-iris'
+            special='rounded-full outline-2 outline-offset-6 outline-solid outline-purple'
           />
         </div>
 
@@ -38,7 +38,7 @@ const Curriculo = () => {
             alt="Frog Smart"
             width='w-[130px] sm:w-[200px] lg:w-[240px] xl:w-[380px]'
             margin='m-0'
-            special='block fill-white drop-shadow-xl/50 dark:fill-white dark:drop-shadow-xl/50'
+            special='block fill-white drop-shadow-xl/50'
           />
         </div>
 
