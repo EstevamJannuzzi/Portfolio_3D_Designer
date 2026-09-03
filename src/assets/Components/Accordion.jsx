@@ -9,7 +9,7 @@ const Accordion = ({
 }) => {
   return (
     <div
-      className={`rounded-lg py-8 px-6 mb-4 w-90 sm:w-164 lg:w-180 xl:w-190 border-l-12 border-purple bg-dark-gray/85`}
+      className={`rounded-lg py-8 px-6 mb-4 w-90 sm:w-164 lg:w-180 xl:w-190 border-l-12 border-purple bg-primary/35`}
     >
       <button
         type="button"
