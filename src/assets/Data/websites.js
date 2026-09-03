@@ -4,7 +4,7 @@ const websites = [
   {
     id: 1,
     title: "MentalPlus",
-    src: `${base}/siteMentalPlus.webp`,
+    src: `${base}/pics/siteMentalPlus.webp`,
     alt: "Site MentalPlus",
     link: "https://www.mentalplus.app/",
     text: "Acessar",

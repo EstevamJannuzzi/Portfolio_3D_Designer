@@ -24,7 +24,7 @@ const Home = () => {
 
             <div className="fixed -rotate-44 top-40 sm:top-24 lg:top-46 xl:top-40 -right-13 sm:-right-18 lg:-right-22 xl:-right-34">
                 <Image
-                    src={`${base}/Gremlin1080_Final.webp`}
+                    src={`${base}/pics/Gremlin1080_Final.webp`}
                     alt="Gremlin"
                     width='w-[150px] sm:w-[210px] lg:w-[220px] xl:w-[390px]'
                     margin='m-0'
@@ -42,7 +42,7 @@ const Home = () => {
                     size="text-[12px] sm:text-[18px]"
                 />
                 <Image
-                    src={`${base}/dingbo.webp`}
+                    src={`${base}/pics/dingbo.webp`}
                     alt="DingBo"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[420px]'
                     margin='ml-28 sm:ml-30 lg:ml-30 xl:ml-60 -mt-50 sm:-mt-50 lg:-mt-40 xl:-mt-20'
@@ -54,7 +54,7 @@ const Home = () => {
             {/* BLOCO 2 */}
             <div className='flex flex-col items-center justify-center gap-6 mb-12 mt-28 sm:mt-22'>
                 <Image
-                    src={`${base}/carnivor.webp`}
+                    src={`${base}/pics/carnivor.webp`}
                     alt="Carnivor"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
                     margin='-ml-34 sm:-ml-50 lg:-ml-50 xl:mr-20'
@@ -81,7 +81,7 @@ const Home = () => {
                     size="text-[12px] sm:text-[18px]"
                 />
                 <Image
-                    src={`${base}/gremlin.webp`}
+                    src={`${base}/pics/gremlin.webp`}
                     alt="Gremlin"
                     width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[440px]'
                     margin='ml-32 sm:ml-30 lg:ml-30 xl:ml-30 -mt-60 sm:-mt-50'
@@ -93,7 +93,7 @@ const Home = () => {
             {/* BLOCO 4 */}
             <div className='flex flex-col items-center justify-center gap-6 mb-4 mt-30 sm:mt-8'>
                 <Image
-                    src={`${base}/joystick.webp`}
+                    src={`${base}/pics/joystick.webp`}
                     alt="Joystick"
                     width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[400px]'
                     margin='-ml-30 sm:-ml-30 lg:-ml-40 xl:mr-30'

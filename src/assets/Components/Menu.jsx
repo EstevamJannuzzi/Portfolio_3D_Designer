@@ -13,7 +13,7 @@ export default function MenuBar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const location = useLocation();
   const links = [
-    { name: "Início", to: "/" },
+    { name: "Home", to: "/" },
     { name: "Vídeos", to: "/videos" },
     { name: "Imagens", to: "/imagens" },
     { name: "Websites", to: "/websites" },
@@ -30,7 +30,7 @@ export default function MenuBar() {
       <div className="flex items-center gap-x-4 xl:gap-x-6 ml-0 sm:ml-90 lg:ml-6 xl:ml-0">
         <Link to="/" className="transition-transform hover:scale-110 cursor-pointer">
           <Image
-            src={`${base}/logo3D.webp`}
+            src={`${base}/pics/logo3D.webp`}
             alt="Logo"
             width="w-[44px] sm:w-[60px] lg:w-[90px] xl:w-[90px]"
           />

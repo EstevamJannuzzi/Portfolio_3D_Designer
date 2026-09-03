@@ -34,7 +34,7 @@ const Contatos = () => {
       {/* Imagem Superior */}
       <div className="flex justify-center items-center mt-10 mb-2">
         <Image
-          src={`${base}/ContatosDing.webp`}
+          src={`${base}/pics/ContatosDing.webp`}
           alt="Contatos Ding"
           width="w-[200px] sm:w-[180px] lg:w-[260px] xl:w-[280px]"
         />
