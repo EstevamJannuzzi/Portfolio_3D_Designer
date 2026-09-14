@@ -1,12 +1,10 @@
 const Iframe = ({
   src,
-  wrapperClass = 'relative flex justify-center items-center w-full',
-  width = 'w-[380px] sm:w-[230px] lg:w-[320px] xl:w-[360px]',
-  height = 'h-[164px] sm:h-[124px] lg:h-[182px] xl:h-[180px]',
+  wrapperClass = 'relative flex justify-center items-center w-full max-w-[380px] sm:max-w-[360px] lg:max-w-[420px] xl:max-w-[580px]',
   className = 'rounded-xl z-10',
 }) => {
   return (
-    <div className={`${wrapperClass} ${width} ${height}`}>
+    <div className={`${wrapperClass} aspect-video`}>
       <video
         src={src}
         controls

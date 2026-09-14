@@ -15,8 +15,8 @@ const Videos = () => {
         />
       </div>
 
-      <div className="relative flex justify-center items-center mt-8 mb-10">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 xl:gap-x-16">
+      <div className="relative mt-8 mb-10 px-4 sm:px-6">
+        <div className="flex flex-wrap justify-center items-center gap-4">
           {videos.map((video, index) => (
             <Iframe
               key={index}
