@@ -44,12 +44,19 @@ export default function MenuBar() {
             <Link
               key={link.to}
               to={link.to}
-              className={`flex items-center font-medium transition-all duration-300 ease-in-out cursor-pointer ${location.pathname === link.to
+              className={`relative flex items-center font-medium transition-all duration-300 ease-in-out cursor-pointer ${location.pathname === link.to
                 ? "text-purple text-[18px] scale-110"
                 : "text-white text-[14px] hover:text-purple hover:-translate-y-1 hover:scale-110"
                 }`}
             >
               {link.name}
+              {location.pathname === link.to && (
+                <motion.span
+                  layoutId="active-menu-indicator"
+                  className="absolute -bottom-1 left-0 right-0 h-[2px] rounded-full bg-purple"
+                  transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                />
+              )}
             </Link>
           ))}
         </nav>
@@ -106,12 +113,19 @@ export default function MenuBar() {
                     <Link
                       to={link.to}
                       onClick={() => setMenuOpen(false)}
-                      className={`block text-lg font-medium text-center py-1 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${location.pathname === link.to
+                      className={`relative block text-lg font-medium text-center py-1 transition-all duration-300 ease-in-out cursor-pointer flex items-center justify-center ${location.pathname === link.to
                         ? "text-purple text-[16px] scale-110"
                         : "text-white hover:text-purple hover:-translate-y-1 hover:scale-110 text-[14px]"
                         }`}
                     >
                       {link.name}
+                      {location.pathname === link.to && (
+                        <motion.span
+                          layoutId="active-menu-indicator"
+                          className="absolute -bottom-px left-0 right-0 h-[2px] rounded-full bg-purple"
+                          transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                        />
+                      )}
                     </Link>
                   </motion.li>
                 ))}
