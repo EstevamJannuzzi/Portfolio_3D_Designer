@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Title from '../assets/Components/Title.jsx'
 import Image from '../assets/Components/Image.jsx'
+import Button from '../assets/Components/Button.jsx'
 import Accordion from '../assets/Components/Accordion.jsx'
 
 const Curriculo = () => {
@@ -9,6 +10,15 @@ const Curriculo = () => {
 
   // Caminho base para GitHub Pages
   const base = "/Portfolio_3D_Designer"
+
+  const handleDownloadPresentation = () => {
+    const link = document.createElement('a')
+    link.href = `${base}/ppt/Apresentacao_Estevam.ppsx`
+    link.download = 'Apresentacao_Estevam.ppsx'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   return (
     <DefaultScreen className='z-30'>
@@ -19,7 +29,7 @@ const Curriculo = () => {
           size="text-[32px] sm:text-[34px] lg:text-[38px] xl:text-[44px]"
         />
 
-        <div className='flex items-center justify-center gap-4 mt-4 mb-4'>
+        <div className='flex flex-col items-center justify-center gap-4 mt-4 mb-4'>
 
           {/* Foto do Usuário */}
           <Image
@@ -27,6 +37,12 @@ const Curriculo = () => {
             alt="Estevam Jannuzzi"
             width='w-20 sm:w-28 lg:w-26 xl:w-40'
             special='rounded-full outline-2 outline-offset-6 outline-solid outline-purple'
+          />
+
+          <Button
+            text="Baixar Apresentação"
+            onClick={handleDownloadPresentation}
+            width='w-[160px] xl:w-[200px]'
           />
         </div>
 
