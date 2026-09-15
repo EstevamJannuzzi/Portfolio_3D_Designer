@@ -6,10 +6,17 @@ import images from '../Data/imagens.js'
 
 const Imagens = () => {
   const [selectedIndex, setSelectedIndex] = useState(null)
+  const [zoomPosition, setZoomPosition] = useState({ x: 50, y: 50 })
+  const [isZoomed, setIsZoomed] = useState(false)
 
   useEffect(() => {
     document.body.style.overflow = selectedIndex !== null ? 'hidden' : 'auto'
     return () => { document.body.style.overflow = 'auto' }
+  }, [selectedIndex])
+
+  useEffect(() => {
+    setIsZoomed(false)
+    setZoomPosition({ x: 50, y: 50 })
   }, [selectedIndex])
 
   const nextImage = (e) => {
@@ -57,22 +64,43 @@ const Imagens = () => {
           {/* Anterior */}
           <button
             onClick={prevImage}
-            className="absolute left-6 text-white hover:text-purple px-1 py-1 bg-black/40 rounded-full hover:bg-black/60 cursor-pointer"
+            className="absolute left-6 z-10 text-white hover:text-purple px-1 py-1 bg-black/40 rounded-full hover:bg-black/60 cursor-pointer"
           >
             <MdNavigateBefore size={50} />
           </button>
 
           {/* Imagem */}
-          <img
-            src={images[selectedIndex]}
-            alt="Imagem ampliada"
-            className="max-h-[90vh] max-w-[90vw] object-contain rounded-2xl shadow-2xl"
-          />
+          <div
+            className="relative max-h-[90vh] max-w-[90vw] overflow-hidden rounded-2xl shadow-2xl cursor-zoom-in"
+            onClick={(e) => e.stopPropagation()}
+            onMouseEnter={() => setIsZoomed(true)}
+            onMouseLeave={() => {
+              setIsZoomed(false)
+              setZoomPosition({ x: 50, y: 50 })
+            }}
+            onMouseMove={(e) => {
+              const bounds = e.currentTarget.getBoundingClientRect()
+              setZoomPosition({
+                x: ((e.clientX - bounds.left) / bounds.width) * 100,
+                y: ((e.clientY - bounds.top) / bounds.height) * 100,
+              })
+            }}
+          >
+            <img
+              src={images[selectedIndex]}
+              alt="Imagem ampliada"
+              className="block max-h-[90vh] max-w-[90vw] object-contain transition-transform duration-150"
+              style={{
+                transform: isZoomed ? 'scale(2)' : 'scale(1)',
+                transformOrigin: `${zoomPosition.x}% ${zoomPosition.y}%`,
+              }}
+            />
+          </div>
 
           {/* Próximo */}
           <button
             onClick={nextImage}
-            className="absolute right-6 text-white hover:text-purple px-1 py-1 bg-black/40 rounded-full hover:bg-black/60 cursor-pointer"
+            className="absolute right-6 z-10 text-white hover:text-purple px-1 py-1 bg-black/40 rounded-full hover:bg-black/60 cursor-pointer"
           >
             <MdNavigateNext size={50} />
           </button>
