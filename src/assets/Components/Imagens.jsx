@@ -57,7 +57,7 @@ const Imagens = () => {
           {/* Anterior */}
           <button
             onClick={prevImage}
-            className="absolute left-6 text-white px-1 py-1 bg-black/40 rounded-full hover:bg-black/60 cursor-pointer"
+            className="absolute left-6 text-white hover:text-purple px-1 py-1 bg-black/40 rounded-full hover:bg-black/60 cursor-pointer"
           >
             <MdNavigateBefore size={50} />
           </button>
@@ -72,7 +72,7 @@ const Imagens = () => {
           {/* Próximo */}
           <button
             onClick={nextImage}
-            className="absolute right-6 text-white px-1 py-1 bg-black/40 rounded-full hover:bg-black/60 cursor-pointer"
+            className="absolute right-6 text-white hover:text-purple px-1 py-1 bg-black/40 rounded-full hover:bg-black/60 cursor-pointer"
           >
             <MdNavigateNext size={50} />
           </button>
@@ -83,7 +83,7 @@ const Imagens = () => {
               e.stopPropagation()
               setSelectedIndex(null)
             }}
-            className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-gray-300 cursor-pointer"
+            className="absolute top-6 right-6 text-white text-3xl font-bold hover:text-purple cursor-pointer"
           >
             ✕
           </button>

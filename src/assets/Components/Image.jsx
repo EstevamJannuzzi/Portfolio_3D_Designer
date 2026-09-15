@@ -13,7 +13,7 @@ const Image = ({
     <img
       src={src}
       alt={alt}
-      className={`${width} ${height} ${margin} ${distance} ${special}`}
+      className={`rounded-[12px] ${width} ${height} ${margin} ${distance} ${special}`}
     />
   )
 }
