@@ -1,7 +1,6 @@
 import React from 'react'
 import { PiLinkedinLogo } from "react-icons/pi";
 import { FaInstagram } from "react-icons/fa";
-import { VscGithub } from "react-icons/vsc";
 
 const Footer = () => {
   return (
@@ -12,9 +11,6 @@ const Footer = () => {
       <div className='flex gap-4 mt-0 md:ml-auto'>
         <a href='https://www.linkedin.com/in/estevam-jannuzzi-217355bb/' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-purple'>
           <PiLinkedinLogo size={24} />
-        </a>
-        <a href='https://github.com/EstevamJannuzzi' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-purple'>
-          <VscGithub size={24} />
         </a>
         <a href='https://www.instagram.com/estevam_jannuzzi/' target='_blank' rel='noopener noreferrer' className='cursor-pointer bg-transparent border-none p-0 hover:text-purple'>
           <FaInstagram size={24} />
