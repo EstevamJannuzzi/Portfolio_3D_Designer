@@ -13,8 +13,8 @@ const Curriculo = () => {
 
   const handleDownloadPresentation = () => {
     const link = document.createElement('a')
-    link.href = `${base}/ppt/Apresentacao_Estevam.ppsx`
-    link.download = 'Apresentacao_Estevam.ppsx'
+    link.href = `${base}/ppt/Apresentacao_Portfolio_Estevam.ppsx`
+    link.download = 'Apresentacao_Portfolio_Estevam.ppsx'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)

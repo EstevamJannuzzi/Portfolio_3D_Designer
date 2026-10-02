@@ -35,7 +35,7 @@ const Home = () => {
             {/* BLOCO 1 */}
             <div className="relative flex flex-col items-center justify-center gap-6 mt-20 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-14">
                 <BoxText
-                    text="Designer 3D especialista em visualização digital. Domínio nas melhores ferramentas de mercado."
+                    text="Designer gráfico especialista em 3D generalista e artes digitais. Domínio nas melhores ferramentas de mercado."
                     width="max-w-40 sm:max-w-60 lg:max-w-80 xl:max-w-90"
                     distance="z-20 relative"
                     margin="mb-4 sm:-mb-10 lg:mb-0 xl:-mb-24 mr-40 sm:mr-70 lg:mr-90 xl:mr-120"
