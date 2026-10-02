@@ -8,7 +8,7 @@ import Pictures from "./Pictures";
 // Caminho base GitHub Pages
 const base = "/Portfolio_3D_Designer";
 
-export default function MenuBar() {
+export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const location = useLocation();
