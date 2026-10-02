@@ -2,7 +2,7 @@ import React from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Title from '../assets/Components/Title.jsx'
 import Button from '../assets/Components/Button.jsx'
-import Image from '../assets/Components/Image.jsx'
+import Pictures from '../assets/Components/Pictures.jsx'
 import { FaWhatsapp } from 'react-icons/fa'
 
 const Contatos = () => {
@@ -33,7 +33,7 @@ const Contatos = () => {
 
       {/* Imagem Superior */}
       <div className="flex justify-center items-center mt-10 mb-2">
-        <Image
+        <Pictures
           src={`${base}/pics/ContatosDing.webp`}
           alt="Contatos Ding"
           width="w-[200px] sm:w-[180px] lg:w-[260px] xl:w-[280px]"

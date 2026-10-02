@@ -1,6 +1,6 @@
 import React from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
-import Image from '../assets/Components/Image.jsx'
+import Pictures from '../assets/Components/Pictures.jsx'
 import BoxText from '../assets/Components/BoxText.jsx'
 import Title from '../assets/Components/Title.jsx'
 
@@ -23,7 +23,7 @@ const Home = () => {
             </div>
 
             <div className="fixed -rotate-44 top-40 sm:top-24 lg:top-46 xl:top-40 -right-13 sm:-right-18 lg:-right-22 xl:-right-34">
-                <Image
+                <Pictures
                     src={`${base}/pics/Gremlin1080_Final.webp`}
                     alt="Gremlin"
                     width='w-[150px] sm:w-[210px] lg:w-[220px] xl:w-[390px]'
@@ -41,7 +41,7 @@ const Home = () => {
                     margin="mb-4 sm:-mb-10 lg:mb-0 xl:-mb-24 mr-40 sm:mr-70 lg:mr-90 xl:mr-120"
                     size="text-[12px] sm:text-[18px]"
                 />
-                <Image
+                <Pictures
                     src={`${base}/pics/dingbo.webp`}
                     alt="DingBo"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[420px]'
@@ -53,7 +53,7 @@ const Home = () => {
 
             {/* BLOCO 2 */}
             <div className='flex flex-col items-center justify-center gap-6 mb-12 mt-28 sm:mt-22'>
-                <Image
+                <Pictures
                     src={`${base}/pics/carnivor.webp`}
                     alt="Carnivor"
                     width='w-[230px] sm:w-[340px] lg:w-[400px] xl:w-[480px]'
@@ -80,7 +80,7 @@ const Home = () => {
                     margin="-mb-8 sm:-mb-20 lg:-mb-20 xl:-mb-24 mr-30 sm:mr-70 lg:mr-90 xl:mr-144"
                     size="text-[12px] sm:text-[18px]"
                 />
-                <Image
+                <Pictures
                     src={`${base}/pics/gremlin.webp`}
                     alt="Gremlin"
                     width='w-[230px] sm:w-[350px] lg:w-[460px] xl:w-[440px]'
@@ -92,7 +92,7 @@ const Home = () => {
 
             {/* BLOCO 4 */}
             <div className='flex flex-col items-center justify-center gap-6 mb-4 mt-30 sm:mt-8'>
-                <Image
+                <Pictures
                     src={`${base}/pics/joystick.webp`}
                     alt="Joystick"
                     width='w-[190px] sm:w-[320px] lg:w-[420px] xl:w-[400px]'

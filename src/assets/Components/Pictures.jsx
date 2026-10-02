@@ -1,6 +1,6 @@
 import React from "react"
 
-const Image = ({
+const Pictures = ({
   src,
   alt = 'Imagem',
   width = 'w-[320px] sm:w-[640px] lg:w-[750px] xl:w-[390px]',
@@ -18,4 +18,4 @@ const Image = ({
   )
 }
 
-export default Image
+export default Pictures

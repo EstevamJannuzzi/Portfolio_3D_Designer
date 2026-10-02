@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import DefaultScreen from '../assets/Components/DefaultScreen.jsx'
 import Title from '../assets/Components/Title.jsx'
-import Image from '../assets/Components/Image.jsx'
+import Pictures from '../assets/Components/Pictures.jsx'
 import Button from '../assets/Components/Button.jsx'
 import Accordion from '../assets/Components/Accordion.jsx'
 
@@ -32,7 +32,7 @@ const Curriculo = () => {
         <div className='flex flex-col items-center justify-center gap-4 mt-4 mb-4'>
 
           {/* Foto do Usuário */}
-          <Image
+          <Pictures
             src={`${base}/pics/User.webp`}
             alt="Estevam Jannuzzi"
             width='w-20 sm:w-28 lg:w-26 xl:w-40'
@@ -47,7 +47,7 @@ const Curriculo = () => {
         </div>
 
         <div className="fixed top-24 sm:top-26 lg:top-38 xl:top-30 -right-6 sm:-right-8 lg:-right-14 xl:-right-18">
-          <Image
+          <Pictures
             src={`${base}/pics/frog_smart.webp`}
             alt="Frog Smart"
             width='w-[130px] sm:w-[200px] lg:w-[240px] xl:w-[380px]'

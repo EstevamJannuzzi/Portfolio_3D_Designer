@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import Image from "./Image";
+import Pictures from "./Pictures";
 
 // Caminho base GitHub Pages
 const base = "/Portfolio_3D_Designer";
@@ -29,7 +29,7 @@ export default function MenuBar() {
       {/* LOGO */}
       <div className="flex items-center gap-x-4 xl:gap-x-6 ml-0 sm:ml-90 lg:ml-6 xl:ml-0">
         <Link to="/" className="transition-transform hover:scale-110 cursor-pointer">
-          <Image
+          <Pictures
             src={`${base}/pics/logo3D.webp`}
             alt="Logo"
             width="w-[44px] sm:w-[60px] lg:w-[90px] xl:w-[90px]"
