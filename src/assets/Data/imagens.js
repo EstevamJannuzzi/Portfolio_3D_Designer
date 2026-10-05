@@ -11,6 +11,8 @@ const images = [
   `${base}/images/brinquedo8.webp`,
   `${base}/images/brinquedo9.webp`,
   `${base}/images/brinquedo10.webp`,
+  `${base}/images/brinquedo11.webp`,
+  `${base}/images/brinquedo12.webp`,
   `${base}/images/games1.webp`,
   `${base}/images/games2.webp`,
   `${base}/images/games3.webp`,
@@ -37,6 +39,9 @@ const images = [
   `${base}/images/natureza8.webp`,
   `${base}/images/natureza9.webp`,
   `${base}/images/natureza10.webp`,
+  `${base}/images/natureza11.webp`,
+  `${base}/images/natureza12.webp`,
+  `${base}/images/natureza13.webp`,
   `${base}/images/origami1.webp`,
   `${base}/images/origami2.webp`,
   `${base}/images/origami3.webp`,
@@ -48,7 +53,8 @@ const images = [
   `${base}/images/videogame5.webp`,
   `${base}/images/videogame6.webp`,
   `${base}/images/videogame7.webp`,
-  `${base}/images/videogame8.webp`
+  `${base}/images/videogame8.webp`,
+  `${base}/images/videogame9.webp`
 ]
 
 export default images
