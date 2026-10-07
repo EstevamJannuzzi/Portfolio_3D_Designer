@@ -101,13 +101,13 @@ const Home = () => {
                 />
             </div>
 
-            <div className="relative left-1/2 mb-[-30px] flex w-screen -translate-x-1/2 justify-center sm:mb-[-52px] lg:mb-[-42px] lg:justify-end xl:mb-[-36px]">
+            <div className="flex w-full justify-center mb-[-30px] sm:mb-[-52px] lg:mb-[-42px] xl:mb-[-36px]">
                 <Pictures
                     src={`${base}/pics/Gremlin1080_Final.webp`}
                     alt="Gremlin"
                     width='w-[150px] sm:w-[210px] lg:w-[220px] xl:w-[390px]'
                     margin='m-0'
-                    special='block fill-white drop-shadow-xl/50 sm:-translate-x-[10px] lg:-translate-x-[70px] xl:-translate-x-[60px]'
+                    special='block fill-white drop-shadow-xl/50'
                 />
             </div>
 
