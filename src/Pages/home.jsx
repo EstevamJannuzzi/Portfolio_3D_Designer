@@ -22,15 +22,6 @@ const Home = () => {
                 />
             </div>
 
-            <div className="fixed -rotate-44 top-40 sm:top-24 lg:top-46 xl:top-40 -right-13 sm:-right-18 lg:-right-22 xl:-right-34">
-                <Pictures
-                    src={`${base}/pics/Gremlin1080_Final.webp`}
-                    alt="Gremlin"
-                    width='w-[150px] sm:w-[210px] lg:w-[220px] xl:w-[390px]'
-                    margin='m-0'
-                    special='block fill-white drop-shadow-xl/50'
-                />
-            </div>
 
             {/* BLOCO 1 */}
             <div className="relative flex flex-col items-center justify-center gap-6 mt-20 mb-8 ml-0 sm:ml-14 lg:ml-26 xl:ml-14">
@@ -107,6 +98,16 @@ const Home = () => {
                     position='right'
                     margin="-mt-60 sm:-mt-80 lg:-mt-106 xl:-mt-100 ml-30 sm:ml-50 lg:ml-94 xl:ml-100"
                     size="text-[12px] sm:text-[18px]"
+                />
+            </div>
+
+            <div className="relative left-1/2 mb-[-30px] flex w-screen -translate-x-1/2 justify-center sm:mb-[-52px] lg:mb-[-42px] lg:justify-end xl:mb-[-36px]">
+                <Pictures
+                    src={`${base}/pics/Gremlin1080_Final.webp`}
+                    alt="Gremlin"
+                    width='w-[150px] sm:w-[210px] lg:w-[220px] xl:w-[390px]'
+                    margin='m-0'
+                    special='block fill-white drop-shadow-xl/50 sm:-translate-x-[10px] lg:-translate-x-[70px] xl:-translate-x-[60px]'
                 />
             </div>
 
