@@ -13,8 +13,8 @@ const Curriculo = () => {
 
   const handleDownloadPresentation = () => {
     const link = document.createElement('a')
-    link.href = `${base}/ppt/Apresentacao_Portfolio_Estevam.ppsx`
-    link.download = 'Apresentacao_Portfolio_Estevam.ppsx'
+    link.href = `${base}/ppt/Apresentacao_Portfolio_Estevam_V1.ppsx`
+    link.download = 'Apresentacao_Portfolio_Estevam_V1.ppsx'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -39,11 +39,11 @@ const Curriculo = () => {
             special='rounded-full outline-2 outline-offset-6 outline-solid outline-purple'
           />
 
-         {/*<Button
+         <Button
             text="Baixar Apresentação"
             onClick={handleDownloadPresentation}
             width='w-[160px] xl:w-[200px]'
-          />*/}
+          />
         </div>
 
         <div className="fixed top-24 sm:top-26 lg:top-38 xl:top-30 -right-6 sm:-right-8 lg:-right-14 xl:-right-18">
