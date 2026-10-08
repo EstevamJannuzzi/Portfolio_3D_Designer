@@ -49,11 +49,11 @@ const Accordion = ({
         }`}
       >
         <div className="overflow-hidden">
-          <p
-            className={`text-left font-text ${size} text-light-gray`}
+          <div
+            className={`space-y-4 text-left font-text ${size} text-light-gray`}
           >
             {description}
-          </p>
+          </div>
         </div>
       </div>
     </div>
