@@ -1,4 +1,3 @@
-@ -0,0 +1,9 @@
 # Redirecionamento do GitHub Pages antigo
 
 Para ativar o redirecionamento:
